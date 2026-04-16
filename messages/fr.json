@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Carrier Bridge — Sourcing transport routier piloté par l'IA",
-    "description": "L'agent IA qui analyse 100 000 transporteurs européens pour alimenter vos appels d'offres avec les acteurs les plus pertinents. Gagnez du temps, négociez mieux, sécurisez la qualité."
+    "title": "Carrier Bridge — Sourcing transport et comparateur de grilles tarifaires par IA",
+    "description": "Identifiez les bons transporteurs parmi 100 000 acteurs européens et normalisez leurs grilles tarifaires (messagerie, prestations annexes) pour une comparaison instantanée. Sourcing et tarifs transport, pilotés par IA."
   },
   "nav": {
     "features": "Fonctionnalités",
-    "agent": "Agent IA",
+    "agent": "Comparateur IA",
     "useCases": "Cas d'usage",
     "faq": "FAQ",
     "contact": "Contact",
@@ -14,11 +14,11 @@
     "closeMenu": "Fermer le menu"
   },
   "hero": {
-    "badge": "Nouveau · Agent IA de sourcing transporteurs",
-    "title1": "Trouvez le bon transporteur",
-    "titleHighlight": "parmi 100 000.",
-    "title2": "En quelques secondes, pas en quelques semaines.",
-    "subtitle": "Notre agent IA analyse en profondeur 100 000 sites de transporteurs européens pour alimenter vos appels d'offres avec les acteurs les plus pertinents — et vous garantir les meilleurs prix et la meilleure qualité de service.",
+    "badge": "Nouveau · Sourcing IA + comparateur tarifaire",
+    "title1": "Trouvez les bons transporteurs.",
+    "titleHighlight": "Normalisez leurs grilles.",
+    "title2": "Comparez en un clic.",
+    "subtitle": "Notre agent IA identifie les transporteurs les plus pertinents parmi 100 000 acteurs européens et normalise leurs grilles tarifaires — messagerie, lots, prestations annexes — pour une comparaison objective et instantanée.",
     "ctaPrimary": "Demander une démo",
     "ctaSecondary": "Voir la plateforme",
     "mockup": {
@@ -39,27 +39,27 @@
   },
   "problem": {
     "eyebrow": "Le problème",
-    "title": "Le sourcing transport tel qu'on le pratique aujourd'hui est cassé.",
-    "subtitle": "Les acheteurs transport lancent leurs appels d'offres aux mêmes transporteurs depuis des années. Pendant ce temps, des centaines d'acteurs parfaitement qualifiés restent invisibles — et les économies, hors de portée.",
+    "title": "Le sourcing ET la comparaison tarifaire sont cassés.",
+    "subtitle": "Les acheteurs transport lancent leurs AO aux mêmes transporteurs depuis des années. Et quand les grilles reviennent, impossible de les comparer sérieusement : chaque transporteur a son propre format, ses propres tranches, ses propres prestations annexes.",
     "items": [
       {
         "title": "Toujours les mêmes transporteurs consultés",
         "text": "Vos AO tournent autour d'un cercle restreint d'acteurs déjà connus. Sans visibilité sur le marché, vous passez à côté des meilleurs."
       },
       {
-        "title": "Sourcing manuel, lent et incomplet",
-        "text": "Identifier de nouveaux transporteurs qualifiés prend des semaines de prospection sur Google, salons et bouche-à-oreille."
+        "title": "Des grilles tarifaires illisibles et hétérogènes",
+        "text": "Excel, PDF, scans, formats propriétaires. Chaque transporteur a sa structure, ses tranches, ses zones. Aucune comparabilité native."
       },
       {
-        "title": "Pas de pré-qualification objective",
-        "text": "Flotte, certifications, axes opérés, spécialisations : difficile de comparer sans données structurées et fiables."
+        "title": "Prestations annexes éparpillées et opaques",
+        "text": "Carburant, RDV, hayon, ADR, bâchage, péage… Chaque surcharge est exprimée différemment. Les écarts réels se perdent dans le bruit."
       }
     ]
   },
   "features": {
     "eyebrow": "Fonctionnalités",
-    "title": "Tout ce qu'il faut pour sourcer le bon transporteur",
-    "subtitle": "Une plateforme complète conçue pour les directions Achats Transport, du brief à la shortlist qualifiée.",
+    "title": "Sourcing et tarifs transport, réunis dans une seule plateforme",
+    "subtitle": "Une IA qui identifie les bons transporteurs — et qui normalise automatiquement leurs grilles pour les rendre enfin comparables.",
     "items": [
       {
         "title": "Recherche en langage naturel",
@@ -71,130 +71,159 @@
       },
       {
         "title": "Pré-qualification automatique",
-        "text": "Flotte, taille, axes opérés, certifications, spécialisations : tous les critères clés sont extraits et structurés."
+        "text": "Flotte, axes opérés, certifications, spécialisations : tous les critères clés sont extraits et structurés pour une shortlist fiable."
       },
       {
-        "title": "Shortlist qualifiée",
-        "text": "Recevez une liste classée par pertinence, avec le détail des correspondances pour chaque acteur identifié."
+        "title": "Normalisation des grilles tarifaires",
+        "text": "Messagerie, lots, affrètement : l'IA structure les grilles Excel, PDF ou scans de chaque transporteur en un schéma unifié."
       },
       {
-        "title": "Pipeline d'AO enrichi",
-        "text": "Multipliez le nombre de transporteurs consultés par appel d'offres. Plus de concurrence, meilleurs prix."
+        "title": "Prestations annexes décodées",
+        "text": "Carburant, RDV, hayon, ADR, bâchage, péage, stationnement : chaque surcharge est extraite, nommée et rendue comparable."
       },
       {
-        "title": "Export & intégrations",
-        "text": "Exportez vers votre TMS, votre ERP ou votre outil d'AO. Intégrations sur mesure pour les grands comptes."
+        "title": "Comparateur multi-transporteurs",
+        "text": "Comparez les offres côte à côte sur chaque tranche, zone et surcharge. Le meilleur prix par ligne ressort immédiatement."
       }
     ]
   },
   "howItWorks": {
     "eyebrow": "Comment ça marche",
-    "title": "Du brief à la shortlist en moins d'une minute",
-    "subtitle": "Quatre étapes simples pour transformer votre sourcing transport.",
+    "title": "Un flux unique pour sourcer et comparer",
+    "subtitle": "Quatre étapes simples, que vous cherchiez de nouveaux transporteurs ou que vous compariez des grilles reçues.",
     "steps": [
       {
-        "title": "Décrivez votre besoin",
-        "text": "Type de marchandise, axes, volume, certifications, spécialisations. En langage naturel ou via formulaire structuré."
+        "title": "Exprimez votre besoin ou importez vos grilles",
+        "text": "Décrivez votre cahier des charges en langage naturel, ou déposez les grilles reçues (Excel, PDF, email)."
       },
       {
-        "title": "L'IA scanne 100 000 transporteurs",
-        "text": "Analyse sémantique de l'ensemble de la base européenne sur tous vos critères, en parallèle."
+        "title": "L'IA analyse, extrait et normalise",
+        "text": "Sourcing sur 100 000 transporteurs et/ou extraction des tranches, zones et prestations annexes vers un schéma unifié."
       },
       {
-        "title": "Recevez votre shortlist",
-        "text": "Une liste qualifiée et classée par pertinence, avec le détail des correspondances et les contacts utiles."
+        "title": "Recevez votre vision unifiée",
+        "text": "Shortlist qualifiée pour le sourcing, comparateur multi-transporteurs pour les tarifs : tout est prêt à exploiter."
       },
       {
-        "title": "Lancez votre AO",
-        "text": "Consultez plus de transporteurs, comparez objectivement, négociez sur des bases solides."
+        "title": "Décidez et négociez",
+        "text": "Lancez vos AO plus largement, arbitrez vos affectations, négociez sur des bases factuelles et objectives."
       }
     ]
   },
   "agent": {
-    "eyebrow": "L'agent IA",
-    "title1": "Le sourcing transport,",
-    "titleHighlight": "à la vitesse de l'IA.",
-    "subtitle": "Notre agent comprend votre métier. Il interprète des requêtes complexes mêlant flotte, géographie, marchandises et certifications, et ne vous remonte que les transporteurs réellement pertinents.",
+    "eyebrow": "L'IA tarifaire",
+    "title1": "Des grilles hétérogènes,",
+    "titleHighlight": "une comparaison limpide.",
+    "subtitle": "Vous recevez des grilles Excel, PDF, scannées, chacune avec ses propres tranches, zones et surcharges. L'IA les normalise dans un schéma unifié et les affiche côte à côte — la meilleure ligne ressort immédiatement.",
     "bullets": [
-      "Recherche sémantique sur 100 000 transporteurs européens",
-      "Critères métier nativement compris : ADR, température dirigée, vrac, citerne, frigo, conventionnel",
-      "Filtrage géographique fin : pays, axes internationaux, zones de chalandise",
-      "Certifications, taille de flotte, ancienneté, spécialisations sectorielles"
+      "Ingestion de grilles messagerie, lots et affrètement sous tous formats (Excel, PDF, scans, email)",
+      "Normalisation automatique des tranches de poids, zones, départements, destinations internationales",
+      "Extraction des prestations annexes : carburant, RDV, hayon, ADR, bâchage, péage, stationnement",
+      "Comparateur côte à côte avec mise en évidence de la meilleure offre par ligne et par surcharge"
     ],
     "cta": "Demander une démo",
-    "chat": {
-      "you": "Vous",
-      "ai": "Carrier Bridge",
-      "userMessage": "Je cherche un transporteur avec plus de 30 camions citernes, qui opère sur l'axe Italie ↔ Nord de la France, et spécialisé en matières dangereuses (ADR classe 3).",
-      "aiMessage": "J'ai analysé les 100 000 transporteurs de la base. Voici les acteurs les plus pertinents pour votre besoin :",
-      "result1": "TransLogi Spa — 45 citernes ADR (3/6/8), HQ Turin, axe FR-IT actif",
-      "result2": "Chimico Trasporti — 32 citernes, ISO 9001 + SQAS, base Milan",
-      "result3": "Nordic Tank Lines — 28 citernes ADR, Lyon, opère IT/CH/FR",
-      "thinking": "Analyse en cours…"
+    "grid": {
+      "header": "3 grilles messagerie normalisées · France",
+      "normalizedBadge": "Normalisé par IA",
+      "carrierLabel": "Transporteur",
+      "bestLabel": "Meilleur",
+      "cols": {
+        "b1": "0–30 kg",
+        "b2": "31–100 kg",
+        "b3": "101–500 kg",
+        "adr": "ADR",
+        "fuel": "Carburant"
+      },
+      "rows": [
+        {
+          "name": "TransLogi Spa",
+          "b1": "28,40 €",
+          "b2": "52,10 €",
+          "b3": "148 €",
+          "adr": "+12 %",
+          "fuel": "+8,4 %"
+        },
+        {
+          "name": "Chimico Trasporti",
+          "b1": "31,90 €",
+          "b2": "48,60 €",
+          "b3": "152 €",
+          "adr": "+10 %",
+          "fuel": "+9,2 %"
+        },
+        {
+          "name": "Nordic Tank Lines",
+          "b1": "30,20 €",
+          "b2": "54,70 €",
+          "b3": "142 €",
+          "adr": "+8 %",
+          "fuel": "+7,8 %"
+        }
+      ]
     }
   },
   "useCases": {
     "eyebrow": "Cas d'usage",
     "title": "Pensé pour tous les flux transport",
-    "subtitle": "Quel que soit votre secteur, l'agent IA identifie les transporteurs qualifiés pour vos contraintes spécifiques.",
+    "subtitle": "Quel que soit votre secteur, l'IA identifie les transporteurs qualifiés et rend leurs grilles comparables.",
     "items": [
       {
         "title": "Chimie & matières dangereuses",
-        "text": "ADR classes, citernes inox, certifications SQAS. Transporteurs spécialisés identifiés et pré-qualifiés."
+        "text": "ADR classes, citernes inox, certifications SQAS. Sourcing ciblé et surcharges ADR normalisées pour comparaison."
       },
       {
         "title": "Agroalimentaire & température dirigée",
-        "text": "Frigo, surgelé, multi-températures. Conformité IFS Logistics, traçabilité, axes courts."
+        "text": "Frigo, surgelé, multi-températures. IFS Logistics vérifié, prestations rendez-vous et hayon rendues comparables."
       },
       {
         "title": "BTP & vrac",
-        "text": "Bennes, plateaux, vrac solide, chargements lourds. Transporteurs régionaux et internationaux."
+        "text": "Bennes, plateaux, vrac solide. Shortlist régionale + comparaison des tarifs au km et surcharges carburant."
       },
       {
         "title": "Distribution & e-commerce",
-        "text": "Lots complets, palettes, livraisons B2B. Couverture multi-pays et capacité saisonnière."
+        "text": "Lots complets, palettes, messagerie B2B. Grilles messagerie normalisées sur toutes les tranches et zones."
       },
       {
         "title": "Industrie & flux internationaux",
-        "text": "Convois exceptionnels, équipements, flux import/export. Spécialistes par pays et par marchandise."
+        "text": "Exceptionnel, équipements, import/export. Comparaison multi-pays avec prestations annexes extraites."
       }
     ]
   },
   "faq": {
     "eyebrow": "Questions fréquentes",
     "title": "Tout ce que vous voulez savoir",
-    "subtitle": "Vous ne trouvez pas votre réponse ? Contactez-nous, on vous répond sous 24h.",
+    "subtitle": "Vous ne trouvez pas votre réponse ? Contactez-nous, on vous répond sous 24 h.",
     "items": [
       {
-        "q": "Comment l'IA analyse-t-elle 100 000 sites de transporteurs ?",
-        "a": "Notre moteur d'analyse parcourt en continu les sites web publics des transporteurs européens, extrait les informations métier (flotte, axes, certifications, spécialisations) et structure ces données dans une base recherchable sémantiquement."
+        "q": "Comment l'IA analyse-t-elle les 100 000 transporteurs ?",
+        "a": "Notre moteur parcourt en continu les sites publics des transporteurs européens, extrait les informations métier (flotte, axes, certifications, spécialisations) et les structure dans une base recherchable sémantiquement."
+      },
+      {
+        "q": "Quels formats de grilles tarifaires l'IA peut-elle traiter ?",
+        "a": "Excel, PDF (texte ou scanné), Word, images, pièces jointes d'email. L'IA gère les grilles messagerie, lots, affrètement, quel que soit leur degré de structuration initiale."
+      },
+      {
+        "q": "Comment normalisez-vous les prestations annexes hétérogènes ?",
+        "a": "Chaque surcharge (carburant, RDV, hayon, ADR, bâchage, péage, etc.) est identifiée, ramenée à une base commune (%, €/envoi, €/kg…) et rattachée à un vocabulaire unifié pour permettre la comparaison."
       },
       {
         "q": "Le site s'adresse-t-il aux transporteurs ?",
         "a": "Non. Carrier Bridge est exclusivement conçu pour les chargeurs : industriels, distributeurs, négociants et leurs directions Achats Transport et Supply Chain."
       },
       {
-        "q": "Mes données sont-elles protégées ?",
-        "a": "Oui. Vos requêtes, vos AO et vos shortlists sont strictement confidentiels. Hébergement européen, conformité RGPD, chiffrement en transit et au repos."
+        "q": "Mes données et grilles tarifaires sont-elles protégées ?",
+        "a": "Oui. Vos requêtes, grilles, AO et comparaisons sont strictement confidentiels. Hébergement européen, conformité RGPD, chiffrement en transit et au repos."
       },
       {
         "q": "Est-ce compatible avec mon TMS ou mon outil d'AO ?",
-        "a": "Oui. La plateforme propose des exports standards (CSV, Excel) et des intégrations sur mesure (API, webhooks) avec les principaux TMS et ERP du marché."
-      },
-      {
-        "q": "Quelle est la couverture géographique ?",
-        "a": "Toute l'Union européenne, le Royaume-Uni, la Suisse et la Norvège. Les pays de l'Est et des Balkans sont également couverts."
-      },
-      {
-        "q": "Combien de temps pour être opérationnel ?",
-        "a": "L'onboarding standard se fait en quelques jours. Une démo personnalisée vous permet de tester l'agent sur vos propres cas en moins d'une heure."
+        "a": "Oui. Exports standards (CSV, Excel) pour les shortlists et les comparatifs, et intégrations sur mesure (API, webhooks) avec les principaux TMS et ERP du marché."
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Prêt à transformer votre sourcing transport ?",
-    "subtitle": "Décrivez-nous votre contexte, on vous propose une démo ciblée sur vos flux et vos contraintes.",
+    "title": "Prêt à transformer votre sourcing et vos comparaisons tarifaires ?",
+    "subtitle": "Décrivez-nous votre contexte — on vous propose une démo ciblée, avec vos propres grilles et vos flux réels.",
     "form": {
       "name": "Nom complet",
       "namePlaceholder": "Marie Dupont",
@@ -215,10 +244,10 @@
         "other": "Autre"
       },
       "message": "Votre besoin",
-      "messagePlaceholder": "Volume transport annuel, axes principaux, types de flux, contraintes…",
+      "messagePlaceholder": "Volume transport annuel, nombre de grilles à comparer, axes, contraintes…",
       "submit": "Envoyer ma demande",
       "submitting": "Envoi en cours…",
-      "success": "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 24h.",
+      "success": "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 24 h.",
       "error": "Une erreur est survenue. Réessayez ou écrivez-nous directement à hello@carrierbridge.com.",
       "consent": "En envoyant ce formulaire, vous acceptez d'être recontacté par Carrier Bridge."
     },
@@ -231,11 +260,11 @@
     }
   },
   "footer": {
-    "tagline": "L'agent IA de sourcing transport routier en Europe.",
+    "tagline": "Sourcing transport et comparateur de grilles tarifaires, pilotés par IA.",
     "product": "Produit",
     "productLinks": {
       "features": "Fonctionnalités",
-      "agent": "Agent IA",
+      "agent": "Comparateur IA",
       "useCases": "Cas d'usage"
     },
     "company": "Entreprise",

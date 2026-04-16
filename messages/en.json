@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Carrier Bridge — AI-powered road carrier sourcing",
-    "description": "The AI agent that scans 100,000 European road carriers to feed your tenders with the most relevant operators. Save time, negotiate better, secure quality of service."
+    "title": "Carrier Bridge — AI carrier sourcing & rate-sheet comparator",
+    "description": "Identify the right carriers out of 100,000 European operators and normalise their rate sheets — parcel, groupage, ancillary surcharges — for instant, objective comparison. Sourcing and transport pricing, powered by AI."
   },
   "nav": {
     "features": "Features",
-    "agent": "AI Agent",
+    "agent": "AI Comparator",
     "useCases": "Use cases",
     "faq": "FAQ",
     "contact": "Contact",
@@ -14,11 +14,11 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "badge": "New · AI carrier sourcing agent",
-    "title1": "Find the right carrier",
-    "titleHighlight": "out of 100,000.",
-    "title2": "In seconds, not weeks.",
-    "subtitle": "Our AI agent deeply analyses 100,000 European carrier websites to feed your tenders with the most relevant operators — and secure the best prices and quality of service.",
+    "badge": "New · AI sourcing + rate comparator",
+    "title1": "Find the right carriers.",
+    "titleHighlight": "Normalise their rate sheets.",
+    "title2": "Compare in a click.",
+    "subtitle": "Our AI agent identifies the most relevant carriers out of 100,000 European operators and normalises their rate sheets — parcel, groupage, ancillary surcharges — into a single structured view, for objective side-by-side comparison.",
     "ctaPrimary": "Request a demo",
     "ctaSecondary": "See the platform",
     "mockup": {
@@ -39,27 +39,27 @@
   },
   "problem": {
     "eyebrow": "The problem",
-    "title": "Carrier sourcing, as it's done today, is broken.",
-    "subtitle": "Procurement teams keep tendering the same carriers year after year. Meanwhile, hundreds of perfectly qualified operators stay invisible — and savings stay out of reach.",
+    "title": "Carrier sourcing AND rate comparison are broken.",
+    "subtitle": "Procurement teams keep tendering the same carriers year after year. And when offers come back, serious comparison is impossible: every carrier has its own format, its own weight brackets, its own surcharges.",
     "items": [
       {
         "title": "Always the same carriers",
-        "text": "Your tenders revolve around a small circle of known operators. Without market visibility, you miss the best fit."
+        "text": "Your tenders revolve around a small circle of known operators. Without market visibility, you miss the best-fit carriers."
       },
       {
-        "title": "Manual, slow, incomplete sourcing",
-        "text": "Identifying new qualified carriers takes weeks of manual prospecting on Google, trade shows and word-of-mouth."
+        "title": "Unreadable, heterogeneous rate sheets",
+        "text": "Excel, PDF, scans, proprietary formats. Every carrier has its own structure, brackets and zones. Zero native comparability."
       },
       {
-        "title": "No objective pre-qualification",
-        "text": "Fleet, certifications, lanes, specialisations: comparing carriers without structured data is nearly impossible."
+        "title": "Ancillary surcharges scattered and opaque",
+        "text": "Fuel, appointment, tail lift, ADR, tarpaulin, tolls… Every surcharge is expressed differently. Real gaps get lost in the noise."
       }
     ]
   },
   "features": {
     "eyebrow": "Features",
-    "title": "Everything you need to source the right carrier",
-    "subtitle": "A complete platform built for Transport Procurement teams, from brief to qualified shortlist.",
+    "title": "Sourcing and transport pricing, in one platform",
+    "subtitle": "An AI that identifies the right carriers — and automatically normalises their rate sheets so they're finally comparable.",
     "items": [
       {
         "title": "Natural-language search",
@@ -71,92 +71,121 @@
       },
       {
         "title": "Automatic pre-qualification",
-        "text": "Fleet, size, lanes, certifications, specialisations: every key criterion is extracted and structured."
+        "text": "Fleet, lanes, certifications, specialisations: every key criterion is extracted and structured for a reliable shortlist."
       },
       {
-        "title": "Qualified shortlist",
-        "text": "Receive a list ranked by relevance, with detailed match information for every operator surfaced."
+        "title": "Rate-sheet normalisation",
+        "text": "Parcel, groupage, FTL: the AI structures each carrier's Excel, PDF or scanned rate sheets into a unified schema."
       },
       {
-        "title": "Enriched tender pipeline",
-        "text": "Multiply the number of carriers consulted per tender. More competition, better prices."
+        "title": "Ancillary surcharges decoded",
+        "text": "Fuel, appointment, tail lift, ADR, tarpaulin, tolls, demurrage: every surcharge is extracted, labelled and made comparable."
       },
       {
-        "title": "Export & integrations",
-        "text": "Export to your TMS, ERP or tender tool. Custom integrations available for enterprise accounts."
+        "title": "Multi-carrier comparator",
+        "text": "Compare offers side by side on every bracket, zone and surcharge. The best price per line stands out instantly."
       }
     ]
   },
   "howItWorks": {
     "eyebrow": "How it works",
-    "title": "From brief to shortlist in less than a minute",
-    "subtitle": "Four simple steps to transform your carrier sourcing.",
+    "title": "One unified flow for sourcing and comparison",
+    "subtitle": "Four simple steps — whether you're looking for new carriers or comparing rate sheets you've received.",
     "steps": [
       {
-        "title": "Describe your need",
-        "text": "Type of goods, lanes, volume, certifications, specialisations. In natural language or via structured form."
+        "title": "State your need or import rate sheets",
+        "text": "Describe your spec in natural language, or drop in the rate sheets you've received (Excel, PDF, email)."
       },
       {
-        "title": "The AI scans 100,000 carriers",
-        "text": "Semantic analysis of the entire European database against all your criteria, in parallel."
+        "title": "The AI analyses, extracts and normalises",
+        "text": "Sourcing across 100,000 carriers and/or extraction of brackets, zones and ancillary surcharges into a unified schema."
       },
       {
-        "title": "Receive your shortlist",
-        "text": "A qualified list ranked by relevance, with match details and useful contacts."
+        "title": "Get your unified view",
+        "text": "Qualified shortlist for sourcing, multi-carrier comparator for pricing: everything is ready to act on."
       },
       {
-        "title": "Launch your tender",
-        "text": "Consult more carriers, compare objectively, negotiate from a stronger position."
+        "title": "Decide and negotiate",
+        "text": "Tender more broadly, arbitrate your allocations, negotiate from a factual, objective position."
       }
     ]
   },
   "agent": {
-    "eyebrow": "The AI agent",
-    "title1": "Carrier sourcing,",
-    "titleHighlight": "at the speed of AI.",
-    "subtitle": "Our agent understands your business. It interprets complex queries combining fleet, geography, goods and certifications, and only surfaces carriers that are truly relevant.",
+    "eyebrow": "The pricing AI",
+    "title1": "Heterogeneous rate sheets,",
+    "titleHighlight": "crystal-clear comparison.",
+    "subtitle": "You receive Excel, PDF, scanned rate sheets — each with its own brackets, zones and surcharges. The AI normalises them into a unified schema and displays them side by side. The best line pops out instantly.",
     "bullets": [
-      "Semantic search across 100,000 European carriers",
-      "Native understanding of ADR, temperature-controlled, bulk, tanker, reefer, conventional",
-      "Fine-grained geography: countries, international lanes, catchment zones",
-      "Certifications, fleet size, seniority, sector specialisations"
+      "Ingests parcel, groupage and FTL rate sheets in any format (Excel, PDF, scans, email)",
+      "Automatic normalisation of weight brackets, zones, departments, international destinations",
+      "Extracts ancillary surcharges: fuel, appointment, tail lift, ADR, tarpaulin, tolls, demurrage",
+      "Side-by-side comparator with the best offer highlighted per line and per surcharge"
     ],
     "cta": "Request a demo",
-    "chat": {
-      "you": "You",
-      "ai": "Carrier Bridge",
-      "userMessage": "I'm looking for a carrier with more than 30 tankers, operating on the Italy ↔ Northern France lane, specialised in dangerous goods (ADR class 3).",
-      "aiMessage": "I scanned the 100,000-carrier database. Here are the most relevant operators for your need:",
-      "result1": "TransLogi Spa — 45 ADR tankers (3/6/8), HQ Turin, active FR-IT lane",
-      "result2": "Chimico Trasporti — 32 tankers, ISO 9001 + SQAS, Milan-based",
-      "result3": "Nordic Tank Lines — 28 ADR tankers, Lyon, IT/CH/FR coverage",
-      "thinking": "Analysing…"
+    "grid": {
+      "header": "3 parcel rate sheets normalised · France",
+      "normalizedBadge": "AI-normalised",
+      "carrierLabel": "Carrier",
+      "bestLabel": "Best",
+      "cols": {
+        "b1": "0–30 kg",
+        "b2": "31–100 kg",
+        "b3": "101–500 kg",
+        "adr": "ADR",
+        "fuel": "Fuel"
+      },
+      "rows": [
+        {
+          "name": "TransLogi Spa",
+          "b1": "€28.40",
+          "b2": "€52.10",
+          "b3": "€148",
+          "adr": "+12%",
+          "fuel": "+8.4%"
+        },
+        {
+          "name": "Chimico Trasporti",
+          "b1": "€31.90",
+          "b2": "€48.60",
+          "b3": "€152",
+          "adr": "+10%",
+          "fuel": "+9.2%"
+        },
+        {
+          "name": "Nordic Tank Lines",
+          "b1": "€30.20",
+          "b2": "€54.70",
+          "b3": "€142",
+          "adr": "+8%",
+          "fuel": "+7.8%"
+        }
+      ]
     }
   },
   "useCases": {
     "eyebrow": "Use cases",
     "title": "Designed for every transport flow",
-    "subtitle": "Whatever your industry, the AI agent identifies carriers qualified for your specific constraints.",
+    "subtitle": "Whatever your industry, the AI identifies qualified carriers and makes their rate sheets comparable.",
     "items": [
       {
         "title": "Chemicals & dangerous goods",
-        "text": "ADR classes, stainless tankers, SQAS certifications. Specialist carriers identified and pre-qualified."
+        "text": "ADR classes, stainless tankers, SQAS certifications. Targeted sourcing and normalised ADR surcharges for comparison."
       },
       {
         "title": "Food & temperature-controlled",
-        "text": "Reefer, frozen, multi-temperature. IFS Logistics compliance, traceability, short lanes."
+        "text": "Reefer, frozen, multi-temperature. IFS Logistics verified, appointment and tail-lift fees made comparable."
       },
       {
         "title": "Construction & bulk",
-        "text": "Tippers, flatbeds, solid bulk, heavy loads. Regional and international carriers."
+        "text": "Tippers, flatbeds, solid bulk. Regional shortlists plus per-km rates and fuel surcharges side by side."
       },
       {
         "title": "Retail & e-commerce",
-        "text": "Full truckloads, pallets, B2B deliveries. Multi-country coverage and seasonal capacity."
+        "text": "Full truckloads, pallets, B2B parcel. Normalised parcel rate sheets across every bracket and zone."
       },
       {
         "title": "Industry & cross-border flows",
-        "text": "Heavy haulage, equipment, import/export flows. Country and goods specialists."
+        "text": "Heavy haulage, equipment, import/export. Multi-country comparison with ancillary surcharges extracted."
       }
     ]
   },
@@ -166,35 +195,35 @@
     "subtitle": "Can't find your answer? Reach out, we reply within 24 hours.",
     "items": [
       {
-        "q": "How does the AI analyse 100,000 carrier websites?",
-        "a": "Our analysis engine continuously crawls the public websites of European carriers, extracts business information (fleet, lanes, certifications, specialisations) and structures it into a semantically searchable database."
+        "q": "How does the AI analyse 100,000 carriers?",
+        "a": "Our engine continuously crawls the public websites of European carriers, extracts business information (fleet, lanes, certifications, specialisations) and structures it into a semantically searchable database."
+      },
+      {
+        "q": "What rate-sheet formats can the AI process?",
+        "a": "Excel, PDF (text or scanned), Word, images, email attachments. The AI handles parcel, groupage and FTL rate sheets regardless of their initial level of structuring."
+      },
+      {
+        "q": "How do you normalise heterogeneous ancillary surcharges?",
+        "a": "Every surcharge (fuel, appointment, tail lift, ADR, tarpaulin, toll, etc.) is identified, reduced to a common base (%, €/shipment, €/kg…) and mapped to a unified vocabulary for true comparison."
       },
       {
         "q": "Is the platform aimed at carriers?",
         "a": "No. Carrier Bridge is exclusively designed for shippers: manufacturers, distributors, traders and their Transport Procurement and Supply Chain teams."
       },
       {
-        "q": "Is my data protected?",
-        "a": "Yes. Your queries, tenders and shortlists are strictly confidential. European hosting, GDPR compliance, encryption in transit and at rest."
+        "q": "Is my data and rate-sheet information protected?",
+        "a": "Yes. Your queries, rate sheets, tenders and comparisons are strictly confidential. European hosting, GDPR compliance, encryption in transit and at rest."
       },
       {
         "q": "Is it compatible with my TMS or tender tool?",
-        "a": "Yes. The platform offers standard exports (CSV, Excel) and custom integrations (API, webhooks) with the leading TMS and ERP solutions."
-      },
-      {
-        "q": "What's the geographic coverage?",
-        "a": "The full European Union, the United Kingdom, Switzerland and Norway. Eastern European and Balkan countries are also covered."
-      },
-      {
-        "q": "How long does onboarding take?",
-        "a": "Standard onboarding takes a few days. A personalised demo lets you test the agent on your own use cases in less than an hour."
+        "a": "Yes. Standard exports (CSV, Excel) for shortlists and comparisons, plus custom integrations (API, webhooks) with the leading TMS and ERP solutions."
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Ready to transform your carrier sourcing?",
-    "subtitle": "Tell us about your context, we'll set up a demo focused on your flows and constraints.",
+    "title": "Ready to transform sourcing and rate comparison?",
+    "subtitle": "Tell us about your context — we'll set up a demo with your own rate sheets and your real flows.",
     "form": {
       "name": "Full name",
       "namePlaceholder": "Marie Dupont",
@@ -215,7 +244,7 @@
         "other": "Other"
       },
       "message": "Your need",
-      "messagePlaceholder": "Annual transport volume, main lanes, flow types, constraints…",
+      "messagePlaceholder": "Annual transport volume, number of rate sheets to compare, lanes, constraints…",
       "submit": "Send my request",
       "submitting": "Sending…",
       "success": "Thank you! Your request has been sent. We'll get back to you within 24 hours.",
@@ -231,11 +260,11 @@
     }
   },
   "footer": {
-    "tagline": "The AI agent for European road carrier sourcing.",
+    "tagline": "AI-powered carrier sourcing and rate-sheet comparator for Europe.",
     "product": "Product",
     "productLinks": {
       "features": "Features",
-      "agent": "AI Agent",
+      "agent": "AI Comparator",
       "useCases": "Use cases"
     },
     "company": "Company",
