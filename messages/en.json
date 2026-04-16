@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "title": "Carrier Bridge — AI-powered road carrier sourcing",
+    "description": "The AI agent that scans 100,000 European road carriers to feed your tenders with the most relevant operators. Save time, negotiate better, secure quality of service."
+  },
+  "nav": {
+    "features": "Features",
+    "agent": "AI Agent",
+    "useCases": "Use cases",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "demo": "Request a demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "badge": "New · AI carrier sourcing agent",
+    "title1": "Find the right carrier",
+    "titleHighlight": "out of 100,000.",
+    "title2": "In seconds, not weeks.",
+    "subtitle": "Our AI agent deeply analyses 100,000 European carrier websites to feed your tenders with the most relevant operators — and secure the best prices and quality of service.",
+    "ctaPrimary": "Request a demo",
+    "ctaSecondary": "See the platform",
+    "mockup": {
+      "label": "Natural-language search",
+      "query": "30 ADR class 3 tankers, Italy ↔ Northern France lane",
+      "resultsLabel": "qualified carriers",
+      "card1Title": "TransLogi Spa",
+      "card1Meta": "Turin · 45 tankers · ADR 3/6/8",
+      "card2Title": "Chimico Trasporti",
+      "card2Meta": "Milan · 32 tankers · ISO 9001 + SQAS",
+      "card3Title": "Nordic Tank Lines",
+      "card3Meta": "Lyon · 28 tankers · ADR 2/3/8",
+      "matchLabel": "Match"
+    }
+  },
+  "trust": {
+    "label": "Built for Transport Procurement and Supply Chain teams"
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "Carrier sourcing, as it's done today, is broken.",
+    "subtitle": "Procurement teams keep tendering the same carriers year after year. Meanwhile, hundreds of perfectly qualified operators stay invisible — and savings stay out of reach.",
+    "items": [
+      {
+        "title": "Always the same carriers",
+        "text": "Your tenders revolve around a small circle of known operators. Without market visibility, you miss the best fit."
+      },
+      {
+        "title": "Manual, slow, incomplete sourcing",
+        "text": "Identifying new qualified carriers takes weeks of manual prospecting on Google, trade shows and word-of-mouth."
+      },
+      {
+        "title": "No objective pre-qualification",
+        "text": "Fleet, certifications, lanes, specialisations: comparing carriers without structured data is nearly impossible."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "Everything you need to source the right carrier",
+    "subtitle": "A complete platform built for Transport Procurement teams, from brief to qualified shortlist.",
+    "items": [
+      {
+        "title": "Natural-language search",
+        "text": "Describe your need like you would to a colleague. The AI understands business criteria (ADR, reefer, bulk, lanes, certifications)."
+      },
+      {
+        "title": "100,000-carrier database",
+        "text": "Full European coverage. Each carrier is deeply analysed from its website and public sources."
+      },
+      {
+        "title": "Automatic pre-qualification",
+        "text": "Fleet, size, lanes, certifications, specialisations: every key criterion is extracted and structured."
+      },
+      {
+        "title": "Qualified shortlist",
+        "text": "Receive a list ranked by relevance, with detailed match information for every operator surfaced."
+      },
+      {
+        "title": "Enriched tender pipeline",
+        "text": "Multiply the number of carriers consulted per tender. More competition, better prices."
+      },
+      {
+        "title": "Export & integrations",
+        "text": "Export to your TMS, ERP or tender tool. Custom integrations available for enterprise accounts."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "From brief to shortlist in less than a minute",
+    "subtitle": "Four simple steps to transform your carrier sourcing.",
+    "steps": [
+      {
+        "title": "Describe your need",
+        "text": "Type of goods, lanes, volume, certifications, specialisations. In natural language or via structured form."
+      },
+      {
+        "title": "The AI scans 100,000 carriers",
+        "text": "Semantic analysis of the entire European database against all your criteria, in parallel."
+      },
+      {
+        "title": "Receive your shortlist",
+        "text": "A qualified list ranked by relevance, with match details and useful contacts."
+      },
+      {
+        "title": "Launch your tender",
+        "text": "Consult more carriers, compare objectively, negotiate from a stronger position."
+      }
+    ]
+  },
+  "agent": {
+    "eyebrow": "The AI agent",
+    "title1": "Carrier sourcing,",
+    "titleHighlight": "at the speed of AI.",
+    "subtitle": "Our agent understands your business. It interprets complex queries combining fleet, geography, goods and certifications, and only surfaces carriers that are truly relevant.",
+    "bullets": [
+      "Semantic search across 100,000 European carriers",
+      "Native understanding of ADR, temperature-controlled, bulk, tanker, reefer, conventional",
+      "Fine-grained geography: countries, international lanes, catchment zones",
+      "Certifications, fleet size, seniority, sector specialisations"
+    ],
+    "cta": "Request a demo",
+    "chat": {
+      "you": "You",
+      "ai": "Carrier Bridge",
+      "userMessage": "I'm looking for a carrier with more than 30 tankers, operating on the Italy ↔ Northern France lane, specialised in dangerous goods (ADR class 3).",
+      "aiMessage": "I scanned the 100,000-carrier database. Here are the most relevant operators for your need:",
+      "result1": "TransLogi Spa — 45 ADR tankers (3/6/8), HQ Turin, active FR-IT lane",
+      "result2": "Chimico Trasporti — 32 tankers, ISO 9001 + SQAS, Milan-based",
+      "result3": "Nordic Tank Lines — 28 ADR tankers, Lyon, IT/CH/FR coverage",
+      "thinking": "Analysing…"
+    }
+  },
+  "useCases": {
+    "eyebrow": "Use cases",
+    "title": "Designed for every transport flow",
+    "subtitle": "Whatever your industry, the AI agent identifies carriers qualified for your specific constraints.",
+    "items": [
+      {
+        "title": "Chemicals & dangerous goods",
+        "text": "ADR classes, stainless tankers, SQAS certifications. Specialist carriers identified and pre-qualified."
+      },
+      {
+        "title": "Food & temperature-controlled",
+        "text": "Reefer, frozen, multi-temperature. IFS Logistics compliance, traceability, short lanes."
+      },
+      {
+        "title": "Construction & bulk",
+        "text": "Tippers, flatbeds, solid bulk, heavy loads. Regional and international carriers."
+      },
+      {
+        "title": "Retail & e-commerce",
+        "text": "Full truckloads, pallets, B2B deliveries. Multi-country coverage and seasonal capacity."
+      },
+      {
+        "title": "Industry & cross-border flows",
+        "text": "Heavy haulage, equipment, import/export flows. Country and goods specialists."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Everything you want to know",
+    "subtitle": "Can't find your answer? Reach out, we reply within 24 hours.",
+    "items": [
+      {
+        "q": "How does the AI analyse 100,000 carrier websites?",
+        "a": "Our analysis engine continuously crawls the public websites of European carriers, extracts business information (fleet, lanes, certifications, specialisations) and structures it into a semantically searchable database."
+      },
+      {
+        "q": "Is the platform aimed at carriers?",
+        "a": "No. Carrier Bridge is exclusively designed for shippers: manufacturers, distributors, traders and their Transport Procurement and Supply Chain teams."
+      },
+      {
+        "q": "Is my data protected?",
+        "a": "Yes. Your queries, tenders and shortlists are strictly confidential. European hosting, GDPR compliance, encryption in transit and at rest."
+      },
+      {
+        "q": "Is it compatible with my TMS or tender tool?",
+        "a": "Yes. The platform offers standard exports (CSV, Excel) and custom integrations (API, webhooks) with the leading TMS and ERP solutions."
+      },
+      {
+        "q": "What's the geographic coverage?",
+        "a": "The full European Union, the United Kingdom, Switzerland and Norway. Eastern European and Balkan countries are also covered."
+      },
+      {
+        "q": "How long does onboarding take?",
+        "a": "Standard onboarding takes a few days. A personalised demo lets you test the agent on your own use cases in less than an hour."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Ready to transform your carrier sourcing?",
+    "subtitle": "Tell us about your context, we'll set up a demo focused on your flows and constraints.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Marie Dupont",
+      "email": "Work email",
+      "emailPlaceholder": "marie.dupont@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "role": "Role",
+      "rolePlaceholder": "Transport Procurement Director",
+      "sector": "Sector",
+      "sectorPlaceholder": "Select a sector",
+      "sectorOptions": {
+        "chemistry": "Chemicals / dangerous goods",
+        "food": "Food / temperature-controlled",
+        "construction": "Construction / bulk",
+        "distribution": "Retail / e-commerce",
+        "industry": "Industry",
+        "other": "Other"
+      },
+      "message": "Your need",
+      "messagePlaceholder": "Annual transport volume, main lanes, flow types, constraints…",
+      "submit": "Send my request",
+      "submitting": "Sending…",
+      "success": "Thank you! Your request has been sent. We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again or write to hello@carrierbridge.com.",
+      "consent": "By submitting this form, you agree to be contacted by Carrier Bridge."
+    },
+    "errors": {
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Invalid email",
+      "companyRequired": "Please enter your company",
+      "messageRequired": "Please briefly describe your need"
+    }
+  },
+  "footer": {
+    "tagline": "The AI agent for European road carrier sourcing.",
+    "product": "Product",
+    "productLinks": {
+      "features": "Features",
+      "agent": "AI Agent",
+      "useCases": "Use cases"
+    },
+    "company": "Company",
+    "companyLinks": {
+      "contact": "Contact",
+      "demo": "Request a demo"
+    },
+    "legal": "Legal",
+    "legalLinks": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies"
+    },
+    "rights": "All rights reserved.",
+    "language": "Language"
+  }
+}
