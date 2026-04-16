@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "./SectionHeader";
-import { AlertTriangle, Clock, ScanSearch } from "lucide-react";
+import { Users, FileWarning, Layers } from "lucide-react";
 
-const icons = [AlertTriangle, Clock, ScanSearch];
+const icons = [Users, FileWarning, Layers];
 
 export function Problem() {
   const t = useTranslations("problem");
@@ -19,7 +19,7 @@ export function Problem() {
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {items.map((item, i) => {
-            const Icon = icons[i] ?? AlertTriangle;
+            const Icon = icons[i] ?? Users;
             return (
               <div
                 key={item.title}

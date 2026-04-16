@@ -5,20 +5,21 @@ import {
   MessageSquare,
   Database,
   ShieldCheck,
-  ListChecks,
-  TrendingUp,
-  Plug,
+  FileSpreadsheet,
+  Tags,
+  Scale,
 } from "lucide-react";
 
-const icons = [MessageSquare, Database, ShieldCheck, ListChecks, TrendingUp, Plug];
+// 3 first = sourcing pillar · 3 last = pricing pillar
+const icons = [MessageSquare, Database, ShieldCheck, FileSpreadsheet, Tags, Scale];
 
 const tones = [
   "bg-brand-50 text-brand-600",
+  "bg-brand-50 text-brand-600",
+  "bg-brand-50 text-brand-600",
   "bg-cyan-50 text-cyan-600",
-  "bg-emerald-50 text-emerald-600",
-  "bg-violet-50 text-violet-600",
-  "bg-amber-50 text-amber-600",
-  "bg-rose-50 text-rose-600",
+  "bg-cyan-50 text-cyan-600",
+  "bg-cyan-50 text-cyan-600",
 ];
 
 export function Features() {
