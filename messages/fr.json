@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "title": "Carrier Bridge — Sourcing transport routier piloté par l'IA",
+    "description": "L'agent IA qui analyse 100 000 transporteurs européens pour alimenter vos appels d'offres avec les acteurs les plus pertinents. Gagnez du temps, négociez mieux, sécurisez la qualité."
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "agent": "Agent IA",
+    "useCases": "Cas d'usage",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "demo": "Demander une démo",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "badge": "Nouveau · Agent IA de sourcing transporteurs",
+    "title1": "Trouvez le bon transporteur",
+    "titleHighlight": "parmi 100 000.",
+    "title2": "En quelques secondes, pas en quelques semaines.",
+    "subtitle": "Notre agent IA analyse en profondeur 100 000 sites de transporteurs européens pour alimenter vos appels d'offres avec les acteurs les plus pertinents — et vous garantir les meilleurs prix et la meilleure qualité de service.",
+    "ctaPrimary": "Demander une démo",
+    "ctaSecondary": "Voir la plateforme",
+    "mockup": {
+      "label": "Recherche en langage naturel",
+      "query": "30 citernes ADR classe 3, axe Italie ↔ Nord de la France",
+      "resultsLabel": "transporteurs qualifiés",
+      "card1Title": "TransLogi Spa",
+      "card1Meta": "Turin · 45 citernes · ADR 3/6/8",
+      "card2Title": "Chimico Trasporti",
+      "card2Meta": "Milan · 32 citernes · ISO 9001 + SQAS",
+      "card3Title": "Nordic Tank Lines",
+      "card3Meta": "Lyon · 28 citernes · ADR 2/3/8",
+      "matchLabel": "Match"
+    }
+  },
+  "trust": {
+    "label": "Conçu pour les directions Achats Transport et Supply Chain"
+  },
+  "problem": {
+    "eyebrow": "Le problème",
+    "title": "Le sourcing transport tel qu'on le pratique aujourd'hui est cassé.",
+    "subtitle": "Les acheteurs transport lancent leurs appels d'offres aux mêmes transporteurs depuis des années. Pendant ce temps, des centaines d'acteurs parfaitement qualifiés restent invisibles — et les économies, hors de portée.",
+    "items": [
+      {
+        "title": "Toujours les mêmes transporteurs consultés",
+        "text": "Vos AO tournent autour d'un cercle restreint d'acteurs déjà connus. Sans visibilité sur le marché, vous passez à côté des meilleurs."
+      },
+      {
+        "title": "Sourcing manuel, lent et incomplet",
+        "text": "Identifier de nouveaux transporteurs qualifiés prend des semaines de prospection sur Google, salons et bouche-à-oreille."
+      },
+      {
+        "title": "Pas de pré-qualification objective",
+        "text": "Flotte, certifications, axes opérés, spécialisations : difficile de comparer sans données structurées et fiables."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Fonctionnalités",
+    "title": "Tout ce qu'il faut pour sourcer le bon transporteur",
+    "subtitle": "Une plateforme complète conçue pour les directions Achats Transport, du brief à la shortlist qualifiée.",
+    "items": [
+      {
+        "title": "Recherche en langage naturel",
+        "text": "Décrivez votre besoin comme à un collègue. L'IA comprend les critères métier (ADR, frigo, vrac, axes, certifications)."
+      },
+      {
+        "title": "Base de 100 000 transporteurs",
+        "text": "Couverture européenne complète. Chaque transporteur est analysé en profondeur depuis son site web et ses sources publiques."
+      },
+      {
+        "title": "Pré-qualification automatique",
+        "text": "Flotte, taille, axes opérés, certifications, spécialisations : tous les critères clés sont extraits et structurés."
+      },
+      {
+        "title": "Shortlist qualifiée",
+        "text": "Recevez une liste classée par pertinence, avec le détail des correspondances pour chaque acteur identifié."
+      },
+      {
+        "title": "Pipeline d'AO enrichi",
+        "text": "Multipliez le nombre de transporteurs consultés par appel d'offres. Plus de concurrence, meilleurs prix."
+      },
+      {
+        "title": "Export & intégrations",
+        "text": "Exportez vers votre TMS, votre ERP ou votre outil d'AO. Intégrations sur mesure pour les grands comptes."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Comment ça marche",
+    "title": "Du brief à la shortlist en moins d'une minute",
+    "subtitle": "Quatre étapes simples pour transformer votre sourcing transport.",
+    "steps": [
+      {
+        "title": "Décrivez votre besoin",
+        "text": "Type de marchandise, axes, volume, certifications, spécialisations. En langage naturel ou via formulaire structuré."
+      },
+      {
+        "title": "L'IA scanne 100 000 transporteurs",
+        "text": "Analyse sémantique de l'ensemble de la base européenne sur tous vos critères, en parallèle."
+      },
+      {
+        "title": "Recevez votre shortlist",
+        "text": "Une liste qualifiée et classée par pertinence, avec le détail des correspondances et les contacts utiles."
+      },
+      {
+        "title": "Lancez votre AO",
+        "text": "Consultez plus de transporteurs, comparez objectivement, négociez sur des bases solides."
+      }
+    ]
+  },
+  "agent": {
+    "eyebrow": "L'agent IA",
+    "title1": "Le sourcing transport,",
+    "titleHighlight": "à la vitesse de l'IA.",
+    "subtitle": "Notre agent comprend votre métier. Il interprète des requêtes complexes mêlant flotte, géographie, marchandises et certifications, et ne vous remonte que les transporteurs réellement pertinents.",
+    "bullets": [
+      "Recherche sémantique sur 100 000 transporteurs européens",
+      "Critères métier nativement compris : ADR, température dirigée, vrac, citerne, frigo, conventionnel",
+      "Filtrage géographique fin : pays, axes internationaux, zones de chalandise",
+      "Certifications, taille de flotte, ancienneté, spécialisations sectorielles"
+    ],
+    "cta": "Demander une démo",
+    "chat": {
+      "you": "Vous",
+      "ai": "Carrier Bridge",
+      "userMessage": "Je cherche un transporteur avec plus de 30 camions citernes, qui opère sur l'axe Italie ↔ Nord de la France, et spécialisé en matières dangereuses (ADR classe 3).",
+      "aiMessage": "J'ai analysé les 100 000 transporteurs de la base. Voici les acteurs les plus pertinents pour votre besoin :",
+      "result1": "TransLogi Spa — 45 citernes ADR (3/6/8), HQ Turin, axe FR-IT actif",
+      "result2": "Chimico Trasporti — 32 citernes, ISO 9001 + SQAS, base Milan",
+      "result3": "Nordic Tank Lines — 28 citernes ADR, Lyon, opère IT/CH/FR",
+      "thinking": "Analyse en cours…"
+    }
+  },
+  "useCases": {
+    "eyebrow": "Cas d'usage",
+    "title": "Pensé pour tous les flux transport",
+    "subtitle": "Quel que soit votre secteur, l'agent IA identifie les transporteurs qualifiés pour vos contraintes spécifiques.",
+    "items": [
+      {
+        "title": "Chimie & matières dangereuses",
+        "text": "ADR classes, citernes inox, certifications SQAS. Transporteurs spécialisés identifiés et pré-qualifiés."
+      },
+      {
+        "title": "Agroalimentaire & température dirigée",
+        "text": "Frigo, surgelé, multi-températures. Conformité IFS Logistics, traçabilité, axes courts."
+      },
+      {
+        "title": "BTP & vrac",
+        "text": "Bennes, plateaux, vrac solide, chargements lourds. Transporteurs régionaux et internationaux."
+      },
+      {
+        "title": "Distribution & e-commerce",
+        "text": "Lots complets, palettes, livraisons B2B. Couverture multi-pays et capacité saisonnière."
+      },
+      {
+        "title": "Industrie & flux internationaux",
+        "text": "Convois exceptionnels, équipements, flux import/export. Spécialistes par pays et par marchandise."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Tout ce que vous voulez savoir",
+    "subtitle": "Vous ne trouvez pas votre réponse ? Contactez-nous, on vous répond sous 24h.",
+    "items": [
+      {
+        "q": "Comment l'IA analyse-t-elle 100 000 sites de transporteurs ?",
+        "a": "Notre moteur d'analyse parcourt en continu les sites web publics des transporteurs européens, extrait les informations métier (flotte, axes, certifications, spécialisations) et structure ces données dans une base recherchable sémantiquement."
+      },
+      {
+        "q": "Le site s'adresse-t-il aux transporteurs ?",
+        "a": "Non. Carrier Bridge est exclusivement conçu pour les chargeurs : industriels, distributeurs, négociants et leurs directions Achats Transport et Supply Chain."
+      },
+      {
+        "q": "Mes données sont-elles protégées ?",
+        "a": "Oui. Vos requêtes, vos AO et vos shortlists sont strictement confidentiels. Hébergement européen, conformité RGPD, chiffrement en transit et au repos."
+      },
+      {
+        "q": "Est-ce compatible avec mon TMS ou mon outil d'AO ?",
+        "a": "Oui. La plateforme propose des exports standards (CSV, Excel) et des intégrations sur mesure (API, webhooks) avec les principaux TMS et ERP du marché."
+      },
+      {
+        "q": "Quelle est la couverture géographique ?",
+        "a": "Toute l'Union européenne, le Royaume-Uni, la Suisse et la Norvège. Les pays de l'Est et des Balkans sont également couverts."
+      },
+      {
+        "q": "Combien de temps pour être opérationnel ?",
+        "a": "L'onboarding standard se fait en quelques jours. Une démo personnalisée vous permet de tester l'agent sur vos propres cas en moins d'une heure."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Prêt à transformer votre sourcing transport ?",
+    "subtitle": "Décrivez-nous votre contexte, on vous propose une démo ciblée sur vos flux et vos contraintes.",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Marie Dupont",
+      "email": "Email professionnel",
+      "emailPlaceholder": "marie.dupont@entreprise.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "role": "Fonction",
+      "rolePlaceholder": "Directeur Achats Transport",
+      "sector": "Secteur",
+      "sectorPlaceholder": "Sélectionnez un secteur",
+      "sectorOptions": {
+        "chemistry": "Chimie / matières dangereuses",
+        "food": "Agroalimentaire / température dirigée",
+        "construction": "BTP / vrac",
+        "distribution": "Distribution / e-commerce",
+        "industry": "Industrie",
+        "other": "Autre"
+      },
+      "message": "Votre besoin",
+      "messagePlaceholder": "Volume transport annuel, axes principaux, types de flux, contraintes…",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours…",
+      "success": "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 24h.",
+      "error": "Une erreur est survenue. Réessayez ou écrivez-nous directement à hello@carrierbridge.com.",
+      "consent": "En envoyant ce formulaire, vous acceptez d'être recontacté par Carrier Bridge."
+    },
+    "errors": {
+      "nameRequired": "Indiquez votre nom",
+      "emailRequired": "Indiquez votre email",
+      "emailInvalid": "Email invalide",
+      "companyRequired": "Indiquez votre entreprise",
+      "messageRequired": "Décrivez brièvement votre besoin"
+    }
+  },
+  "footer": {
+    "tagline": "L'agent IA de sourcing transport routier en Europe.",
+    "product": "Produit",
+    "productLinks": {
+      "features": "Fonctionnalités",
+      "agent": "Agent IA",
+      "useCases": "Cas d'usage"
+    },
+    "company": "Entreprise",
+    "companyLinks": {
+      "contact": "Contact",
+      "demo": "Demander une démo"
+    },
+    "legal": "Légal",
+    "legalLinks": {
+      "privacy": "Confidentialité",
+      "terms": "CGU",
+      "cookies": "Cookies"
+    },
+    "rights": "Tous droits réservés.",
+    "language": "Langue"
+  }
+}
