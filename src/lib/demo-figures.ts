@@ -73,3 +73,22 @@ export const priceBreakdown = carriers.map((c) => {
 });
 
 export const bestBreakdownTotal = Math.min(...priceBreakdown.map((l) => l.total));
+
+/**
+ * A deliberately awkward sheet, modelled on what carriers actually send:
+ * gaps where a carrier does not serve a town, one column covering two
+ * carriers, a price carrying a comment, and a second table underneath.
+ */
+export const messySheet = [
+  { dpt: "26", town: "VALENCE", prices: [142, null, 164.424] },
+  { dpt: "84", town: "AVIGNON", prices: [167, 186, 178.5], comment: 1 },
+  { dpt: "13", town: "MARSEILLE", prices: [null, 410, null] },
+  { dpt: "30", town: "BAGNOLS", prices: [162, 176, 176.093] },
+] as const;
+
+/** The same three carriers, each priced on a different basis. */
+export const carrierLogics = [
+  { prices: [142, 167, 410] },
+  { prices: [230, 176.923, 123.846] },
+  { prices: [23.97, 36.11, 44.47] },
+] as const;

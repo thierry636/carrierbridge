@@ -50,7 +50,7 @@
     "sections": [
       {
         "title": "1. Objet du service",
-        "body": "CarrierBridge est un logiciel accessible en ligne destiné aux chargeurs. Il permet d’importer et de normaliser des grilles tarifaires de transport, de comparer les offres des transporteurs pour une expédition donnée, de suivre les prestations annexes, et de recalculer l’indexation gazole afin d’identifier d’éventuels écarts avec les montants facturés. Le service ne s’adresse pas aux transporteurs."
+        "body": "CarrierBridge est un logiciel accessible en ligne destiné aux chargeurs. Il permet d’intégrer les grilles tarifaires de transport reçues au format Excel en conservant leur structure d’origine, de comparer les offres des transporteurs pour une expédition donnée, de suivre les prestations annexes, et de recalculer l’indexation carburant afin d’identifier d’éventuels écarts avec les montants facturés. Le service ne s’adresse pas aux transporteurs."
       },
       {
         "title": "2. Compte utilisateur",

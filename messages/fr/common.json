@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : import et normalisation des grilles transporteurs, désignation du meilleur prix par expédition, et contrôle de l’indexation gazole et des surtaxes.",
+    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : il intègre les grilles Excel de chaque transporteur dans leur logique propre, désigne le meilleur prix pour chaque expédition et contrôle l’indexation gazole et les surtaxes.",
     "audience": "Conçu pour les chargeurs dont le budget transport se situe entre 100 000 € et 3 millions d’euros par an."
   },
   "nav": {
@@ -70,9 +70,9 @@
     "fuelTool": "Calculateur d’indexation gazole"
   },
   "screenshots": {
-    "hero": "Écran principal de CarrierBridge : les grilles de plusieurs transporteurs ramenées à une base commune, avec le prix retenu pour une expédition.",
-    "gridBefore": "Une grille tarifaire telle qu’elle est reçue du transporteur, avant normalisation.",
-    "gridAfter": "La même grille tarifaire après normalisation dans CarrierBridge, avec ses tranches de poids et ses zones alignées.",
+    "hero": "Écran principal de CarrierBridge : le classement des transporteurs pour une expédition, prix tout compris, avec le mieux-disant désigné.",
+    "gridBefore": "Un fichier Excel de grille tarifaire tel qu’il est reçu du transporteur, avec ses cellules fusionnées et ses tableaux multiples.",
+    "gridAfter": "Trois grilles transporteurs intégrées dans CarrierBridge, chacune conservant sa propre structure de tarification.",
     "bestPrice": "Classement des transporteurs pour une expédition donnée, prix tout compris, avec l’écart au mieux-disant.",
     "fuelGap": "Écart d’indexation gazole détecté : taux facturé, taux attendu et différence en euros.",
     "demoPoster": "Aperçu de la démonstration vidéo de CarrierBridge."

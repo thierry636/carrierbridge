@@ -50,7 +50,7 @@
     "sections": [
       {
         "title": "1. Purpose of the service",
-        "body": "CarrierBridge is software accessible online, intended for shippers. It allows transport rate sheets to be imported and normalised, carrier offers to be compared for a given shipment, ancillary charges to be tracked, and fuel indexation to be recalculated in order to identify any gaps with the amounts invoiced. The service is not intended for carriers."
+        "body": "CarrierBridge is software accessible online, intended for shippers. It allows transport rate sheets received as Excel files to be loaded while keeping their original structure, carrier offers to be compared for a given shipment, ancillary charges to be tracked, and fuel indexation to be recalculated in order to identify any gaps with the amounts invoiced. The service is not intended for carriers."
       },
       {
         "title": "2. User account",

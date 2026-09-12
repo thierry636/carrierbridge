@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "CarrierBridge — Carrier rate sheet comparison",
-    "description": "Import every carrier rate sheet, whatever the format. CarrierBridge names the best price per shipment and checks fuel indexation on your invoices."
+    "description": "Load your carriers' Excel rate sheets exactly as they arrive. CarrierBridge names the best price per shipment and checks fuel indexation on your invoices."
   },
   "hero": {
     "h1": "Manage 20 carriers as easily as 3.",
     "subtitle": "Import every rate sheet, whatever the format. CarrierBridge names the best carrier for each shipment and checks that surcharges and fuel indexation do not drift. No TMS, no dedicated transport buyer.",
     "proofLabel": "What changes",
     "proof": [
-      "One base for every rate sheet, whatever format it arrived in",
+      "Every rate sheet loaded as the carrier built it, with no retyping",
       "The all-in price of each carrier, surcharges included",
       "Fuel indexation gaps flagged, not discovered at year end"
     ]
@@ -33,45 +33,43 @@
     "consequence": "So the saving won at tender evaporates during the year, while the order-management team spends its days hunting for a rate across fifteen files and calling sales reps to have it confirmed."
   },
   "import": {
-    "h2": "How do you import rate sheets in Excel, PDF or scanned form?",
-    "lede": "You upload the file exactly as the carrier sent it, whatever the format and whatever the structure. CarrierBridge reads it and brings it onto a common base. No upfront configuration is asked of you: the rate sheet is usable straight after import, and you adjust it yourself on screen if you want to refine a label or a zone.",
-    "formatsLabel": "Accepted formats",
+    "h2": "How do you load a carrier rate sheet from Excel?",
+    "lede": "You upload the file exactly as the carrier sent it. A conversational agent opens it on screen with you, shows what it has understood and asks you to decide wherever it is ambiguous. A few exchanges and the rate sheet is live. Nothing is retyped, nothing is reformatted.",
+    "formatsLabel": "Accepted format",
     "formats": [
-      "Excel and CSV",
-      "Native PDF",
-      "Scanned PDF",
-      "Email attachment"
+      "Excel — .xls and .xlsx"
     ],
+    "formatsNote": "CarrierBridge reads Excel files today. Rate sheets received as PDFs or scans are not processed yet.",
     "items": [
       {
-        "title": "Any weight bracket structure",
-        "text": "0-10, 10-20, 20-30 kg or any other step: each carrier's brackets are aligned onto a common base without you retyping them."
+        "title": "An agent that reads the sheet with you",
+        "text": "It displays the file, highlights what it has identified — headers, destinations, brackets, prices — and asks a question wherever two readings are possible. You answer in plain language, not in settings."
       },
       {
-        "title": "Zones, départements, postcodes",
-        "text": "In-house zones, groups of départements, postcode lists: each carrier's geography is rebuilt exactly as they defined it."
+        "title": "Files as they are, including the worst",
+        "text": "Merged cells, several tables on one sheet, a column covering two carriers, prices carrying a comment, one tab per departure site, terms and conditions slipped in under the prices. That is the everyday reality: the file does not have to be tidied up first."
       },
       {
-        "title": "Domestic and international",
-        "text": "Domestic groupage, full loads, export and import, country by country."
+        "title": "The carrier's own structure is kept",
+        "text": "A town-by-carrier matrix, a scale by pallet count, a flat rate per trip, weight brackets by département: each sheet is loaded in its own logic. Nothing is forced into a house format — that is exactly what would destroy the information."
+      },
+      {
+        "title": "Ancillary terms captured with it",
+        "text": "Empty pallet returns, waiting beyond an hour, site-access surcharges, the reference period for fuel indexation: the lines trailing at the bottom of the sheet follow the carrier instead of getting lost."
       },
       {
         "title": "Rate sheet updates",
         "text": "A new version replaces the old one without starting over. Earlier versions stay available, so you can tell which rate applied on which date."
-      },
-      {
-        "title": "You stay in control",
-        "text": "The normalised sheet sits next to the original file. A label, a bracket or a zone can be changed directly on screen, in seconds and without retyping."
       }
     ],
     "visual": {
-      "beforeLabel": "Before — the rate sheet as you receive it",
-      "afterLabel": "After — the same rate sheet, normalised"
+      "beforeLabel": "The file as it arrives",
+      "afterLabel": "Three carriers, three logics, all loaded"
     }
   },
   "surcharges": {
     "h2": "What do a carrier's ancillary charges actually contain?",
-    "lede": "Seven families of cost that almost never enter the comparison, and that make the difference between two apparently identical offers.",
+    "lede": "The costs that almost never enter the comparison, and that make the difference between two apparently identical offers.",
     "items": [
       {
         "title": "Fuel surcharge",
@@ -90,6 +88,14 @@
         "text": "A percentage uplift or a flat fee per consignment, depending on the class and the quantities carried."
       },
       {
+        "title": "Empty pallet returns",
+        "text": "Charged per pallet, at rates that vary twofold from one carrier to the next."
+      },
+      {
+        "title": "Site delivery surcharge",
+        "text": "Delivery to a building site or a difficult access point, charged as a flat fee per call."
+      },
+      {
         "title": "Sheeting and unsheeting",
         "text": "Charged per operation, with minimum-charge rules that differ from one carrier to the next."
       },
@@ -102,7 +108,7 @@
         "text": "Beyond a free allowance at loading or delivery, charged in hourly blocks."
       }
     ],
-    "conclusion": "CarrierBridge brings these seven families onto a comparable base. For a given consignment you see each carrier's complete price, not just their base rate."
+    "conclusion": "For a given shipment, CarrierBridge applies each carrier's own rules and shows the complete price, not just the base rate."
   },
   "fuel": {
     "h2": "How do you check fuel indexation on a transport invoice?",
@@ -129,8 +135,8 @@
     "lede": "Weight, destination, services required. The full ranking appears in seconds, all charges included.",
     "items": [
       {
-        "title": "Every rate sheet queried at once",
-        "text": "Including the ones you would not have thought to check. That is where the gain sits: the best price is not always the carrier you call out of habit."
+        "title": "Each rate sheet queried in its own logic",
+        "text": "For the same shipment, one reads by pallet count, another by destination town, a third by weight bracket per département. The conversion happens when the quote is produced, not at load time — doing it the other way round would throw away what makes each sheet worth having."
       },
       {
         "title": "The complete price, not the base rate",
@@ -225,33 +231,6 @@
         "detail": "+ {points} point over the period"
       }
     },
-    "before": {
-      "title": "What you receive",
-      "sheetA": "carrier-a.xlsx",
-      "sheetB": "rates-b.pdf",
-      "headersA": [
-        "Weight",
-        "Zone 1",
-        "Zone 2"
-      ],
-      "headersB": [
-        "Bracket",
-        "A",
-        "B",
-        "C"
-      ],
-      "caption": "Two rate sheets, two weight divisions, two geographies. The same consignment does not read the same way."
-    },
-    "after": {
-      "title": "After normalisation",
-      "headers": [
-        "Bracket",
-        "Carrier A",
-        "Carrier B",
-        "Carrier C"
-      ],
-      "caption": "One common base. The best price reads off, bracket by bracket."
-    },
     "breakdown": {
       "title": "The base rate decides nothing",
       "shipment": "180 kg · Nantes → Strasbourg",
@@ -299,6 +278,100 @@
           "text": "The full ranking, all charges included."
         }
       ]
+    },
+    "messy": {
+      "title": "The file as it arrives",
+      "filename": "transport_rates_2026.xls",
+      "tabs": [
+        "Site A depot",
+        "Site B depot",
+        "Carrier X",
+        "Carrier Y"
+      ],
+      "sheetTitle": "SITE A DEPOT — 2026",
+      "headers": [
+        "DPT",
+        "TOWN",
+        "Carrier A 28 t\nCarrier B 28 t",
+        "Carrier C",
+        "Carrier D"
+      ],
+      "conditionsLabel": "Terms",
+      "conditions": [
+        [
+          "Pallet return / pallet",
+          "€0.18"
+        ],
+        [
+          "Waiting beyond 1 h / h",
+          "€45.00"
+        ],
+        [
+          "Fuel indexation — base",
+          "Jan 2023"
+        ]
+      ],
+      "flags": [
+        "One column for two carriers",
+        "A price carrying a comment",
+        "A second table under the prices"
+      ],
+      "caption": "Merged cells, four tabs, two carriers in one column, terms slipped in under the prices. None of it has to be fixed before loading."
+    },
+    "agent": {
+      "title": "The loading agent",
+      "subtitle": "It sees the file and asks you to decide",
+      "thread": [
+        {
+          "from": "agent",
+          "text": "I found 36 carriers across the columns and 190 destinations down the rows. Column 3 carries two: “Carrier A 28 t” and “Carrier B 28 t”. Two separate carriers, or one group?"
+        },
+        {
+          "from": "user",
+          "text": "Two carriers, same rate."
+        },
+        {
+          "from": "agent",
+          "text": "Noted. At the bottom of the sheet: pallet return €0.18, waiting beyond 1 h at €45/h, fuel indexation on a January 2023 base. I am attaching them to both."
+        }
+      ],
+      "caption": "You answer in plain language. There is no settings form to fill in."
+    },
+    "logics": {
+      "title": "Three carriers, three logics, all loaded",
+      "cards": [
+        {
+          "carrier": "Carrier A",
+          "structure": "Town × price matrix, 28 t truck",
+          "sample": [
+            "Valence",
+            "Avignon",
+            "Marseille"
+          ],
+          "unit": "per trip"
+        },
+        {
+          "carrier": "Carrier B",
+          "structure": "Scale by pallet count",
+          "sample": [
+            "26 pallets",
+            "20 pallets",
+            "14 pallets"
+          ],
+          "unit": "per trip"
+        },
+        {
+          "carrier": "Carrier C",
+          "structure": "Weight brackets by département",
+          "sample": [
+            "0 – 9 kg · 26",
+            "9 – 12 kg · 26",
+            "12 – 14 kg · 26"
+          ],
+          "unit": "per consignment"
+        }
+      ],
+      "caption": "None of them is forced into a house format. Converting to a given shipment happens when the quote is produced."
     }
   }
 }

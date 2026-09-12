@@ -8,7 +8,7 @@
     },
     {
       "q": "Quels formats de grilles sont acceptés ?",
-      "a": "Tous. Excel et CSV, PDF natifs, PDF scannés, et les grilles reçues en pièce jointe d’e-mail. Quelle que soit la structure : tranches de poids quelle qu’en soit la découpe, zones propres au transporteur, groupes de départements, listes de codes postaux, grilles France et international. Vous déposez le fichier tel que vous l’avez reçu, sans le retravailler et sans le ramener à un format imposé. Le résultat s’affiche à côté de l’original : s’il y a un libellé à préciser ou une zone à renommer, vous l’ajustez vous-même à l’écran, en quelques secondes."
+      "a": "Excel, aujourd’hui : .xls et .xlsx. Les grilles reçues en PDF ou scannées ne sont pas encore traitées — nous préférons le dire que le laisser découvrir.\n\nEn revanche, le fichier Excel n’a pas à être propre. Cellules fusionnées, plusieurs tableaux sur le même onglet, une colonne qui couvre deux transporteurs, des prix annotés d’un commentaire, un onglet par site de départ, des conditions annexes glissées sous les prix : c’est ce que nous voyons tous les jours, et c’est ce que l’agent d’import sait lire. Il vous montre à l’écran ce qu’il a compris et vous fait trancher quand deux lectures sont possibles.\n\nLa structure, elle, est conservée telle quelle : matrice ville par transporteur, barème au nombre de palettes, forfait au voyage, tranches de poids par département. Nous n’imposons aucun format maison."
     },
     {
       "q": "Comment l’indexation gazole est-elle vérifiée ?",

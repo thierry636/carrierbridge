@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: import and normalise carrier rate sheets, name the best price for each shipment, and check fuel indexation and surcharges.",
+    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: it loads each carrier's Excel rate sheet in its own logic, names the best price for each shipment, and checks fuel indexation and surcharges.",
     "audience": "Built for shippers with an annual transport spend between €100,000 and €3 million."
   },
   "nav": {
@@ -70,9 +70,9 @@
     "fuelTool": "Fuel index calculator"
   },
   "screenshots": {
-    "hero": "The main CarrierBridge screen: rate sheets from several carriers brought onto a common base, with the price selected for one shipment.",
-    "gridBefore": "A carrier rate sheet as received, before normalisation.",
-    "gridAfter": "The same rate sheet after normalisation in CarrierBridge, with weight brackets and zones aligned.",
+    "hero": "The main CarrierBridge screen: carriers ranked for one shipment, all-in prices, with the best one named.",
+    "gridBefore": "An Excel rate sheet file as received from the carrier, with its merged cells and multiple tables.",
+    "gridAfter": "Three carrier rate sheets loaded into CarrierBridge, each keeping its own pricing structure.",
     "bestPrice": "Carrier ranking for a given shipment, all charges included, with the gap to the best price.",
     "fuelGap": "A fuel indexation gap detected: invoiced rate, expected rate and the difference in euros.",
     "demoPoster": "Preview of the CarrierBridge demo video."

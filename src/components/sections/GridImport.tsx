@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Screenshot } from "@/components/ui/screenshot";
-import { RateSheetBefore, RateSheetAfter } from "@/components/visuals/RateSheets";
+import { MessySheet, ImportAgent } from "@/components/visuals/MessyImport";
+import { CarrierLogics } from "@/components/visuals/CarrierLogics";
 
 export function GridImport() {
   const t = useTranslations("home.import");
@@ -23,9 +24,12 @@ export function GridImport() {
           </span>
         ))}
       </div>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-500">{t("formatsNote")}</p>
 
       <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-14">
-        <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+        {/* Without self-start the list stretches to the visuals column and the
+            items drift apart. */}
+        <dl className="grid gap-6 self-start sm:grid-cols-2 lg:grid-cols-1">
           {items.map((item) => (
             <div key={item.title} className="border-t border-ink-200 pt-4">
               <dt className="text-base font-semibold text-ink-900">{item.title}</dt>
@@ -34,23 +38,14 @@ export function GridImport() {
           ))}
         </dl>
 
-        <div className="grid gap-4">
-          <figure>
-            <Screenshot id="gridBefore" ratio="aspect-[16/9]">
-              <RateSheetBefore />
-            </Screenshot>
-            <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
-              {t("visual.beforeLabel")}
-            </figcaption>
-          </figure>
-          <figure>
-            <Screenshot id="gridAfter" ratio="aspect-[16/9]">
-              <RateSheetAfter />
-            </Screenshot>
-            <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
-              {t("visual.afterLabel")}
-            </figcaption>
-          </figure>
+        <div className="grid gap-6">
+          <Screenshot id="gridBefore" ratio="aspect-[16/9]">
+            <MessySheet />
+          </Screenshot>
+          <ImportAgent />
+          <Screenshot id="gridAfter" ratio="aspect-[16/9]">
+            <CarrierLogics />
+          </Screenshot>
         </div>
       </div>
     </Section>
