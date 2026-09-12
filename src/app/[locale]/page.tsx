@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { faqJsonLd, pageMetadata } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ClientMessages } from "@/components/i18n/ClientMessages";
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { GridImport } from "@/components/sections/GridImport";
@@ -61,9 +62,13 @@ export default async function HomePage({
       <Operations />
       <CarrierRegistry />
       <AiSourcing />
-      <PricingSection />
+      <ClientMessages namespaces={["pricing"]}>
+        <PricingSection />
+      </ClientMessages>
       <Support />
-      <Faq />
+      <ClientMessages namespaces={["faq"]}>
+        <Faq />
+      </ClientMessages>
       <FinalCta />
       <JsonLd data={faqJsonLd(faqItems)} />
     </>

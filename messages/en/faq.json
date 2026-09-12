@@ -1,1 +1,42 @@
-{}
+{
+  "h2": "Frequently asked questions",
+  "lede": "The objections that come up most often, answered without hedging.",
+  "items": [
+    {
+      "q": "More carriers means more admin and less volume discount, doesn't it?",
+      "a": "More admin, yes — if it stays manual. That is exactly what the tool absorbs: once the rate sheets are imported, checking three carriers or fifteen takes the same single action. On volume, the effect is real but usually overstated: a discount granted once a year to an incumbent holds up poorly against permanent competition, shipment by shipment. And nothing forces you to fragment everything: many shippers keep two main partners on their regular flows and open the rest to arbitration."
+    },
+    {
+      "q": "Which rate sheet formats are accepted?",
+      "a": "All of them. Excel and CSV, native PDFs, scanned PDFs, and rate sheets received as email attachments. Whatever the structure: weight brackets in any division, carrier-specific zones, groups of départements, postcode lists, domestic and international sheets. You upload the file exactly as you received it, without reworking it and without forcing it into an imposed format. The result appears next to the original: if a label needs clarifying or a zone renaming, you adjust it yourself on screen, in seconds."
+    },
+    {
+      "q": "How is fuel indexation checked?",
+      "a": "You enter your contract formula: fuel share, reference index, base index, revision frequency. The formula stays yours — CarrierBridge imposes none. The tool then recalculates the expected surcharge for each period from published indices and compares it with the rate applied on your invoices. It flags calculation gaps; it does not read your contract and is no substitute for contractual analysis. A flagged gap is a point to raise with your carrier, not a conclusion."
+    },
+    {
+      "q": "Do I need a TMS?",
+      "a": "No, and CarrierBridge does not replace one: they answer different questions. A TMS executes — it plans, produces documents, tracks shipments. CarrierBridge arbitrates — it decides who gets the order and at what price, then checks what is invoiced. If you have no TMS, CarrierBridge works on its own. If you have one, the two sit side by side, and a connector can pull your transport orders in automatically."
+    },
+    {
+      "q": "Is my data confidential?",
+      "a": "Your rate sheets, volumes and negotiated prices are yours. They are not shared with other clients, not passed to carriers, and not aggregated into a market index. Data is hosted in Europe, encrypted in transit and at rest, and processed in line with the GDPR. Processing purposes, retention periods and your rights are set out in our privacy policy."
+    },
+    {
+      "q": "How long does it take to get started?",
+      "a": "Signing up asks for two fields and no configuration. Expect under ten minutes between creating the account and your first comparison on your own rate sheets: you upload one or two files, enter a typical shipment, and get the ranking. Loading a full register of ten to fifteen carriers then happens as you go, sheet by sheet. Kick-off onboarding lets you move it all across in one go."
+    },
+    {
+      "q": "Is AI sourcing included?",
+      "a": "Yes, in the Pro and Business plans, at no extra charge. It is in beta: it suggests carriers to approach, it does not qualify them for you and does not replace your tender. CarrierBridge works perfectly well without it — most of the value comes from the rate sheets you already have."
+    },
+    {
+      "q": "Is this meant for carriers?",
+      "a": "No. CarrierBridge is for shippers only: manufacturers, distributors and traders. The tool exists to compare transport offers, not to issue them. Carriers have no access to the platform and so see neither your rate sheets nor those of their competitors."
+    },
+    {
+      "q": "What size of company is CarrierBridge for?",
+      "a": "Shippers with an annual transport spend between €100,000 and €3 million: too small to justify a TMS or a dedicated transport buyer, too large to keep running on spreadsheets. In these companies transport is often handled part-time by an order-management or logistics lead who is not a procurement specialist. The tool is built for exactly that: no configuration expected, a usable result in the first session."
+    }
+  ]
+}

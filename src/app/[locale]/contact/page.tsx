@@ -5,6 +5,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { pageMetadata } from "@/lib/seo";
 import { Container } from "@/components/ui/container";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { ClientMessages } from "@/components/i18n/ClientMessages";
 import { SignupButton } from "@/components/ui/signup-button";
 import { site } from "@/lib/site";
 
@@ -68,7 +69,9 @@ export default async function ContactPage({
             </div>
           </div>
 
-          <ContactForm />
+          <ClientMessages namespaces={["contact"]}>
+            <ContactForm />
+          </ClientMessages>
         </div>
       </Container>
     </div>

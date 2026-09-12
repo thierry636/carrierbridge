@@ -7,6 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { FuelIndexCalculator } from "@/components/tools/FuelIndexCalculator";
+import { ClientMessages } from "@/components/i18n/ClientMessages";
 import { SignupButton } from "@/components/ui/signup-button";
 
 function isLocale(value: string): value is Locale {
@@ -58,7 +59,9 @@ export default async function FuelIndexPage({
       </section>
 
       <Section>
-        <FuelIndexCalculator />
+        <ClientMessages namespaces={["tools"]}>
+          <FuelIndexCalculator />
+        </ClientMessages>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <div className="rounded-xl border border-ink-200 bg-white p-6">

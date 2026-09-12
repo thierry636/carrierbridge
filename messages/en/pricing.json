@@ -1,1 +1,156 @@
-{}
+{
+  "meta": {
+    "title": "CarrierBridge pricing — from €0",
+    "description": "Discovery €0, Essential €79, Pro €199 per month. Public prices, direct sign-up, no sales call. Multi-site and large-account plans available."
+  },
+  "page": {
+    "h1": "What does managing your transport rates cost?",
+    "lede": "Public prices, no negotiation required. Discovery, Essential and Pro open with a simple sign-up. You move up a plan when your volumes justify it.",
+    "vatNote": "All prices are shown excluding VAT, in euros."
+  },
+  "billing": {
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "annualBadge": "2 months free",
+    "perMonth": "/ month",
+    "perYear": "/ year",
+    "billedAnnually": "billed annually at {amount}",
+    "free": "Free"
+  },
+  "tabs": {
+    "standard": "Standard plans",
+    "enterprise": "Multi-site and large accounts",
+    "enterpriseHint": "Business and Enterprise: consolidation across sites, day-to-day operations, API."
+  },
+  "plans": {
+    "discovery": {
+      "name": "Discovery",
+      "tagline": "To check on your own rate sheets that the tool delivers.",
+      "cta": "Get started"
+    },
+    "essential": {
+      "name": "Essential",
+      "tagline": "For a single site leaving spreadsheets behind and taking back control of its surcharges.",
+      "cta": "Get started"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "For shippers who want to arbitrate every shipment and keep track of their carriers.",
+      "badge": "Most chosen",
+      "cta": "Get started"
+    },
+    "business": {
+      "name": "Business",
+      "tagline": "To run day-to-day operations: requests, aggregation, assignment, spot rates.",
+      "cta": "Contact us"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "tagline": "For groups consolidating several sites, flows and carriers.",
+      "cta": "Contact us"
+    }
+  },
+  "features": {
+    "groups": {
+      "base": "Scope",
+      "rates": "Rate sheets and pricing",
+      "control": "Cost control",
+      "operations": "Operations",
+      "sourcing": "Sourcing and tenders",
+      "support": "Integration and support"
+    },
+    "labels": {
+      "users": "Users",
+      "carriers": "Active carriers",
+      "sites": "Sites",
+      "quotes": "Priced shipments per month",
+      "grids": "Imported rate sheets",
+      "ancillary": "Ancillary charges",
+      "calculator": "Best price calculator",
+      "fuelControl": "Fuel and surcharge control",
+      "history": "History",
+      "vigilance": "Compliance documents",
+      "opsSuite": "Requests, aggregation, assignment, spot",
+      "groupConsolidation": "Group consolidation (sites, flows, carriers)",
+      "driftReport": "Monthly cost drift report",
+      "tender": "Tender module",
+      "aiSourcing": "AI sourcing (beta)",
+      "api": "API and webhooks",
+      "support": "Support"
+    },
+    "values": {
+      "unlimited": "Unlimited",
+      "unlimitedPlural": "Unlimited",
+      "yes": "Yes",
+      "no": "—",
+      "occasional": "Occasional",
+      "withAlerts": "Yes + monthly alerts",
+      "months12": "12 months",
+      "perAct": "Per tender",
+      "tenderIncluded": "1 simple tender per year included",
+      "included": "Included",
+      "supportEmail": "Email within 48 h",
+      "supportPriority": "Priority email",
+      "supportDedicated": "Priority + named contact",
+      "one": "1",
+      "three": "3",
+      "twenty": "20",
+      "fiveHundred": "500",
+      "threeThousand": "3,000"
+    }
+  },
+  "connectors": {
+    "label": "ERP/TMS connectors, automatic retrieval of transport orders",
+    "price": "On request",
+    "cta": "Contact us"
+  },
+  "roi": {
+    "title": "What the subscription represents against the transport budget",
+    "disclaimer": "Indicative estimate, based on an assumption of 4% saved on the annual transport budget. It is not a guarantee of results and depends on your starting position.",
+    "items": {
+      "essential": "Transport budget €150,000 — 4% saved = €6,000 a year, roughly 8 times the annual subscription.",
+      "pro": "Transport budget €500,000 — 4% saved = €20,000 a year, 10 times the annual subscription.",
+      "business": "Transport budget €1.2M — 4% saved = €48,000 a year, close to 11 times the annual subscription.",
+      "enterprise": "Transport budget €3M — 4% saved = €120,000 a year, 10 times the annual subscription."
+    }
+  },
+  "tenders": {
+    "h2": "Tenders",
+    "lede": "Charged per tender, separately from the subscription. The Enterprise plan includes one simple tender a year.",
+    "items": [
+      { "name": "Simple tender", "scope": "Up to 10 carriers approached", "price": "€1,200" },
+      { "name": "Extended tender", "scope": "Up to 30 carriers approached", "price": "€2,500" },
+      { "name": "Multi-site or multi-flow tender", "scope": "Scope to be defined together", "price": "On request" }
+    ]
+  },
+  "onboarding": {
+    "h2": "Onboarding",
+    "tagline": "For teams that want someone who knows both the transport trade and the tool.",
+    "items": [
+      {
+        "name": "Kick-off",
+        "price": "€490",
+        "summary": "Two 90-minute video sessions.",
+        "details": "Loading your rate sheets, setting up your indexation formulas, hands-on start.",
+        "cta": "Contact us"
+      },
+      {
+        "name": "Secure",
+        "price": "€3,750",
+        "summary": "Five days of support spread over 12 months.",
+        "details": "Full carrier register set-up, advanced configuration, tender scoping, quarterly reviews.",
+        "note": "Unused days are not carried beyond 12 months.",
+        "cta": "Contact us"
+      }
+    ]
+  },
+  "notes": {
+    "h2": "Before you choose",
+    "items": [
+      "Discovery, Essential and Pro open with a simple sign-up: two fields, no contact form, no sales call.",
+      "Business, Enterprise, Secure onboarding and connectors are scoped in a conversation, because the scope drives the price.",
+      "An annual commitment gives you two months free compared with paying monthly.",
+      "AI sourcing is in beta: it is included in Pro and Business, and is never charged separately."
+    ]
+  }
+}

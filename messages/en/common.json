@@ -1,1 +1,77 @@
-{}
+{
+  "brand": {
+    "name": "CarrierBridge",
+    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: import and normalise carrier rate sheets, name the best price for each shipment, and check fuel indexation and surcharges.",
+    "audience": "Built for shippers with an annual transport spend between €100,000 and €3 million."
+  },
+  "nav": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "fuelTool": "Fuel index calculator",
+    "blog": "Blog",
+    "contact": "Contact us",
+    "signup": "Get started",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to main content"
+  },
+  "cta": {
+    "signup": "Compare my rate sheets free",
+    "signupShort": "Get started",
+    "signupNote": "Free, no card required. 3 rate sheets and 20 priced shipments per month.",
+    "demo": "Watch a demo (3 min)",
+    "contact": "Contact us",
+    "pricing": "See pricing",
+    "fuelTool": "Try the fuel index calculator",
+    "fuelToolFree": "Try it free, no sign-up"
+  },
+  "footer": {
+    "tagline": "Transport rate management for shippers. Import your rate sheets, name the best price for every shipment, keep fuel indexation in check.",
+    "columns": {
+      "product": "Product",
+      "resources": "Resources",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "fuelTool": "Fuel index calculator",
+      "signup": "Create an account",
+      "login": "Sign in",
+      "blog": "Blog",
+      "faq": "Frequently asked questions",
+      "contact": "Contact us",
+      "legalNotice": "Legal notice",
+      "terms": "Terms of use",
+      "privacy": "Privacy policy",
+      "cookies": "Cookie settings"
+    },
+    "rights": "All rights reserved.",
+    "madeIn": "Built in France, hosted in Europe."
+  },
+  "cookies": {
+    "title": "Audience measurement",
+    "body": "We use cookieless audience measurement with no individual tracking, so we can see which pages are read. No advertising trackers are set and no data is sold. You can refuse: the site works exactly the same.",
+    "accept": "Accept",
+    "refuse": "Refuse",
+    "more": "Learn more",
+    "manage": "Manage cookies"
+  },
+  "placeholder": {
+    "screenshot": "Product screenshot to be added",
+    "screenshotBefore": "Screenshot to be added — the rate sheet as received",
+    "screenshotAfter": "Screenshot to be added — the same rate sheet, normalised",
+    "screenshotGap": "Screenshot to be added — an indexation gap detected",
+    "video": "Demo video to be added",
+    "metric": "Client figure to be confirmed"
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "body": "The link you followed may be out of date, or the address contains a mistake.",
+    "home": "Back to home",
+    "pricing": "See pricing",
+    "fuelTool": "Fuel index calculator"
+  }
+}

@@ -62,10 +62,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "common" });
 
+  // Header and the cookie banner are the only client components at this level,
+  // and both read `common`. Pages add the namespaces their own client parts
+  // need, so terms and privacy copy never ship with the home page.
+  const shellMessages = { common: messages.common };
+
   return (
     <html lang={locale} className={inter.variable}>
       <body className="bg-white font-sans text-ink-900 antialiased">
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={shellMessages}>
           <a
             href="#contenu"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow"

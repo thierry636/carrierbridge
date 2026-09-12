@@ -1,1 +1,78 @@
-{}
+{
+  "fuel": {
+    "meta": {
+      "title": "Fuel index calculator — check your transport surcharge",
+      "description": "Free, no sign-up: enter your contract formula, your reference index and the invoiced rate, and get the gap in points and in euros."
+    },
+    "h1": "Is your fuel surcharge calculated correctly?",
+    "lede": "Enter your contract formula, the indices for the period and the rate applied on your invoice. You get the gap straight away, in points and in euros.",
+    "privacy": "The calculation runs entirely in your browser. No data is sent, stored or kept. No sign-up is required.",
+    "form": {
+      "legend": "Your invoice and your formula",
+      "baseAmount": {
+        "label": "Base amount excluding VAT for the period",
+        "help": "The transport amount before the fuel surcharge, for one shipment or for the whole month.",
+        "unit": "€"
+      },
+      "fuelShare": {
+        "label": "Fuel share set in the contract",
+        "help": "The share of the price treated as fuel-sensitive. Most often between 20 and 35%.",
+        "unit": "%"
+      },
+      "baseIndex": {
+        "label": "Base index (contractual reference)",
+        "help": "The index the contract sets as the starting point for indexation."
+      },
+      "periodIndex": {
+        "label": "Index for the invoiced period",
+        "help": "The index published for the month the invoice covers."
+      },
+      "invoicedRate": {
+        "label": "Surcharge rate applied on the invoice",
+        "help": "The fuel surcharge percentage the carrier charged you.",
+        "unit": "%"
+      },
+      "submit": "Calculate the gap",
+      "reset": "Reset",
+      "errors": {
+        "required": "This field is needed for the calculation.",
+        "positive": "Enter a number greater than zero.",
+        "number": "Enter a number.",
+        "percentRange": "Enter a percentage between 0 and 100."
+      }
+    },
+    "result": {
+      "title": "Result",
+      "expectedRate": "Expected surcharge rate",
+      "invoicedRate": "Invoiced rate",
+      "gapPoints": "Gap",
+      "gapPointsUnit": "points",
+      "expectedAmount": "Expected surcharge",
+      "invoicedAmount": "Invoiced surcharge",
+      "gapAmount": "Gap in euros",
+      "verdict": {
+        "aligned": "The invoiced rate matches your formula. No significant gap for this period.",
+        "overcharged": "The invoiced rate is above the expected rate. For this period the difference is {amount}.",
+        "undercharged": "The invoiced rate is below the expected rate. For this period the difference is {amount} in your favour."
+      },
+      "annualHint": "Carried across twelve months of similar volumes, this gap would represent roughly {amount}."
+    },
+    "formula": {
+      "title": "How the calculation works",
+      "expression": "Surcharge rate = fuel share × (period index − base index) ÷ base index",
+      "explanation": "This is the most widespread indexation formula in road transport contracts. It applies the relative movement of the index to the fraction of the price treated as fuel-sensitive.",
+      "caveat": "If your contract uses a different mechanism — a rolling average over several months, a trigger threshold, quarterly revision, indexation on pump prices rather than an index — the result above is only an approximation. Check the clause before raising it with your carrier."
+    },
+    "source": {
+      "title": "Where to find your index",
+      "body": "Your contract names the reference index to use. Take the one it states: changing the index changes the result.",
+      "placeholder": "Index source and commercial reuse terms to be confirmed before publication."
+    },
+    "disclaimer": "This tool gives an indication of the calculation. It is neither legal advice nor a contractual analysis, and it does not certify that an invoice is correct. A gap found is a point to raise with your carrier.",
+    "cta": {
+      "h2": "Twelve months of invoices, every carrier, in one go",
+      "text": "This calculator handles one line at a time. In CarrierBridge you enter your formula once and the gap is tracked automatically, month after month, for each of your carriers — alongside your rate sheets and ancillary charges.",
+      "button": "Compare my rate sheets free"
+    }
+  }
+}

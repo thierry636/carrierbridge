@@ -1,6 +1,6 @@
 {
   "common": {
-    "lastUpdated": "Dernière mise à jour : {{DATE_MAJ}}",
+    "lastUpdated": "Dernière mise à jour : [[DATE_MAJ]]",
     "contactLine": "Pour toute question sur cette page : contact@carrier-bridge.com"
   },
   "notice": {
@@ -12,19 +12,19 @@
     "sections": [
       {
         "title": "Éditeur du site",
-        "body": "Le site carrier-bridge.com est édité par {{RAISON_SOCIALE}}, {{FORME_JURIDIQUE}} au capital de {{CAPITAL}} euros.\nSiège social : {{ADRESSE_SIEGE}}.\nImmatriculée au registre du commerce et des sociétés de {{VILLE_RCS}} sous le numéro {{SIREN}}.\nNuméro de TVA intracommunautaire : {{TVA_INTRA}}.\nAdresse électronique : contact@carrier-bridge.com."
+        "body": "Le site carrier-bridge.com est édité par [[RAISON_SOCIALE]], [[FORME_JURIDIQUE]] au capital de [[CAPITAL]] euros.\nSiège social : [[ADRESSE_SIEGE]].\nImmatriculée au registre du commerce et des sociétés de [[VILLE_RCS]] sous le numéro [[SIREN]].\nNuméro de TVA intracommunautaire : [[TVA_INTRA]].\nAdresse électronique : contact@carrier-bridge.com."
       },
       {
         "title": "Directeur de la publication",
-        "body": "{{DIRECTEUR_PUBLICATION}}, en qualité de représentant légal de {{RAISON_SOCIALE}}."
+        "body": "[[DIRECTEUR_PUBLICATION]], en qualité de représentant légal de [[RAISON_SOCIALE]]."
       },
       {
         "title": "Hébergeur",
-        "body": "Le site est hébergé par {{HEBERGEUR_NOM}}, {{HEBERGEUR_ADRESSE}}. Téléphone : {{HEBERGEUR_TELEPHONE}}."
+        "body": "Le site est hébergé par [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Téléphone : [[HEBERGEUR_TELEPHONE]]."
       },
       {
         "title": "Propriété intellectuelle",
-        "body": "L’ensemble des éléments composant ce site — structure, textes, visuels, logiciels, marques et logos — est protégé par le droit de la propriété intellectuelle et demeure la propriété de {{RAISON_SOCIALE}} ou de ses partenaires. Toute reproduction, représentation ou adaptation, totale ou partielle, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable."
+        "body": "L’ensemble des éléments composant ce site — structure, textes, visuels, logiciels, marques et logos — est protégé par le droit de la propriété intellectuelle et demeure la propriété de [[RAISON_SOCIALE]] ou de ses partenaires. Toute reproduction, représentation ou adaptation, totale ou partielle, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable."
       },
       {
         "title": "Responsabilité",
@@ -32,7 +32,7 @@
       },
       {
         "title": "Liens vers des sites tiers",
-        "body": "Ce site peut renvoyer vers des sites édités par des tiers. {{RAISON_SOCIALE}} n’exerce aucun contrôle sur leur contenu et décline toute responsabilité à leur égard."
+        "body": "Ce site peut renvoyer vers des sites édités par des tiers. [[RAISON_SOCIALE]] n’exerce aucun contrôle sur leur contenu et décline toute responsabilité à leur égard."
       },
       {
         "title": "Signalement d’un contenu",
@@ -46,7 +46,7 @@
       "description": "Conditions générales d’utilisation du service CarrierBridge : compte, abonnements, obligations, responsabilité, résiliation."
     },
     "h1": "Conditions générales d’utilisation",
-    "intro": "Les présentes conditions régissent l’accès au site carrier-bridge.com et l’utilisation du service CarrierBridge édité par {{RAISON_SOCIALE}}. La création d’un compte vaut acceptation sans réserve de ces conditions.",
+    "intro": "Les présentes conditions régissent l’accès au site carrier-bridge.com et l’utilisation du service CarrierBridge édité par [[RAISON_SOCIALE]]. La création d’un compte vaut acceptation sans réserve de ces conditions.",
     "sections": [
       {
         "title": "1. Objet du service",
@@ -90,7 +90,7 @@
       },
       {
         "title": "11. Droit applicable et juridiction",
-        "body": "Les présentes conditions sont soumises au droit français. À défaut de résolution amiable, tout litige relève de la compétence des tribunaux de {{VILLE_JURIDICTION}}."
+        "body": "Les présentes conditions sont soumises au droit français. À défaut de résolution amiable, tout litige relève de la compétence des tribunaux de [[VILLE_JURIDICTION]]."
       }
     ]
   },
@@ -104,7 +104,7 @@
     "sections": [
       {
         "title": "Responsable de traitement",
-        "body": "{{RAISON_SOCIALE}}, {{ADRESSE_SIEGE}}. Contact : contact@carrier-bridge.com."
+        "body": "[[RAISON_SOCIALE]], [[ADRESSE_SIEGE]]. Contact : contact@carrier-bridge.com."
       },
       {
         "title": "Données traitées",
@@ -116,15 +116,15 @@
       },
       {
         "title": "Destinataires et sous-traitants",
-        "body": "Vos données ne sont ni vendues, ni louées, ni communiquées à des tiers à des fins commerciales. Elles ne sont jamais transmises aux transporteurs. Elles sont accessibles aux seules personnes habilitées chez l’éditeur, ainsi qu’aux prestataires techniques strictement nécessaires au fonctionnement du service — hébergement, envoi d’e-mails transactionnels, mesure d’audience, encaissement des paiements — agissant en qualité de sous-traitants et liés par contrat.\nListe des sous-traitants : {{LISTE_SOUS_TRAITANTS}}."
+        "body": "Vos données ne sont ni vendues, ni louées, ni communiquées à des tiers à des fins commerciales. Elles ne sont jamais transmises aux transporteurs. Elles sont accessibles aux seules personnes habilitées chez l’éditeur, ainsi qu’aux prestataires techniques strictement nécessaires au fonctionnement du service — hébergement, envoi d’e-mails transactionnels, mesure d’audience, encaissement des paiements — agissant en qualité de sous-traitants et liés par contrat.\nListe des sous-traitants : [[LISTE_SOUS_TRAITANTS]]."
       },
       {
         "title": "Localisation des données",
-        "body": "Les données sont hébergées au sein de l’Union européenne, chez {{HEBERGEUR_NOM}}. Aucun transfert hors de l’Union européenne n’est effectué pour l’exploitation courante du service. Si un tel transfert devenait nécessaire, il serait encadré par les garanties prévues par le règlement général sur la protection des données."
+        "body": "Les données sont hébergées au sein de l’Union européenne, chez [[HEBERGEUR_NOM]]. Aucun transfert hors de l’Union européenne n’est effectué pour l’exploitation courante du service. Si un tel transfert devenait nécessaire, il serait encadré par les garanties prévues par le règlement général sur la protection des données."
       },
       {
         "title": "Durées de conservation",
-        "body": "Données de compte et contenus importés : pendant toute la durée du contrat, puis {{DUREE_APRES_RESILIATION}} après sa résiliation, afin de permettre une reprise ou un export.\nDocuments comptables et factures : dix ans, conformément aux obligations légales.\nDemandes de contact restées sans suite : trois ans à compter du dernier échange.\nStatistiques d’audience : agrégées, sans conservation de données individuelles."
+        "body": "Données de compte et contenus importés : pendant toute la durée du contrat, puis [[DUREE_APRES_RESILIATION]] après sa résiliation, afin de permettre une reprise ou un export.\nDocuments comptables et factures : dix ans, conformément aux obligations légales.\nDemandes de contact restées sans suite : trois ans à compter du dernier échange.\nStatistiques d’audience : agrégées, sans conservation de données individuelles."
       },
       {
         "title": "Sécurité",

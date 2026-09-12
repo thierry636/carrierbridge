@@ -1,1 +1,176 @@
-{}
+{
+  "common": {
+    "lastUpdated": "Last updated: [[DATE_MAJ]]",
+    "contactLine": "Any question about this page: contact@carrier-bridge.com"
+  },
+  "notice": {
+    "meta": {
+      "title": "Legal notice — CarrierBridge",
+      "description": "Publisher, host and legal information for carrier-bridge.com."
+    },
+    "h1": "Legal notice",
+    "sections": [
+      {
+        "title": "Publisher",
+        "body": "The carrier-bridge.com website is published by [[RAISON_SOCIALE]], [[FORME_JURIDIQUE]] with share capital of €[[CAPITAL]].\nRegistered office: [[ADRESSE_SIEGE]].\nRegistered with the [[VILLE_RCS]] trade and companies register under number [[SIREN]].\nIntra-community VAT number: [[TVA_INTRA]].\nEmail: contact@carrier-bridge.com."
+      },
+      {
+        "title": "Publication director",
+        "body": "[[DIRECTEUR_PUBLICATION]], as legal representative of [[RAISON_SOCIALE]]."
+      },
+      {
+        "title": "Host",
+        "body": "The site is hosted by [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Telephone: [[HEBERGEUR_TELEPHONE]]."
+      },
+      {
+        "title": "Intellectual property",
+        "body": "Everything making up this site — structure, text, visuals, software, trade marks and logos — is protected by intellectual property law and remains the property of [[RAISON_SOCIALE]] or its partners. Any reproduction, representation or adaptation, in whole or in part and by any means, is prohibited without prior written permission."
+      },
+      {
+        "title": "Liability",
+        "body": "The information published on this site is provided for guidance. It describes the features of the service at the date of publication and may change. The calculation tools provided, in particular the fuel indexation calculator, give an indication and constitute neither legal advice, nor a contractual analysis, nor certification that an invoice is correct."
+      },
+      {
+        "title": "Links to third-party sites",
+        "body": "This site may link to sites published by third parties. [[RAISON_SOCIALE]] exercises no control over their content and accepts no responsibility for it."
+      },
+      {
+        "title": "Reporting content",
+        "body": "Any request concerning content published on this site may be sent to contact@carrier-bridge.com."
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of use — CarrierBridge",
+      "description": "Terms of use for the CarrierBridge service: account, subscriptions, obligations, liability, termination."
+    },
+    "h1": "Terms of use",
+    "intro": "These terms govern access to carrier-bridge.com and use of the CarrierBridge service published by [[RAISON_SOCIALE]]. Creating an account constitutes unreserved acceptance of them.",
+    "sections": [
+      {
+        "title": "1. Purpose of the service",
+        "body": "CarrierBridge is software accessible online, intended for shippers. It allows transport rate sheets to be imported and normalised, carrier offers to be compared for a given shipment, ancillary charges to be tracked, and fuel indexation to be recalculated in order to identify any gaps with the amounts invoiced. The service is not intended for carriers."
+      },
+      {
+        "title": "2. User account",
+        "body": "Access to the service requires an account created with an email address and a password. The account holder is responsible for keeping their credentials confidential and for any action carried out from their account. They must inform the publisher without delay of any unauthorised use they become aware of."
+      },
+      {
+        "title": "3. Plans, subscriptions and payment",
+        "body": "The service is offered in several plans whose features and prices are set out on the Pricing page. Prices are shown excluding VAT, in euros. Paid subscriptions are billed at the frequency chosen at sign-up, monthly or annually. The Discovery plan is free and limited to the volumes stated on the Pricing page. Services charged per act — tenders, onboarding, connectors — are subject to a separate quotation or order."
+      },
+      {
+        "title": "4. Use of the service",
+        "body": "The user undertakes to import only documents they are entitled to hold and process, not to attempt to access other clients' data, not to disrupt the operation of the service, and not to extract content in bulk by automated means other than the API where it is included in their plan."
+      },
+      {
+        "title": "5. Client data and content",
+        "body": "Rate sheets, volumes, negotiated prices and imported documents remain the property of the client. The publisher does not disclose them to third parties, does not share them with other clients and does not pass them to carriers. They are processed solely to deliver the service, under the conditions described in the privacy policy."
+      },
+      {
+        "title": "6. Availability and changes",
+        "body": "The publisher takes reasonable steps to keep the service accessible. Interruptions may occur for maintenance, updates or external causes. The service evolves: features may be added, changed or withdrawn. Features identified as beta, in particular the assisted sourcing module, are provided as is, with no guarantee of results or of continued availability."
+      },
+      {
+        "title": "7. Nature of the results produced",
+        "body": "The price comparisons, indexation recalculations and gap alerts produced by the service are decision aids, calculated from the data supplied by the client and the parameters they have entered. They constitute neither legal advice, nor contractual analysis, nor certification that an invoice is correct or that a document is valid. It is for the client to check their contracts and to conduct their own discussions with their carriers."
+      },
+      {
+        "title": "8. Liability",
+        "body": "The publisher's liability can be engaged only where fault is proven and is limited to direct loss. It may not exceed the amounts paid by the client over the twelve months preceding the triggering event. The publisher is not responsible for the commercial decisions taken by the client, nor for the consequences of any inaccuracy in the data the client has imported or configured."
+      },
+      {
+        "title": "9. Term and termination",
+        "body": "The subscription runs for the period chosen and renews automatically unless terminated before the renewal date from the client area. Termination ends access to the service at the end of the current period. The client may export their data before that date. In the event of a serious breach of these terms, the publisher may suspend access after a formal notice has gone unanswered."
+      },
+      {
+        "title": "10. Changes to these terms",
+        "body": "These terms may be amended. Clients are informed of any substantial change by electronic means before it takes effect."
+      },
+      {
+        "title": "11. Governing law and jurisdiction",
+        "body": "These terms are governed by French law. Failing an amicable settlement, any dispute falls within the jurisdiction of the courts of [[VILLE_JURIDICTION]]."
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy — CarrierBridge",
+      "description": "Data collected, purposes, retention periods, hosting in Europe and how to exercise your rights."
+    },
+    "h1": "Privacy policy",
+    "intro": "This policy describes the personal data processed in connection with the carrier-bridge.com website and the CarrierBridge service, the purposes of that processing, and how you can exercise your rights.",
+    "sections": [
+      {
+        "title": "Data controller",
+        "body": "[[RAISON_SOCIALE]], [[ADRESSE_SIEGE]]. Contact: contact@carrier-bridge.com."
+      },
+      {
+        "title": "Data processed",
+        "body": "Account data: email address, password in encrypted form, company name, and where you provide them your name, role and telephone number.\nService usage data: rate sheets, simulated shipments, indexation settings, imported documents. This content relates to your professional activity rather than your private life, but may contain personal data (the name of a contact at a carrier, for example).\nContact data: information submitted through the contact form.\nAudience measurement: aggregated page-view statistics, with no cookie and no identifier allowing you to be recognised from one visit to the next."
+      },
+      {
+        "title": "Purposes and legal bases",
+        "body": "Delivering the service and managing the account: performance of the contract.\nBilling and accounting obligations: legal obligation.\nResponding to contact enquiries: pre-contractual step or legitimate interest.\nImproving the service and measuring audience: legitimate interest, using a cookieless solution with no profiling.\nInforming our clients about changes to the service: legitimate interest, with the option to opt out at any time."
+      },
+      {
+        "title": "Recipients and processors",
+        "body": "Your data is not sold, rented or disclosed to third parties for commercial purposes. It is never passed to carriers. It is accessible only to authorised staff at the publisher, and to the technical providers strictly necessary to run the service — hosting, transactional email, audience measurement, payment collection — acting as processors and bound by contract.\nList of processors: [[LISTE_SOUS_TRAITANTS]]."
+      },
+      {
+        "title": "Where data is held",
+        "body": "Data is hosted within the European Union, at [[HEBERGEUR_NOM]]. No transfer outside the European Union takes place for day-to-day operation of the service. Should such a transfer become necessary, it would be covered by the safeguards set out in the General Data Protection Regulation."
+      },
+      {
+        "title": "Retention periods",
+        "body": "Account data and imported content: for the duration of the contract, then [[DUREE_APRES_RESILIATION]] after termination, so that data can be recovered or exported.\nAccounting records and invoices: ten years, in line with legal obligations.\nContact enquiries with no follow-up: three years from the last exchange.\nAudience statistics: aggregated, with no individual data retained."
+      },
+      {
+        "title": "Security",
+        "body": "Data is encrypted in transit and at rest. Access to production environments is restricted and logged. Passwords are stored as hashes and are never accessible in clear text."
+      },
+      {
+        "title": "Your rights",
+        "body": "You have rights of access, rectification, erasure, restriction, objection and portability over data concerning you. You can exercise them by writing to contact@carrier-bridge.com. We respond within one month. If, having contacted us, you consider your rights are not being respected, you may lodge a complaint with the French data protection authority (CNIL), 3 place de Fontenoy, 75007 Paris."
+      }
+    ]
+  },
+  "cookies": {
+    "meta": {
+      "title": "Cookie settings — CarrierBridge",
+      "description": "Which cookies are set on carrier-bridge.com, what they are for, and how to refuse them."
+    },
+    "h1": "Cookie settings",
+    "intro": "A cookie is a file placed on your device when you visit a site. Our approach is simple: we use no advertising trackers and no profiling cookies. Refusing audience measurement changes nothing about how the site works.",
+    "tableHeaders": {
+      "name": "Type",
+      "purpose": "Purpose",
+      "duration": "Duration",
+      "consent": "Consent"
+    },
+    "rows": [
+      {
+        "name": "Strictly necessary cookies",
+        "purpose": "Keeping your session, remembering your cookie choice, form security.",
+        "duration": "Session to 12 months",
+        "consent": "Not required"
+      },
+      {
+        "name": "Audience measurement",
+        "purpose": "Aggregated page-view statistics, with no cookie, no persistent identifier and no tracking of a visitor across sites.",
+        "duration": "Nothing stored on your device",
+        "consent": "Can be refused at any time"
+      }
+    ],
+    "manage": {
+      "title": "Change your choice",
+      "body": "You can accept or refuse audience measurement at any time using the buttons below. Your choice is kept on this device.",
+      "button": "Manage my preferences"
+    },
+    "browser": {
+      "title": "Browser settings",
+      "body": "You can also configure your browser to block or delete cookies. Blocking strictly necessary cookies may stop some parts of the site working properly."
+    }
+  }
+}

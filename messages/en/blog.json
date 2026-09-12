@@ -1,1 +1,17 @@
-{}
+{
+  "meta": {
+    "title": "Blog — transport procurement and rates — CarrierBridge",
+    "description": "Practical analysis of carrier rate sheets, ancillary charges, fuel indexation and putting carriers into competition."
+  },
+  "h1": "Understanding what you pay your carriers",
+  "lede": "Practical analysis of rate sheets, ancillary charges, fuel indexation and putting carriers into competition. Without the procurement jargon.",
+  "empty": {
+    "title": "First articles on the way",
+    "text": "We are preparing the first pieces. In the meantime the fuel indexation calculator is open to everyone and already answers the most common question.",
+    "cta": "Open the calculator"
+  },
+  "readMore": "Read the article",
+  "publishedOn": "Published on {date}",
+  "readingTime": "{minutes} min read",
+  "backToBlog": "All articles"
+}

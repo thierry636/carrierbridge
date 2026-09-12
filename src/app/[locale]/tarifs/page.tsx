@@ -6,6 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
 import { PricingPlans } from "@/components/pricing/PricingPlans";
+import { ClientMessages } from "@/components/i18n/ClientMessages";
 import { RoiEstimates } from "@/components/pricing/RoiEstimates";
 import { TenderPricing } from "@/components/pricing/TenderPricing";
 import { Support } from "@/components/sections/Support";
@@ -57,7 +58,9 @@ export default async function PricingPage({
       </section>
 
       <Section>
-        <PricingPlans withMatrix />
+        <ClientMessages namespaces={["pricing"]}>
+          <PricingPlans withMatrix />
+        </ClientMessages>
       </Section>
 
       <RoiEstimates />
