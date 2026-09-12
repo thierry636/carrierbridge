@@ -8,7 +8,7 @@
     },
     {
       "q": "Quels formats de grilles sont acceptés ?",
-      "a": "Excel et CSV, PDF natifs, PDF scannés, et les grilles reçues en pièce jointe d’e-mail. Les structures les plus courantes sont gérées : tranches de poids quelle qu’en soit la découpe, zones propres au transporteur, groupes de départements, listes de codes postaux, grilles France et international. Si un fichier résiste au traitement automatique, il est repris manuellement — c’est ce que couvre l’offre d’accompagnement Démarrage."
+      "a": "Tous. Excel et CSV, PDF natifs, PDF scannés, et les grilles reçues en pièce jointe d’e-mail. Quelle que soit la structure : tranches de poids quelle qu’en soit la découpe, zones propres au transporteur, groupes de départements, listes de codes postaux, grilles France et international. Vous déposez le fichier tel que vous l’avez reçu, sans le retravailler et sans le ramener à un format imposé. Le résultat s’affiche à côté de l’original : s’il y a un libellé à préciser ou une zone à renommer, vous l’ajustez vous-même à l’écran, en quelques secondes."
     },
     {
       "q": "Comment l’indexation gazole est-elle vérifiée ?",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Combien de temps pour démarrer ?",
-      "a": "L’inscription demande deux champs et aucun paramétrage. Comptez moins de dix minutes entre la création du compte et votre première comparaison sur vos propres grilles : vous déposez un ou deux fichiers, vous saisissez une expédition type, vous obtenez le classement. La reprise complète d’un référentiel de dix à quinze transporteurs prend plutôt quelques jours, selon l’état des fichiers — c’est là que l’accompagnement Démarrage fait gagner du temps."
+      "a": "L’inscription demande deux champs et aucun paramétrage. Comptez moins de dix minutes entre la création du compte et votre première comparaison sur vos propres grilles : vous déposez un ou deux fichiers, vous saisissez une expédition type, vous obtenez le classement. La reprise complète d’un référentiel de dix à quinze transporteurs se fait ensuite au fil de l’eau, grille par grille. L’accompagnement Démarrage permet de tout basculer en une fois."
     },
     {
       "q": "Le sourcing IA est-il inclus ?",

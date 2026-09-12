@@ -34,9 +34,14 @@
   },
   "import": {
     "h2": "Comment importer des grilles au format Excel, PDF ou scanné ?",
-    "lede": "Vous déposez le fichier tel que le transporteur vous l’a transmis. CarrierBridge le lit et le ramène à une structure unique. Aucun paramétrage n’est attendu de votre part : vous déposez, vous vérifiez le résultat.",
+    "lede": "Vous déposez le fichier tel que le transporteur vous l’a transmis, quel qu’en soit le format et quelle qu’en soit la structure. CarrierBridge le lit et le ramène à une base commune. Aucun paramétrage préalable n’est demandé : la grille est exploitable dès l’import, et vous l’ajustez vous-même à l’écran si vous voulez affiner un libellé ou une zone.",
     "formatsLabel": "Formats acceptés",
-    "formats": ["Excel et CSV", "PDF natif", "PDF scanné", "Pièce jointe d’e-mail"],
+    "formats": [
+      "Excel et CSV",
+      "PDF natif",
+      "PDF scanné",
+      "Pièce jointe d’e-mail"
+    ],
     "items": [
       {
         "title": "Toutes les découpes de tranches de poids",
@@ -53,6 +58,10 @@
       {
         "title": "Mises à jour de grille",
         "text": "Une nouvelle version remplace l’ancienne sans repartir de zéro. Les versions précédentes restent consultables, ce qui permet de savoir quel tarif s’appliquait à quelle date."
+      },
+      {
+        "title": "Vous gardez la main",
+        "text": "La grille normalisée s’affiche à côté du fichier d’origine. Un libellé, une tranche ou une zone se modifie directement à l’écran, en quelques secondes et sans ressaisie."
       }
     ],
     "visual": {
