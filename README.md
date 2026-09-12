@@ -1,168 +1,126 @@
-# Carrier Bridge — Site marketing
+# CarrierBridge — site vitrine
 
-Site web officiel de **Carrier Bridge**, la plateforme SaaS d'agent IA de sourcing transport routier en Europe.
+Site officiel de **CarrierBridge**, le logiciel de gestion des tarifs transport
+destiné aux chargeurs.
 
-> Conçu pour les directions Achats Transport et Supply Chain. **Le site ne s'adresse pas aux transporteurs.**
+> Phrase de définition canonique, à reprendre à l’identique sur le site, LinkedIn
+> et les annuaires logiciels :
+>
+> CarrierBridge est un logiciel français de gestion des tarifs transport pour les
+> chargeurs : import et normalisation des grilles transporteurs, désignation du
+> meilleur prix par expédition, et contrôle de l’indexation gazole et des surtaxes.
 
-## ⚙️ Stack
+Le site s’adresse **exclusivement aux chargeurs**, jamais aux transporteurs, et ne
+fait apparaître aucune personne physique.
 
-- **Next.js 15** (App Router) + **React 19** + **TypeScript**
-- **Tailwind CSS v4** (design tokens via `@theme` dans `globals.css`)
-- **next-intl** pour l'internationalisation FR / EN
-- **React Hook Form** + **Zod** pour les formulaires
-- **Resend** pour l'envoi des emails de contact
-- **Lucide React** pour les icônes
-- **Framer Motion** disponible pour les animations à venir
+## Stack
 
-## 🚀 Démarrage
+Next.js 15 (App Router) · React 19 · TypeScript strict · Tailwind CSS v4
+(tokens `@theme`) · next-intl (FR par défaut, EN sous `/en`) · Zod · Resend.
 
-### 1. Installation
+## Démarrage
 
 ```bash
 npm install
+cp .env.example .env.local   # puis renseigner les variables
+npm run dev                  # http://localhost:3000
 ```
 
-### 2. Variables d'environnement
-
-Copiez `.env.example` vers `.env.local` puis renseignez :
-
-```bash
-cp .env.example .env.local
-```
-
-| Variable | Description |
+| Variable | Rôle |
 |---|---|
-| `RESEND_API_KEY` | Clé API Resend (https://resend.com). Si absente, le formulaire renvoie OK sans envoyer d'email (utile en dev). |
-| `CONTACT_FROM_EMAIL` | Adresse expéditeur, ex. `Carrier Bridge <hello@carrierbridge.com>`. Doit appartenir à un domaine validé sur Resend. |
-| `CONTACT_TO_EMAIL` | Boîte qui reçoit les demandes de contact. |
-| `NEXT_PUBLIC_SITE_URL` | URL canonique pour les métadonnées SEO et le sitemap. |
-
-### 3. Développement
-
-```bash
-npm run dev
-```
-
-Le site est servi sur http://localhost:3000.
-- `/` → version française (locale par défaut)
-- `/en` → version anglaise
-
-### 4. Build production
-
-```bash
-npm run build
-npm run start
-```
-
-### 5. Vérifications
+| `NEXT_PUBLIC_SITE_URL` | URL canonique. Alimente canonical, hreflang, sitemap et robots. |
+| `NEXT_PUBLIC_APP_URL` | Destination des CTA d’inscription (`app.carrier-bridge.com`). |
+| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Domaine Plausible. Vide = aucun analytics chargé. |
+| `RESEND_API_KEY` | Envoi du formulaire de contact. Absente, la route accepte et journalise. |
+| `CONTACT_FROM_EMAIL` / `CONTACT_TO_EMAIL` | Expéditeur et destinataire des demandes. |
 
 ```bash
 npm run typecheck   # tsc --noEmit
-npm run lint        # eslint
+npm run lint
+npm run build && npm run start
 ```
 
-## 🌍 Internationalisation
+### Contrôle Lighthouse
 
-- Locales : `fr` (par défaut, sans préfixe d'URL) et `en` (`/en`).
-- Routing géré par **next-intl** (`src/i18n/routing.ts`) + middleware (`src/middleware.ts`).
-- Tous les textes sont dans `messages/fr.json` et `messages/en.json`.
-- Pour ajouter une langue : ajouter le code dans `routing.locales` et créer le fichier `messages/<lang>.json` correspondant.
+Lighthouse n’est pas une dépendance du projet ; on l’exécute à la demande sur un
+build de production. Chromium est déjà présent dans l’environnement de CI.
 
-## 📂 Structure du projet
-
-```
-carrierbridge/
-├── messages/
-│   ├── fr.json                  # Contenu français
-│   └── en.json                  # Contenu anglais
-├── public/
-│   ├── logo.svg
-│   └── favicon.svg
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx           # Root layout (pass-through)
-│   │   ├── globals.css          # Tailwind v4 + design tokens
-│   │   ├── sitemap.ts
-│   │   ├── robots.ts
-│   │   ├── not-found.tsx
-│   │   ├── api/
-│   │   │   └── contact/route.ts # Envoi email via Resend
-│   │   └── [locale]/
-│   │       ├── layout.tsx       # html/body + i18n provider + JSON-LD
-│   │       ├── page.tsx         # Landing page
-│   │       └── not-found.tsx
-│   ├── components/
-│   │   ├── layout/
-│   │   │   ├── Header.tsx
-│   │   │   ├── Footer.tsx
-│   │   │   ├── Logo.tsx
-│   │   │   └── LanguageSwitcher.tsx
-│   │   ├── sections/
-│   │   │   ├── Hero.tsx
-│   │   │   ├── TrustBar.tsx
-│   │   │   ├── Problem.tsx
-│   │   │   ├── Features.tsx
-│   │   │   ├── HowItWorks.tsx
-│   │   │   ├── AIAgent.tsx
-│   │   │   ├── UseCases.tsx
-│   │   │   ├── FAQ.tsx
-│   │   │   ├── Contact.tsx
-│   │   │   └── SectionHeader.tsx
-│   │   └── ui/
-│   │       ├── button.tsx
-│   │       └── container.tsx
-│   ├── i18n/
-│   │   ├── routing.ts
-│   │   └── request.ts
-│   ├── lib/
-│   │   ├── utils.ts             # cn() helper
-│   │   └── contactSchema.ts     # Zod schema partagé client / serveur
-│   └── middleware.ts            # next-intl middleware
-├── next.config.ts
-├── tailwind.config (v4 = pas de fichier, tokens dans globals.css)
-├── postcss.config.mjs
-├── tsconfig.json
-└── package.json
+```bash
+npm run build && npm run start &
+npx lighthouse http://localhost:3000/ \
+  --chrome-flags="--headless=new --no-sandbox" \
+  --only-categories=performance,accessibility,best-practices,seo --view
 ```
 
-## ✏️ Édition du contenu
+Dernier relevé (`/`, `/tarifs`, `/outils/indexation-gazole`, `/en`, `/contact`) :
+performance 97-98, accessibilité 100, bonnes pratiques 100, SEO 100.
 
-Tout le contenu textuel vit dans **`messages/fr.json`** et **`messages/en.json`**. Pas besoin de toucher au code pour modifier :
+L’audit `canonical` échoue si l’on teste en local sans avoir construit avec
+`NEXT_PUBLIC_SITE_URL` pointant sur l’origine testée : la balise est figée au
+build. Ce n’est pas un défaut du site.
 
-- Titres et sous-titres de chaque section
-- Liste des fonctionnalités, cas d'usage, FAQ
-- Wording du formulaire et des messages de succès / erreur
-- Badge hero, CTA, bullets de l'agent IA, etc.
+## Organisation
 
-Les éléments visuels (logos clients, témoignages chiffrés) sont volontairement **absents** pour éviter d'inventer des données. Ils sont à ajouter ultérieurement comme composants dédiés.
+```
+src/app/[locale]/        une page par route (slugs traduits via next-intl)
+src/components/
+  layout/   Header · Footer · CookieBanner · Analytics · Logo · LanguageSwitcher
+  sections/ les 13 blocs de la home, dans l’ordre imposé
+  pricing/  PricingPlans (paliers, matrice, connecteurs) · RoiEstimates · TenderPricing
+  tools/    FuelIndexCalculator
+  legal/    LegalPage · CookiePreferences
+  i18n/     ClientMessages — n’envoie au client que les namespaces utiles
+src/lib/
+  site.ts       domaine, e-mail de contact, URL de l’app — source unique
+  pricing.ts    paliers, prix et matrice de fonctionnalités — source unique
+  fuel.ts       calcul d’indexation gazole, pur et testable
+  seo.ts        canonical, hreflang, JSON-LD SoftwareApplication et FAQPage
+  analytics.ts  événements Plausible et gestion du consentement
+messages/{fr,en}/  copie découpée par domaine, parité de clés vérifiable
+```
 
-## 🎨 Design system
+### Deux règles à ne pas contourner
 
-Tout est dans **`src/app/globals.css`** sous `@theme` :
+1. **Les prix ne se saisissent qu’une fois**, dans `src/lib/pricing.ts`. La home,
+   la page tarifs et les `offers` schema.org en dérivent.
+2. **Le domaine ne se réécrit qu’une fois**, dans `src/lib/site.ts`. Le site est
+   canonique sur `carrier-bridge.com` ; `carrierbridge.com` et les variantes `www`
+   partent en 301 (voir `next.config.ts`).
 
-- `--color-brand-*` : bleu primaire (CTA, liens, accents)
-- `--color-accent-*` : cyan / turquoise (gradients, highlights)
-- `--color-ink-*` : anthracite (textes, fonds)
+## Routes
 
-Les tokens sont consommables directement comme classes Tailwind (`bg-brand-600`, `text-ink-900`, etc.).
+| FR | EN |
+|---|---|
+| `/` | `/en` |
+| `/tarifs` | `/en/pricing` |
+| `/outils/indexation-gazole` | `/en/tools/fuel-index` |
+| `/blog` | `/en/blog` |
+| `/contact` | `/en/contact` |
+| `/mentions-legales` | `/en/legal-notice` |
+| `/cgu` | `/en/terms` |
+| `/confidentialite` | `/en/privacy` |
+| `/cookies` | `/en/cookies` |
 
-## 🔐 Formulaire de contact
+## Mesure
 
-- Validation côté client **et** serveur via le même schéma Zod (`src/lib/contactSchema.ts`).
-- Honeypot anti-spam : champ `website` masqué.
-- L'API route `POST /api/contact` envoie un email HTML + texte via Resend, avec `replyTo` sur l'email du prospect.
-- En l'absence de `RESEND_API_KEY`, l'API répond `{ ok: true, skipped: true }` et logge le payload — pratique en dev local.
+Plausible n’est injecté qu’après consentement explicite, bien qu’il soit sans
+cookie. Événements suivis : `signup_click`, `grid_import`,
+`fuel_calculator_used`, `pricing_tier_click`, `contact_request`.
 
-## 🚢 Déploiement
+À brancher manuellement après mise en ligne : Google Search Console et Bing
+Webmaster Tools (vérification par enregistrement DNS, pour éviter d’ajouter une
+balise de vérification au code).
 
-Recommandé : **Vercel** (zéro config).
+## Ce qui reste à fournir
 
-1. Push sur la branche → import dans Vercel
-2. Renseigner les variables d'environnement (cf. ci-dessus)
-3. Déployer
+Rien de tout cela n’a été inventé — les emplacements sont visibles sur le site.
 
-Pour Resend, valider votre domaine d'envoi (`carrierbridge.com`) avant la mise en production.
-
-## 📜 Licence
-
-Propriétaire — Carrier Bridge.
+- **Mentions légales** — les marqueurs `[[RAISON_SOCIALE]]`, `[[SIREN]]`,
+  `[[HEBERGEUR_NOM]]`, `[[DIRECTEUR_PUBLICATION]]` … dans `messages/{fr,en}/legal.json`.
+  Faire relire les CGU et la politique de confidentialité par un juriste.
+- **Captures d’écran du produit** en WebP, avec `alt` rédigés, à la place des
+  blocs `ScreenshotPlaceholder`.
+- **Vidéo de démonstration** (3 min), ciblée par le CTA secondaire du héros.
+- **Chiffre de résultat client** vérifiable.
+- **Source des indices gazole** et ses conditions de réutilisation commerciale
+  (`tools.fuel.source.placeholder`).

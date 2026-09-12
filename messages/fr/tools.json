@@ -2,21 +2,35 @@
   "fuel": {
     "meta": {
       "title": "Calculateur d’indexation gazole — vérifiez votre surcharge",
-      "description": "Outil gratuit et sans inscription : saisissez votre formule contractuelle, votre indice de référence et le taux facturé, obtenez l’écart en points et en euros."
+      "description": "Outil gratuit et sans inscription : saisissez votre formule contractuelle, vos indices et le taux facturé, obtenez l’écart. Gazole, gaz ou électricité."
     },
     "h1": "Votre surcharge gazole est-elle correctement calculée ?",
-    "lede": "Saisissez la formule de votre contrat, les indices de la période et le taux appliqué sur votre facture. Vous obtenez immédiatement l’écart, en points et en euros.",
+    "lede": "Saisissez la formule de votre contrat, les indices de la période et le taux appliqué sur votre facture. Vous obtenez immédiatement l’écart, en points et en euros. Le calcul vaut aussi pour les contrats indexés sur le gaz ou l’électricité.",
     "privacy": "Le calcul s’exécute entièrement dans votre navigateur. Aucune donnée n’est transmise, enregistrée ni conservée. Aucune inscription n’est demandée.",
     "form": {
       "legend": "Votre facture et votre formule",
+      "energy": {
+        "label": "Énergie indexée",
+        "help": "La formule est identique quelle que soit l’énergie : seul l’indice de référence change.",
+        "options": {
+          "diesel": "Gazole",
+          "gas": "GNV / GNL",
+          "electric": "Électricité"
+        }
+      },
       "baseAmount": {
         "label": "Montant de base HT sur la période",
-        "help": "Le montant transport hors surcharge gazole, pour une expédition ou pour le mois entier.",
+        "help": "Le montant transport hors surcharge énergie, pour une expédition ou pour le mois entier.",
         "unit": "€"
       },
-      "fuelShare": {
-        "label": "Part gazole retenue au contrat",
-        "help": "La part du prix considérée comme sensible au gazole. Le plus souvent entre 20 et 35 %.",
+      "energyShare": {
+        "label": "Part de l’énergie retenue au contrat",
+        "help": "La part du prix considérée comme sensible au coût de l’énergie.",
+        "hints": {
+          "diesel": "Pour le gazole, le plus souvent entre 20 et 35 %.",
+          "gas": "Reprenez la part inscrite au contrat : aucun usage de marché ne s’est stabilisé pour le GNV et le GNL.",
+          "electric": "Reprenez la part inscrite au contrat : aucun usage de marché ne s’est stabilisé pour l’électrique."
+        },
         "unit": "%"
       },
       "baseIndex": {
@@ -29,8 +43,13 @@
       },
       "invoicedRate": {
         "label": "Taux de surcharge appliqué sur la facture",
-        "help": "Le pourcentage de surcharge gazole que le transporteur vous a facturé.",
+        "help": "Le pourcentage de surcharge que le transporteur vous a facturé.",
         "unit": "%"
+      },
+      "indexHints": {
+        "diesel": "Pour le gazole professionnel, l’indice le plus couramment repris en France est celui publié par le Comité National Routier. D’autres existent : reprenez celui que désigne votre contrat.",
+        "gas": "Les contrats indexés sur le GNV ou le GNL renvoient à des indices spécifiques, parfois propres au fournisseur. Reprenez celui que désigne votre contrat.",
+        "electric": "Les contrats indexés sur l’électricité renvoient à un indice de marché ou à un tarif fournisseur. Reprenez celui que désigne votre contrat."
       },
       "submit": "Calculer l’écart",
       "reset": "Réinitialiser",
@@ -59,19 +78,19 @@
     },
     "formula": {
       "title": "Comment le calcul est fait",
-      "expression": "Taux de surcharge = part gazole × (indice de la période − indice de base) ÷ indice de base",
-      "explanation": "C’est la formule d’indexation la plus répandue dans les contrats de transport routier. Elle applique la variation relative de l’indice à la seule fraction du prix considérée comme sensible au carburant.",
-      "caveat": "Si votre contrat retient une autre mécanique — moyenne glissante sur plusieurs mois, seuil de déclenchement, révision trimestrielle, indexation sur le prix à la pompe plutôt que sur un indice — le résultat ci-dessus n’est qu’une approximation. Vérifiez la clause avant d’ouvrir la discussion avec votre transporteur."
+      "expression": "Taux de surcharge = part énergie × (indice de la période − indice de base) ÷ indice de base",
+      "explanation": "C’est la formule d’indexation la plus répandue dans les contrats de transport routier, quelle que soit l’énergie. Elle applique la variation relative de l’indice à la seule fraction du prix considérée comme sensible au coût de l’énergie.",
+      "caveat": "Si votre contrat retient une autre mécanique — moyenne glissante sur plusieurs mois, seuil de déclenchement, révision trimestrielle, indexation sur un prix relevé plutôt que sur un indice — le résultat ci-dessus n’est qu’une approximation. Vérifiez la clause avant d’ouvrir la discussion avec votre transporteur."
     },
     "source": {
-      "title": "Où trouver votre indice",
-      "body": "Votre contrat désigne l’indice de référence à utiliser. Reprenez celui qui y figure : changer d’indice change le résultat.",
-      "placeholder": "Source et conditions de réutilisation des indices à confirmer avant publication."
+      "title": "Quel indice utiliser ?",
+      "body": "Celui que désigne votre contrat, et lui seul : changer d’indice change le résultat. Les indices sont multiples et dépendent de l’énergie comme du contrat.\nPour le gazole professionnel, les indices publiés par le Comité National Routier sont les plus couramment repris en France. D’autres existent, publiés par des fédérations professionnelles, par des fournisseurs d’énergie ou par l’INSEE, et certains contrats retiennent un prix relevé contradictoirement plutôt qu’un indice.",
+      "note": "CarrierBridge ne redistribue aucun indice. Vous saisissez la valeur que vous avez relevée, et elle ne quitte pas votre navigateur."
     },
     "disclaimer": "Cet outil donne une indication de calcul. Il ne constitue ni un conseil juridique, ni une analyse contractuelle, et ne certifie pas la régularité d’une facture. Un écart constaté est un point à vérifier avec votre transporteur.",
     "cta": {
       "h2": "Douze mois de factures, tous vos transporteurs, d’un seul coup",
-      "text": "Ce calculateur traite une ligne à la fois. Dans CarrierBridge, vous saisissez votre formule une fois et l’écart est suivi automatiquement, mois après mois, pour chacun de vos transporteurs — en même temps que vos grilles et vos prestations annexes.",
+      "text": "Ce calculateur traite une ligne à la fois. Dans CarrierBridge, vous saisissez votre formule une fois — pour chaque énergie et chaque contrat — et l’écart est suivi automatiquement, mois après mois, transporteur par transporteur, en même temps que vos grilles et vos prestations annexes.",
       "button": "Comparer mes grilles gratuitement"
     }
   }

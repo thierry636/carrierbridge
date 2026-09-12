@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Contact us — CarrierBridge",
+    "description": "For the Business and Enterprise plans, Secure onboarding, ERP/TMS connectors and tenders. Other plans open with a simple sign-up."
+  },
+  "h1": "Let's talk about your scope",
+  "lede": "This form is for the Business and Enterprise plans, Secure onboarding, ERP/TMS connectors and tenders — everything whose price depends on scope.",
+  "selfServe": {
+    "title": "Just want to try it?",
+    "text": "The Discovery, Essential and Pro plans open with a simple sign-up, without going through us.",
+    "cta": "Create an account"
+  },
+  "form": {
+    "name": { "label": "Full name" },
+    "email": { "label": "Work email" },
+    "company": { "label": "Company" },
+    "role": { "label": "Role", "optional": "optional" },
+    "phone": { "label": "Phone", "optional": "optional" },
+    "subject": {
+      "label": "Your enquiry",
+      "options": {
+        "business": "Business plan",
+        "enterprise": "Enterprise plan",
+        "secure": "Secure onboarding",
+        "connectors": "ERP/TMS connectors",
+        "tender": "Tender",
+        "other": "Something else"
+      }
+    },
+    "budget": {
+      "label": "Annual transport budget",
+      "optional": "optional",
+      "options": {
+        "under100k": "Under €100,000",
+        "100k500k": "€100,000 to €500,000",
+        "500k1m": "€500,000 to €1M",
+        "1m3m": "€1M to €3M",
+        "over3m": "Over €3M"
+      }
+    },
+    "message": {
+      "label": "Your situation",
+      "placeholder": "Number of sites, number of carriers, what you use today to compare."
+    },
+    "consent": "I agree to this information being used to handle my enquiry, in line with the privacy policy.",
+    "submit": "Send my enquiry",
+    "sending": "Sending…",
+    "success": {
+      "title": "Enquiry received",
+      "text": "We will come back to you within one working day. In the meantime, nothing stops you creating an account and testing on your own rate sheets."
+    },
+    "errors": {
+      "name": "Please give your name.",
+      "email": "Please give a valid email address.",
+      "company": "Please give your company name.",
+      "subject": "Please choose what your enquiry is about.",
+      "message": "Please describe your situation in a few lines.",
+      "consent": "Your agreement is needed to handle the enquiry.",
+      "generic": "Sending failed. Try again, or write to us directly at contact@carrier-bridge.com."
+    }
+  },
+  "direct": {
+    "title": "Or write to us directly",
+    "email": "contact@carrier-bridge.com"
+  }
+}

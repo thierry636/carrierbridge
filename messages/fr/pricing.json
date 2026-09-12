@@ -6,7 +6,8 @@
   "page": {
     "h1": "Combien coûte la gestion de vos tarifs transport ?",
     "lede": "Prix publics, sans négociation préalable. Découverte, Essentiel et Pro s’ouvrent par simple inscription. Vous changez de palier quand vos volumes le justifient.",
-    "vatNote": "Tous les prix sont indiqués hors taxes, en euros."
+    "vatNote": "Tous les prix sont indiqués hors taxes, en euros.",
+    "plansH2": "Quel palier correspond à votre situation ?"
   },
   "billing": {
     "monthly": "Mensuel",
@@ -80,7 +81,6 @@
     },
     "values": {
       "unlimited": "Illimité",
-      "unlimitedUsers": "Illimités",
       "yes": "Oui",
       "no": "—",
       "occasional": "Ponctuel",
@@ -96,7 +96,8 @@
       "three": "3",
       "twenty": "20",
       "fiveHundred": "500",
-      "threeThousand": "3 000"
+      "threeThousand": "3 000",
+      "unlimitedPlural": "Illimités"
     }
   },
   "connectors": {
@@ -118,9 +119,21 @@
     "h2": "Appels d’offres",
     "lede": "Facturés à l’acte, indépendamment de l’abonnement. Le palier Enterprise inclut un appel d’offres simple par an.",
     "items": [
-      { "name": "AO simple", "scope": "Jusqu’à 10 transporteurs consultés", "price": "1 200 €" },
-      { "name": "AO étendu", "scope": "Jusqu’à 30 transporteurs consultés", "price": "2 500 €" },
-      { "name": "AO multi-sites ou multi-flux", "scope": "Périmètre à cadrer ensemble", "price": "Sur devis" }
+      {
+        "name": "AO simple",
+        "scope": "Jusqu’à 10 transporteurs consultés",
+        "price": "1 200 €"
+      },
+      {
+        "name": "AO étendu",
+        "scope": "Jusqu’à 30 transporteurs consultés",
+        "price": "2 500 €"
+      },
+      {
+        "name": "AO multi-sites ou multi-flux",
+        "scope": "Périmètre à cadrer ensemble",
+        "price": "Sur devis"
+      }
     ]
   },
   "onboarding": {

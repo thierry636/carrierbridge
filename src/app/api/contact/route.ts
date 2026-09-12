@@ -1,17 +1,9 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { contactSchema } from "@/lib/contactSchema";
+import { site } from "@/lib/site";
 
 export const runtime = "nodejs";
-
-const sectorLabels: Record<string, string> = {
-  chemistry: "Chimie / matières dangereuses",
-  food: "Agroalimentaire / température dirigée",
-  construction: "BTP / vrac",
-  distribution: "Distribution / e-commerce",
-  industry: "Industrie",
-  other: "Autre",
-};
 
 export async function POST(request: Request) {
   let payload: unknown;
@@ -23,98 +15,69 @@ export async function POST(request: Request) {
 
   const parsed = contactSchema.safeParse(payload);
   if (!parsed.success) {
-    return NextResponse.json(
-      { error: "validation_failed", issues: parsed.error.flatten() },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: "validation_failed" }, { status: 400 });
   }
 
   const data = parsed.data;
 
-  // Honeypot — if filled, silently accept
-  if (data.website && data.website.length > 0) {
-    return NextResponse.json({ ok: true });
-  }
+  // Honeypot filled: accept silently so the bot learns nothing.
+  if (data.website) return NextResponse.json({ ok: true });
 
   const apiKey = process.env.RESEND_API_KEY;
-  const fromEmail =
-    process.env.CONTACT_FROM_EMAIL ?? "Carrier Bridge <onboarding@resend.dev>";
-  const toEmail = process.env.CONTACT_TO_EMAIL ?? "hello@carrierbridge.com";
-
   if (!apiKey) {
-    console.warn(
-      "[contact] RESEND_API_KEY missing — skipping email send. Payload:",
-      data
-    );
+    console.warn("[contact] RESEND_API_KEY missing — request accepted but not emailed.");
     return NextResponse.json({ ok: true, skipped: true });
   }
 
-  const resend = new Resend(apiKey);
-
-  const subject = `[Carrier Bridge] Nouvelle demande de démo — ${data.company}`;
+  const rows: [string, string][] = [
+    ["Nom", data.name],
+    ["E-mail", data.email],
+    ["Société", data.company],
+    ["Fonction", data.role || "—"],
+    ["Téléphone", data.phone || "—"],
+    ["Demande", data.subject],
+    ["Budget transport", data.budget ?? "—"],
+    ["Langue", data.locale ?? "fr"],
+  ];
 
   const html = `
-    <div style="font-family: -apple-system, Segoe UI, Roboto, sans-serif; color: #0f172a; max-width: 560px;">
-      <h2 style="margin: 0 0 16px; font-size: 18px;">Nouvelle demande Carrier Bridge</h2>
+    <div style="font-family: system-ui, sans-serif; color: #0f172a; max-width: 560px;">
+      <h2 style="margin: 0 0 16px; font-size: 18px;">Nouvelle demande CarrierBridge</h2>
       <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-        ${row("Nom", data.name)}
-        ${row("Email", data.email)}
-        ${row("Entreprise", data.company)}
-        ${row("Fonction", data.role || "—")}
-        ${row("Secteur", data.sector ? sectorLabels[data.sector] ?? data.sector : "—")}
-        ${row("Langue", data.locale === "en" ? "EN" : "FR")}
+        ${rows.map(([label, value]) => row(label, value)).join("")}
       </table>
-      <h3 style="margin: 24px 0 8px; font-size: 14px;">Message</h3>
-      <div style="white-space: pre-wrap; padding: 12px 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; line-height: 1.6;">
-        ${escapeHtml(data.message)}
-      </div>
+      <p style="margin: 20px 0 6px; font-weight: 600; font-size: 14px;">Contexte</p>
+      <p style="white-space: pre-wrap; font-size: 14px; line-height: 1.6;">${escapeHtml(data.message)}</p>
     </div>
   `;
 
-  const text = [
-    "Nouvelle demande Carrier Bridge",
-    `Nom: ${data.name}`,
-    `Email: ${data.email}`,
-    `Entreprise: ${data.company}`,
-    `Fonction: ${data.role || "—"}`,
-    `Secteur: ${data.sector ? sectorLabels[data.sector] ?? data.sector : "—"}`,
-    `Langue: ${data.locale === "en" ? "EN" : "FR"}`,
-    "",
-    "Message:",
-    data.message,
-  ].join("\n");
-
   try {
-    const { error } = await resend.emails.send({
-      from: fromEmail,
-      to: toEmail,
+    const resend = new Resend(apiKey);
+    await resend.emails.send({
+      from: process.env.CONTACT_FROM_EMAIL ?? `CarrierBridge <${site.contactEmail}>`,
+      to: process.env.CONTACT_TO_EMAIL ?? site.contactEmail,
       replyTo: data.email,
-      subject,
+      subject: `[CarrierBridge] ${data.subject} — ${data.company}`,
       html,
-      text,
     });
-    if (error) {
-      console.error("[contact] Resend error:", error);
-      return NextResponse.json({ error: "send_failed" }, { status: 500 });
-    }
-    return NextResponse.json({ ok: true });
-  } catch (err) {
-    console.error("[contact] Unexpected error:", err);
-    return NextResponse.json({ error: "send_failed" }, { status: 500 });
+  } catch (error) {
+    console.error("[contact] send failed", error);
+    return NextResponse.json({ error: "send_failed" }, { status: 502 });
   }
+
+  return NextResponse.json({ ok: true });
 }
 
 function row(label: string, value: string) {
-  return `
-    <tr>
-      <td style="padding: 6px 12px 6px 0; color: #64748b; vertical-align: top; width: 110px;">${escapeHtml(label)}</td>
-      <td style="padding: 6px 0; color: #0f172a;">${escapeHtml(value)}</td>
-    </tr>
-  `;
+  return `<tr>
+    <td style="padding: 6px 12px 6px 0; color: #64748b; vertical-align: top;">${escapeHtml(label)}</td>
+    <td style="padding: 6px 0; font-weight: 500;">${escapeHtml(value)}</td>
+  </tr>`;
 }
 
-function escapeHtml(s: string) {
-  return s
+/** Field values land in an HTML email, so they are escaped before interpolation. */
+function escapeHtml(value: string) {
+  return value
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")

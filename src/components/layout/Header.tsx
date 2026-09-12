@@ -1,24 +1,27 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { Menu, X } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { Link, usePathname, type AppPathname } from "@/i18n/routing";
+import { signupUrl } from "@/lib/site";
+import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
-const navItems = [
-  { key: "features", href: "#features" },
-  { key: "agent", href: "#agent" },
-  { key: "useCases", href: "#use-cases" },
-  { key: "faq", href: "#faq" },
-  { key: "contact", href: "#contact" },
-] as const;
+const navItems: { key: string; href: AppPathname }[] = [
+  { key: "pricing", href: "/tarifs" },
+  { key: "fuelTool", href: "/outils/indexation-gazole" },
+  { key: "blog", href: "/blog" },
+  { key: "contact", href: "/contact" },
+];
 
 export function Header() {
-  const t = useTranslations("nav");
+  const t = useTranslations("common.nav");
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,6 +31,9 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Close the mobile menu on navigation, otherwise it stays over the new page.
+  useEffect(() => setOpen(false), [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -39,32 +45,38 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-ink-200/60 bg-white/85 backdrop-blur-md"
-          : "border-b border-transparent bg-white/0"
+        "fixed inset-x-0 top-0 z-50 transition-colors duration-200",
+        scrolled ? "border-b border-ink-200 bg-white/90 backdrop-blur-md" : "border-b border-transparent bg-white"
       )}
     >
       <Container>
         <div className="flex h-16 items-center justify-between gap-6">
           <Logo />
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav aria-label="Navigation principale" className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.key}
                 href={item.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:text-ink-900"
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={cn(
+                  "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                  pathname === item.href ? "text-brand-700" : "text-ink-700 hover:text-ink-900"
+                )}
               >
                 {t(item.key)}
-              </a>
+              </Link>
             ))}
           </nav>
 
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <LanguageSwitcher />
-            <a href="#contact">
-              <Button size="sm">{t("demo")}</Button>
+            <a
+              href={signupUrl("header")}
+              onClick={() => track("signup_click", { location: "header" })}
+              className={buttonVariants({ size: "sm" })}
+            >
+              {t("signup")}
             </a>
           </div>
 
@@ -73,38 +85,38 @@ export function Header() {
             aria-label={open ? t("closeMenu") : t("openMenu")}
             aria-expanded={open}
             className="inline-flex h-10 w-10 items-center justify-center rounded-md text-ink-700 hover:bg-ink-100 lg:hidden"
-            onClick={() => setOpen((o) => !o)}
+            onClick={() => setOpen((value) => !value)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </Container>
 
-      {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden">
-          <div className="border-t border-ink-200 bg-white">
-            <Container className="py-6">
-              <nav className="flex flex-col gap-1">
-                {navItems.map((item) => (
-                  <a
-                    key={item.key}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="rounded-md px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-50"
-                  >
-                    {t(item.key)}
-                  </a>
-                ))}
-              </nav>
-              <div className="mt-4 flex items-center justify-between gap-3 border-t border-ink-100 pt-4">
-                <LanguageSwitcher />
-                <a href="#contact" onClick={() => setOpen(false)} className="flex-1">
-                  <Button className="w-full">{t("demo")}</Button>
-                </a>
-              </div>
-            </Container>
-          </div>
+        <div className="border-t border-ink-200 bg-white lg:hidden">
+          <Container className="py-5">
+            <nav aria-label="Navigation principale" className="flex flex-col gap-1">
+              {navItems.map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className="rounded-md px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-50"
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </nav>
+            <div className="mt-4 flex items-center justify-between gap-3 border-t border-ink-100 pt-4">
+              <LanguageSwitcher />
+              <a
+                href={signupUrl("header-mobile")}
+                onClick={() => track("signup_click", { location: "header-mobile" })}
+                className={cn(buttonVariants({ size: "md" }), "flex-1")}
+              >
+                {t("signup")}
+              </a>
+            </div>
+          </Container>
         </div>
       )}
     </header>

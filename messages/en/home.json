@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "title": "CarrierBridge — Carrier rate sheet comparison",
+    "description": "Import every carrier rate sheet, whatever the format. CarrierBridge names the best price per shipment and checks fuel indexation on your invoices."
+  },
+  "hero": {
+    "h1": "Manage 20 carriers as easily as 3.",
+    "subtitle": "Import every rate sheet, whatever the format. CarrierBridge names the best carrier for each shipment and checks that surcharges and fuel indexation do not drift. No TMS, no dedicated transport buyer.",
+    "proofLabel": "What changes",
+    "proof": [
+      "One base for every rate sheet, whatever format it arrived in",
+      "The all-in price of each carrier, surcharges included",
+      "Fuel indexation gaps flagged, not discovered at year end"
+    ]
+  },
+  "problem": {
+    "h2": "Why do shippers award to only two or three carriers?",
+    "lede": "Because beyond that, tracking them in spreadsheets stops working. The ceiling is not commercial, it is practical: nobody can compare fifteen rate sheets in fifteen formats on every shipment. So you lose twice — at tender, for want of competition, and day to day, for want of arbitration on each order.",
+    "items": [
+      {
+        "title": "Rate sheets that cannot be compared",
+        "text": "Every carrier has its own format: different weight brackets, in-house zones, départements grouped another way. The same consignment does not read the same way from one sheet to the next. Your comparison workbook is wrong the moment one rate changes."
+      },
+      {
+        "title": "Opaque ancillary charges",
+        "text": "The quoted price is never the price paid. Tail lift, booked delivery slots, dangerous goods, sheeting, waiting time, tolls: these lines follow rules specific to each carrier, and almost never make it into the comparison."
+      },
+      {
+        "title": "Fuel indexation nobody checks",
+        "text": "The formula is signed at the start of the contract, then nobody recalculates it. The gap between what was agreed and what is invoiced settles in month after month, with nothing to flag it."
+      }
+    ],
+    "consequence": "So the saving won at tender evaporates during the year, while the order-management team spends its days hunting for a rate across fifteen files and calling sales reps to have it confirmed."
+  },
+  "import": {
+    "h2": "How do you import rate sheets in Excel, PDF or scanned form?",
+    "lede": "You upload the file exactly as the carrier sent it, whatever the format and whatever the structure. CarrierBridge reads it and brings it onto a common base. No upfront configuration is asked of you: the rate sheet is usable straight after import, and you adjust it yourself on screen if you want to refine a label or a zone.",
+    "formatsLabel": "Accepted formats",
+    "formats": ["Excel and CSV", "Native PDF", "Scanned PDF", "Email attachment"],
+    "items": [
+      {
+        "title": "Any weight bracket structure",
+        "text": "0-10, 10-20, 20-30 kg or any other step: each carrier's brackets are aligned onto a common base without you retyping them."
+      },
+      {
+        "title": "Zones, départements, postcodes",
+        "text": "In-house zones, groups of départements, postcode lists: each carrier's geography is rebuilt exactly as they defined it."
+      },
+      {
+        "title": "Domestic and international",
+        "text": "Domestic groupage, full loads, export and import, country by country."
+      },
+      {
+        "title": "Rate sheet updates",
+        "text": "A new version replaces the old one without starting over. Earlier versions stay available, so you can tell which rate applied on which date."
+      },
+      {
+        "title": "You stay in control",
+        "text": "The normalised sheet sits next to the original file. A label, a bracket or a zone can be changed directly on screen, in seconds and without retyping."
+      }
+    ],
+    "visual": {
+      "beforeLabel": "Before — the rate sheet as you receive it",
+      "afterLabel": "After — the same rate sheet, normalised"
+    }
+  },
+  "surcharges": {
+    "h2": "What do a carrier's ancillary charges actually contain?",
+    "lede": "Seven families of cost that almost never enter the comparison, and that make the difference between two apparently identical offers.",
+    "items": [
+      {
+        "title": "Fuel surcharge",
+        "text": "Applied as a percentage of the base price, following a formula and an index specific to each contract."
+      },
+      {
+        "title": "Booked delivery slot",
+        "text": "Charged whenever a delivery is made to an appointment. The amount and the trigger conditions vary widely between carriers."
+      },
+      {
+        "title": "Tail lift",
+        "text": "At collection, at delivery, or both. Sometimes included up to a certain weight, often with a minimum charge."
+      },
+      {
+        "title": "Dangerous goods (ADR)",
+        "text": "A percentage uplift or a flat fee per consignment, depending on the class and the quantities carried."
+      },
+      {
+        "title": "Sheeting and unsheeting",
+        "text": "Charged per operation, with minimum-charge rules that differ from one carrier to the next."
+      },
+      {
+        "title": "Tolls and taxes",
+        "text": "Passed on as a percentage of the price or per kilometre, depending on the roads used."
+      },
+      {
+        "title": "Waiting time",
+        "text": "Beyond a free allowance at loading or delivery, charged in hourly blocks."
+      }
+    ],
+    "conclusion": "CarrierBridge brings these seven families onto a comparable base. For a given consignment you see each carrier's complete price, not just their base rate."
+  },
+  "fuel": {
+    "h2": "How do you check fuel indexation on a transport invoice?",
+    "lede": "You enter your contract formula and reference index once. CarrierBridge recalculates the expected surcharge for each period and compares it with what you were invoiced.",
+    "steps": [
+      {
+        "title": "Your formula, exactly as the contract states it",
+        "text": "Fuel share, reference index, base index, revision frequency. The formula stays yours: CarrierBridge neither imposes nor assumes one."
+      },
+      {
+        "title": "Recalculated from published indices",
+        "text": "For each period the theoretical surcharge is recalculated from the matching index, then applied to the base price of your shipments."
+      },
+      {
+        "title": "The gap, if there is one",
+        "text": "The difference between the invoiced rate and the expected rate is shown in points and converted into euros, carrier by carrier and month by month."
+      }
+    ],
+    "disclaimer": "CarrierBridge flags a calculation gap. It does not read your contract and is no substitute for reading it or for legal advice. A flagged gap is a point to raise with your carrier, not a conclusion.",
+    "toolTeaser": "An invoice to check right now? The indexation calculator is open to everyone, no sign-up."
+  },
+  "bestPrice": {
+    "h2": "Which carrier is cheapest for this shipment?",
+    "lede": "Weight, destination, services required. The full ranking appears in seconds, all charges included.",
+    "items": [
+      {
+        "title": "Every rate sheet queried at once",
+        "text": "Including the ones you would not have thought to check. That is where the gain sits: the best price is not always the carrier you call out of habit."
+      },
+      {
+        "title": "The complete price, not the base rate",
+        "text": "Base rate, fuel surcharge for the period, ancillary charges requested: the figure shown is the one you will pay."
+      },
+      {
+        "title": "The gap made visible",
+        "text": "Second and third place appear with their gap to the best price. When availability matters more than cost, you know exactly what that choice costs."
+      },
+      {
+        "title": "No hunting through files",
+        "text": "No sorting through fifteen workbooks, no calling a sales rep to confirm a rate, no doubt about which version of the sheet is in force."
+      }
+    ]
+  },
+  "operations": {
+    "badge": "Business plan",
+    "h2": "How do you assign transport orders without a TMS?",
+    "lede": "Day-to-day operations, from the internal request to the assignment, in one place.",
+    "items": [
+      {
+        "title": "Transport requests",
+        "text": "Sites and departments file their need through a single form instead of by email. Nothing gets lost in an inbox."
+      },
+      {
+        "title": "Order aggregation",
+        "text": "Shipments going to the same area on the same day are grouped before arbitration, which often tips the calculation towards a different carrier."
+      },
+      {
+        "title": "Assignment",
+        "text": "The chosen carrier is named for each order, with a record of the decision and of the price at the time it was made."
+      },
+      {
+        "title": "Spot rates outside the sheets",
+        "text": "When no rate sheet covers the need, the price negotiated for that job is captured and kept. Your one-off charters stop escaping the record."
+      }
+    ]
+  },
+  "registry": {
+    "h2": "How do you keep track of your carriers' compliance certificates?",
+    "lede": "One register for your carriers and the documents you ask them for.",
+    "items": [
+      {
+        "title": "Carrier record",
+        "text": "Contacts, geographic coverage, vehicle types, rate sheets in force and their version history."
+      },
+      {
+        "title": "Compliance documents",
+        "text": "Social security compliance certificate, transport licence, goods-in-transit insurance, bank details. Each document carries its expiry date."
+      },
+      {
+        "title": "Expiry flagged in advance",
+        "text": "Documents approaching expiry are flagged before the date, not once they have lapsed."
+      }
+    ],
+    "disclaimer": "CarrierBridge centralises the documents you collect and alerts you to their expiry dates. It does not replace your own verification obligations and does not certify that a document is valid."
+  },
+  "sourcing": {
+    "badge": "Beta — included in Pro and Business",
+    "h2": "How do you find new carriers?",
+    "text": "Describe what you need in plain language: a lane, a vehicle type, a particular constraint. The module suggests carriers that may fit, for you to approach at your next tender.",
+    "caveat": "This module is in beta. It is not charged separately and is not needed to use CarrierBridge: most of the value comes from the rate sheets you already have."
+  },
+  "pricingTeaser": {
+    "h2": "What does CarrierBridge cost?",
+    "lede": "Public prices, no negotiation required. You start free and move up when your volumes justify it.",
+    "allPlans": "See every plan and the multi-site options"
+  },
+  "support": {
+    "h2": "Do you need onboarding to get started?",
+    "lede": "No. Signing up asks for no configuration and leads to a usable result in under ten minutes. Onboarding exists for teams that want to move faster, or go further.",
+    "tagline": "For teams that want someone who knows both the transport trade and the tool."
+  },
+  "finalCta": {
+    "h2": "Start with your own rate sheets",
+    "text": "Upload two or three files, enter a typical shipment, compare. Ten minutes will tell you whether the tool is worth anything to you — no card, no sales call."
+  }
+}
