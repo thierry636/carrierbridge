@@ -1,0 +1,176 @@
+{
+  "common": {
+    "lastUpdated": "Dernière mise à jour : {{DATE_MAJ}}",
+    "contactLine": "Pour toute question sur cette page : contact@carrier-bridge.com"
+  },
+  "notice": {
+    "meta": {
+      "title": "Mentions légales — CarrierBridge",
+      "description": "Éditeur, hébergeur et informations légales du site carrier-bridge.com."
+    },
+    "h1": "Mentions légales",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "body": "Le site carrier-bridge.com est édité par {{RAISON_SOCIALE}}, {{FORME_JURIDIQUE}} au capital de {{CAPITAL}} euros.\nSiège social : {{ADRESSE_SIEGE}}.\nImmatriculée au registre du commerce et des sociétés de {{VILLE_RCS}} sous le numéro {{SIREN}}.\nNuméro de TVA intracommunautaire : {{TVA_INTRA}}.\nAdresse électronique : contact@carrier-bridge.com."
+      },
+      {
+        "title": "Directeur de la publication",
+        "body": "{{DIRECTEUR_PUBLICATION}}, en qualité de représentant légal de {{RAISON_SOCIALE}}."
+      },
+      {
+        "title": "Hébergeur",
+        "body": "Le site est hébergé par {{HEBERGEUR_NOM}}, {{HEBERGEUR_ADRESSE}}. Téléphone : {{HEBERGEUR_TELEPHONE}}."
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "body": "L’ensemble des éléments composant ce site — structure, textes, visuels, logiciels, marques et logos — est protégé par le droit de la propriété intellectuelle et demeure la propriété de {{RAISON_SOCIALE}} ou de ses partenaires. Toute reproduction, représentation ou adaptation, totale ou partielle, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable."
+      },
+      {
+        "title": "Responsabilité",
+        "body": "Les informations publiées sur ce site sont fournies à titre indicatif. Elles décrivent les fonctionnalités du service à la date de publication et peuvent évoluer. Les outils de calcul mis à disposition, notamment le calculateur d’indexation gazole, donnent une indication et ne constituent ni un conseil juridique, ni une analyse contractuelle, ni une certification de la régularité d’une facture."
+      },
+      {
+        "title": "Liens vers des sites tiers",
+        "body": "Ce site peut renvoyer vers des sites édités par des tiers. {{RAISON_SOCIALE}} n’exerce aucun contrôle sur leur contenu et décline toute responsabilité à leur égard."
+      },
+      {
+        "title": "Signalement d’un contenu",
+        "body": "Toute demande relative à un contenu publié sur ce site peut être adressée à contact@carrier-bridge.com."
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Conditions générales d’utilisation — CarrierBridge",
+      "description": "Conditions générales d’utilisation du service CarrierBridge : compte, abonnements, obligations, responsabilité, résiliation."
+    },
+    "h1": "Conditions générales d’utilisation",
+    "intro": "Les présentes conditions régissent l’accès au site carrier-bridge.com et l’utilisation du service CarrierBridge édité par {{RAISON_SOCIALE}}. La création d’un compte vaut acceptation sans réserve de ces conditions.",
+    "sections": [
+      {
+        "title": "1. Objet du service",
+        "body": "CarrierBridge est un logiciel accessible en ligne destiné aux chargeurs. Il permet d’importer et de normaliser des grilles tarifaires de transport, de comparer les offres des transporteurs pour une expédition donnée, de suivre les prestations annexes, et de recalculer l’indexation gazole afin d’identifier d’éventuels écarts avec les montants facturés. Le service ne s’adresse pas aux transporteurs."
+      },
+      {
+        "title": "2. Compte utilisateur",
+        "body": "L’accès au service suppose la création d’un compte au moyen d’une adresse électronique et d’un mot de passe. Le titulaire du compte est responsable de la confidentialité de ses identifiants et de toute action effectuée depuis son compte. Il informe sans délai l’éditeur de tout usage non autorisé qu’il constaterait."
+      },
+      {
+        "title": "3. Paliers, abonnements et paiement",
+        "body": "Le service est proposé selon plusieurs paliers dont les fonctionnalités et les prix figurent sur la page Tarifs. Les prix sont indiqués hors taxes, en euros. Les abonnements payants sont facturés selon la périodicité choisie lors de la souscription, mensuelle ou annuelle. Le palier Découverte est gratuit et limité aux volumes indiqués sur la page Tarifs. Les prestations facturées à l’acte — appels d’offres, accompagnement, connecteurs — font l’objet d’un devis ou d’une commande distincte."
+      },
+      {
+        "title": "4. Utilisation du service",
+        "body": "L’utilisateur s’engage à n’importer que des documents qu’il est en droit de détenir et de traiter, à ne pas tenter d’accéder aux données d’autres clients, à ne pas perturber le fonctionnement du service, et à ne pas extraire massivement les contenus par des moyens automatisés en dehors de l’API lorsqu’elle est incluse dans son palier."
+      },
+      {
+        "title": "5. Données et contenus du client",
+        "body": "Les grilles tarifaires, volumes, prix négociés et documents importés restent la propriété du client. L’éditeur ne les communique pas à des tiers, ne les partage pas avec d’autres clients et ne les transmet pas aux transporteurs. Ils sont traités aux seules fins d’exécution du service, dans les conditions décrites par la politique de confidentialité."
+      },
+      {
+        "title": "6. Disponibilité et évolutions",
+        "body": "L’éditeur met en œuvre les moyens raisonnables pour assurer l’accessibilité du service. Des interruptions peuvent survenir pour maintenance, mise à jour ou pour des causes extérieures. Le service évolue : des fonctionnalités peuvent être ajoutées, modifiées ou retirées. Les fonctionnalités identifiées comme étant en beta, notamment le module de sourcing assisté, sont fournies en l’état, sans garantie de résultat ni de maintien dans le temps."
+      },
+      {
+        "title": "7. Nature des résultats produits",
+        "body": "Les comparaisons de prix, recalculs d’indexation et signalements d’écarts produits par le service sont des aides à la décision, calculées à partir des données fournies par le client et des paramètres qu’il a saisis. Ils ne constituent ni un conseil juridique, ni une analyse contractuelle, ni une certification de la régularité d’une facture ou de la validité d’un document. Il appartient au client de vérifier ses contrats et de conduire ses propres échanges avec ses transporteurs."
+      },
+      {
+        "title": "8. Responsabilité",
+        "body": "La responsabilité de l’éditeur ne peut être engagée qu’en cas de faute prouvée et se limite aux dommages directs. Elle ne saurait excéder le montant des sommes versées par le client au titre des douze mois précédant le fait générateur. L’éditeur n’est pas responsable des décisions commerciales prises par le client, ni des conséquences d’une inexactitude dans les données que celui-ci a importées ou paramétrées."
+      },
+      {
+        "title": "9. Durée et résiliation",
+        "body": "L’abonnement est souscrit pour la période choisie et se renouvelle par tacite reconduction, sauf résiliation avant l’échéance depuis l’espace client. La résiliation met fin à l’accès au service à l’issue de la période en cours. Le client peut exporter ses données avant cette échéance. En cas de manquement grave aux présentes conditions, l’éditeur peut suspendre l’accès après mise en demeure restée sans effet."
+      },
+      {
+        "title": "10. Modification des conditions",
+        "body": "Les présentes conditions peuvent être modifiées. Les clients sont informés de toute modification substantielle par voie électronique avant son entrée en vigueur."
+      },
+      {
+        "title": "11. Droit applicable et juridiction",
+        "body": "Les présentes conditions sont soumises au droit français. À défaut de résolution amiable, tout litige relève de la compétence des tribunaux de {{VILLE_JURIDICTION}}."
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité — CarrierBridge",
+      "description": "Données collectées, finalités, durées de conservation, hébergement en Europe et exercice de vos droits."
+    },
+    "h1": "Politique de confidentialité",
+    "intro": "Cette politique décrit les données à caractère personnel traitées dans le cadre du site carrier-bridge.com et du service CarrierBridge, les finalités de ces traitements et les moyens dont vous disposez pour exercer vos droits.",
+    "sections": [
+      {
+        "title": "Responsable de traitement",
+        "body": "{{RAISON_SOCIALE}}, {{ADRESSE_SIEGE}}. Contact : contact@carrier-bridge.com."
+      },
+      {
+        "title": "Données traitées",
+        "body": "Données de compte : adresse électronique, mot de passe sous forme chiffrée, nom de la société, et le cas échéant nom, fonction et téléphone lorsque vous nous les communiquez.\nDonnées d’usage du service : grilles tarifaires, expéditions simulées, paramètres d’indexation, documents importés. Ces contenus relèvent de votre activité professionnelle et non de votre vie privée, mais peuvent contenir des données personnelles (nom d’un contact chez un transporteur, par exemple).\nDonnées de contact : informations transmises via le formulaire de contact.\nMesure d’audience : statistiques agrégées de consultation, sans cookie et sans identifiant permettant de vous reconnaître d’une visite à l’autre."
+      },
+      {
+        "title": "Finalités et bases légales",
+        "body": "Fourniture du service et gestion du compte : exécution du contrat.\nFacturation et obligations comptables : obligation légale.\nRéponse aux demandes de contact : mesure précontractuelle ou intérêt légitime.\nAmélioration du service et mesure d’audience : intérêt légitime, au moyen d’une solution sans cookie et sans profilage.\nInformation sur les évolutions du service adressée à nos clients : intérêt légitime, avec possibilité de refus à tout moment."
+      },
+      {
+        "title": "Destinataires et sous-traitants",
+        "body": "Vos données ne sont ni vendues, ni louées, ni communiquées à des tiers à des fins commerciales. Elles ne sont jamais transmises aux transporteurs. Elles sont accessibles aux seules personnes habilitées chez l’éditeur, ainsi qu’aux prestataires techniques strictement nécessaires au fonctionnement du service — hébergement, envoi d’e-mails transactionnels, mesure d’audience, encaissement des paiements — agissant en qualité de sous-traitants et liés par contrat.\nListe des sous-traitants : {{LISTE_SOUS_TRAITANTS}}."
+      },
+      {
+        "title": "Localisation des données",
+        "body": "Les données sont hébergées au sein de l’Union européenne, chez {{HEBERGEUR_NOM}}. Aucun transfert hors de l’Union européenne n’est effectué pour l’exploitation courante du service. Si un tel transfert devenait nécessaire, il serait encadré par les garanties prévues par le règlement général sur la protection des données."
+      },
+      {
+        "title": "Durées de conservation",
+        "body": "Données de compte et contenus importés : pendant toute la durée du contrat, puis {{DUREE_APRES_RESILIATION}} après sa résiliation, afin de permettre une reprise ou un export.\nDocuments comptables et factures : dix ans, conformément aux obligations légales.\nDemandes de contact restées sans suite : trois ans à compter du dernier échange.\nStatistiques d’audience : agrégées, sans conservation de données individuelles."
+      },
+      {
+        "title": "Sécurité",
+        "body": "Les données sont chiffrées en transit et au repos. L’accès aux environnements de production est restreint et journalisé. Les mots de passe sont stockés sous forme de condensat et ne sont jamais accessibles en clair."
+      },
+      {
+        "title": "Vos droits",
+        "body": "Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité sur les données vous concernant. Vous pouvez les exercer en écrivant à contact@carrier-bridge.com. Une réponse vous est apportée dans un délai d’un mois. Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la Commission nationale de l’informatique et des libertés (CNIL), 3 place de Fontenoy, 75007 Paris."
+      }
+    ]
+  },
+  "cookies": {
+    "meta": {
+      "title": "Gestion des cookies — CarrierBridge",
+      "description": "Quels cookies sont déposés sur carrier-bridge.com, à quoi ils servent, et comment les refuser."
+    },
+    "h1": "Gestion des cookies",
+    "intro": "Un cookie est un fichier déposé sur votre appareil lors de la consultation d’un site. Notre approche est simple : nous n’utilisons aucun traceur publicitaire et aucun cookie de profilage. Refuser la mesure d’audience ne change rien au fonctionnement du site.",
+    "tableHeaders": {
+      "name": "Type",
+      "purpose": "Finalité",
+      "duration": "Durée",
+      "consent": "Consentement"
+    },
+    "rows": [
+      {
+        "name": "Cookies strictement nécessaires",
+        "purpose": "Maintien de votre session, mémorisation de votre choix en matière de cookies, sécurité des formulaires.",
+        "duration": "Session à 12 mois",
+        "consent": "Non requis"
+      },
+      {
+        "name": "Mesure d’audience",
+        "purpose": "Statistiques agrégées de consultation des pages, sans cookie, sans identifiant persistant et sans suivi d’un visiteur d’un site à l’autre.",
+        "duration": "Aucun stockage sur votre appareil",
+        "consent": "Refus possible à tout moment"
+      }
+    ],
+    "manage": {
+      "title": "Modifier votre choix",
+      "body": "Vous pouvez à tout moment accepter ou refuser la mesure d’audience depuis le bouton ci-dessous. Votre choix est conservé sur cet appareil.",
+      "button": "Gérer mes préférences"
+    },
+    "browser": {
+      "title": "Paramétrage de votre navigateur",
+      "body": "Vous pouvez également configurer votre navigateur pour bloquer ou supprimer les cookies. Le blocage des cookies strictement nécessaires peut empêcher certaines fonctions du site de fonctionner correctement."
+    }
+  }
+}

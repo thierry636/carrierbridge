@@ -1,0 +1,77 @@
+{
+  "brand": {
+    "name": "CarrierBridge",
+    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : import et normalisation des grilles transporteurs, désignation du meilleur prix par expédition, et contrôle de l’indexation gazole et des surtaxes.",
+    "audience": "Conçu pour les chargeurs dont le budget transport se situe entre 100 000 € et 3 millions d’euros par an."
+  },
+  "nav": {
+    "product": "Le produit",
+    "pricing": "Tarifs",
+    "fuelTool": "Calculateur gazole",
+    "blog": "Blog",
+    "contact": "Nous contacter",
+    "signup": "Commencer",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "cta": {
+    "signup": "Comparer mes grilles gratuitement",
+    "signupShort": "Commencer",
+    "signupNote": "Gratuit, sans carte bancaire. 3 grilles et 20 expéditions cotées par mois.",
+    "demo": "Voir une démo (3 min)",
+    "contact": "Nous contacter",
+    "pricing": "Voir les tarifs",
+    "fuelTool": "Tester le calculateur gazole",
+    "fuelToolFree": "Tester gratuitement, sans inscription"
+  },
+  "footer": {
+    "tagline": "Le logiciel de gestion des tarifs transport des chargeurs. Importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation gazole.",
+    "columns": {
+      "product": "Produit",
+      "resources": "Ressources",
+      "company": "Société",
+      "legal": "Informations légales"
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "fuelTool": "Calculateur d’indexation gazole",
+      "signup": "Créer un compte",
+      "login": "Se connecter",
+      "blog": "Blog",
+      "faq": "Questions fréquentes",
+      "contact": "Nous contacter",
+      "legalNotice": "Mentions légales",
+      "terms": "Conditions générales d’utilisation",
+      "privacy": "Politique de confidentialité",
+      "cookies": "Gestion des cookies"
+    },
+    "rights": "Tous droits réservés.",
+    "madeIn": "Édité en France, hébergé en Europe."
+  },
+  "cookies": {
+    "title": "Mesure d’audience",
+    "body": "Nous utilisons une mesure d’audience sans cookie et sans suivi individuel, afin de savoir quelles pages sont consultées. Aucun traceur publicitaire n’est déposé, aucune donnée n’est revendue. Vous pouvez refuser : le site fonctionne à l’identique.",
+    "accept": "Accepter",
+    "refuse": "Refuser",
+    "more": "En savoir plus",
+    "manage": "Gérer mes cookies"
+  },
+  "placeholder": {
+    "screenshot": "Capture d’écran du produit à insérer",
+    "screenshotBefore": "Capture à insérer — la grille telle qu’elle est reçue",
+    "screenshotAfter": "Capture à insérer — la même grille, normalisée",
+    "screenshotGap": "Capture à insérer — un écart d’indexation détecté",
+    "video": "Vidéo de démonstration à insérer",
+    "metric": "Chiffre client à confirmer"
+  },
+  "notFound": {
+    "title": "Cette page n’existe pas",
+    "body": "Le lien que vous avez suivi est peut-être obsolète, ou l’adresse comporte une erreur.",
+    "home": "Retour à l’accueil",
+    "pricing": "Voir les tarifs",
+    "fuelTool": "Calculateur d’indexation gazole"
+  }
+}

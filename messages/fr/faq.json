@@ -1,0 +1,42 @@
+{
+  "h2": "Questions fréquentes",
+  "lede": "Les objections qui reviennent le plus souvent, traitées sans détour.",
+  "items": [
+    {
+      "q": "Plus de transporteurs, n’est-ce pas plus de gestion et moins de remise au volume ?",
+      "a": "Plus de gestion, oui — si elle reste manuelle. C’est précisément ce que l’outil absorbe : une fois les grilles importées, consulter trois ou quinze transporteurs demande exactement le même geste. Sur le volume, l’effet existe mais il est le plus souvent surestimé : une remise consentie une fois par an à un transporteur en position acquise résiste mal à une mise en concurrence permanente, expédition par expédition. Et rien ne vous oblige à tout éclater : beaucoup de chargeurs conservent deux partenaires principaux sur leurs flux réguliers et ouvrent le reste à l’arbitrage."
+    },
+    {
+      "q": "Quels formats de grilles sont acceptés ?",
+      "a": "Tous. Excel et CSV, PDF natifs, PDF scannés, et les grilles reçues en pièce jointe d’e-mail. Quelle que soit la structure : tranches de poids quelle qu’en soit la découpe, zones propres au transporteur, groupes de départements, listes de codes postaux, grilles France et international. Vous déposez le fichier tel que vous l’avez reçu, sans le retravailler et sans le ramener à un format imposé. Le résultat s’affiche à côté de l’original : s’il y a un libellé à préciser ou une zone à renommer, vous l’ajustez vous-même à l’écran, en quelques secondes."
+    },
+    {
+      "q": "Comment l’indexation gazole est-elle vérifiée ?",
+      "a": "Vous saisissez la formule de votre contrat : part gazole, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre, CarrierBridge n’en impose aucune. L’outil recalcule ensuite la surcharge attendue pour chaque période à partir des indices publics, et la compare au taux appliqué sur vos factures. Il signale les écarts de calcul ; il ne lit pas votre contrat et ne se substitue pas à une analyse contractuelle. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion."
+    },
+    {
+      "q": "Faut-il un TMS ?",
+      "a": "Non, et CarrierBridge n’en remplace pas un : les deux répondent à des questions différentes. Le TMS exécute — il planifie, édite les documents, suit les expéditions. CarrierBridge arbitre — il détermine à qui confier l’ordre et à quel prix, puis contrôle ce qui est facturé. Si vous n’avez pas de TMS, CarrierBridge fonctionne seul. Si vous en avez un, les deux cohabitent, et un connecteur peut récupérer automatiquement vos ordres de transport."
+    },
+    {
+      "q": "Mes données sont-elles confidentielles ?",
+      "a": "Vos grilles, vos volumes et vos prix négociés vous appartiennent. Ils ne sont ni partagés avec d’autres clients, ni communiqués aux transporteurs, ni agrégés dans un indice de marché. Les données sont hébergées en Europe, chiffrées en transit et au repos, et traitées conformément au RGPD. Le détail des traitements, des durées de conservation et de vos droits figure dans notre politique de confidentialité."
+    },
+    {
+      "q": "Combien de temps pour démarrer ?",
+      "a": "L’inscription demande deux champs et aucun paramétrage. Comptez moins de dix minutes entre la création du compte et votre première comparaison sur vos propres grilles : vous déposez un ou deux fichiers, vous saisissez une expédition type, vous obtenez le classement. La reprise complète d’un référentiel de dix à quinze transporteurs se fait ensuite au fil de l’eau, grille par grille. L’accompagnement Démarrage permet de tout basculer en une fois."
+    },
+    {
+      "q": "Le sourcing IA est-il inclus ?",
+      "a": "Oui, dans les paliers Pro et Business, sans facturation séparée. Il est en beta : il propose des transporteurs à consulter, il ne les qualifie pas à votre place et ne remplace pas votre appel d’offres. CarrierBridge fonctionne très bien sans lui : l’essentiel de la valeur vient des grilles que vous avez déjà."
+    },
+    {
+      "q": "Est-ce destiné aux transporteurs ?",
+      "a": "Non. CarrierBridge s’adresse exclusivement aux chargeurs : industriels, distributeurs, négociants. L’outil sert à comparer des offres de transport, pas à en émettre. Les transporteurs n’ont pas accès à la plateforme et n’y voient donc ni vos grilles, ni celles de leurs confrères."
+    },
+    {
+      "q": "À quelle taille d’entreprise CarrierBridge s’adresse-t-il ?",
+      "a": "Aux chargeurs dont le budget transport se situe entre 100 000 € et 3 millions d’euros par an : trop petit pour justifier un TMS ou le recrutement d’un acheteur transport, trop important pour rester piloté sous Excel. Dans ces entreprises, le transport est souvent suivi à temps partiel par une ADV ou un responsable logistique qui n’est pas acheteur de métier. L’outil est conçu pour ce cas précis : aucun paramétrage attendu, un résultat exploitable dès la première séance."
+    }
+  ]
+}

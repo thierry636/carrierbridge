@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Blog — achats et tarifs transport | CarrierBridge",
+    "description": "Analyses concrètes sur les grilles tarifaires, les prestations annexes, l’indexation gazole et la mise en concurrence des transporteurs."
+  },
+  "h1": "Comprendre ce que vous payez à vos transporteurs",
+  "lede": "Des analyses concrètes sur les grilles tarifaires, les prestations annexes, l’indexation gazole et la mise en concurrence des transporteurs. Sans jargon d’acheteur.",
+  "empty": {
+    "title": "Les premiers articles arrivent",
+    "text": "Nous préparons les premières publications. En attendant, le calculateur d’indexation gazole est en accès libre et répond déjà à la question la plus fréquente.",
+    "cta": "Ouvrir le calculateur"
+  },
+  "readMore": "Lire l’article",
+  "publishedOn": "Publié le {date}",
+  "readingTime": "{minutes} min de lecture",
+  "backToBlog": "Tous les articles"
+}

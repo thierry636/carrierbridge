@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "CarrierBridge — Comparateur de grilles tarifaires transport",
+    "description": "Importez les grilles de tous vos transporteurs, quel qu’en soit le format. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation gazole."
+  },
+  "hero": {
+    "h1": "Gérez 20 transporteurs aussi facilement que 3.",
+    "subtitle": "Importez toutes vos grilles, quel qu’en soit le format. CarrierBridge désigne le meilleur transporteur pour chaque expédition et vérifie que les surtaxes et l’indexation gazole ne dérivent pas. Sans TMS, sans acheteur transport dédié.",
+    "proofLabel": "Ce que ça change",
+    "proof": [
+      "Une seule base pour toutes vos grilles, quel que soit le format reçu",
+      "Le prix tout compris de chaque transporteur, surtaxes incluses",
+      "Les écarts d’indexation gazole signalés, pas découverts en fin d’année"
+    ]
+  },
+  "problem": {
+    "h2": "Pourquoi n’attribue-t-on qu’à deux ou trois transporteurs ?",
+    "lede": "Parce qu’au-delà, le suivi sous Excel devient ingérable. Le plafond n’est pas commercial, il est matériel : personne ne peut comparer quinze grilles de formats différents à chaque expédition. Vous perdez donc deux fois — à l’appel d’offres, faute de mise en concurrence suffisante, et au quotidien, faute d’arbitrage par ordre.",
+    "items": [
+      {
+        "title": "Des grilles impossibles à comparer",
+        "text": "Chaque transporteur a son format : tranches de poids différentes, zones maison, départements regroupés autrement. Un même envoi ne se lit pas de la même façon d’une grille à l’autre. Le classeur de comparaison devient faux dès la première mise à jour."
+      },
+      {
+        "title": "Des prestations annexes opaques",
+        "text": "Le prix affiché n’est jamais le prix payé. Hayon, rendez-vous, ADR, bâchage, immobilisation, péages : ces lignes s’ajoutent selon des règles propres à chaque transporteur, et n’entrent presque jamais dans la comparaison."
+      },
+      {
+        "title": "Une indexation gazole jamais vérifiée",
+        "text": "La formule est signée en début de contrat, puis plus personne ne la recalcule. L’écart entre ce qui a été contractualisé et ce qui est facturé s’installe mois après mois sans que rien ne le signale."
+      }
+    ],
+    "consequence": "Le gain arraché à l’appel d’offres s’évapore ainsi en cours d’année, pendant que l’équipe ADV passe ses journées à chercher un tarif dans quinze fichiers et à appeler des commerciaux pour le faire confirmer."
+  },
+  "import": {
+    "h2": "Comment importer des grilles au format Excel, PDF ou scanné ?",
+    "lede": "Vous déposez le fichier tel que le transporteur vous l’a transmis, quel qu’en soit le format et quelle qu’en soit la structure. CarrierBridge le lit et le ramène à une base commune. Aucun paramétrage préalable n’est demandé : la grille est exploitable dès l’import, et vous l’ajustez vous-même à l’écran si vous voulez affiner un libellé ou une zone.",
+    "formatsLabel": "Formats acceptés",
+    "formats": [
+      "Excel et CSV",
+      "PDF natif",
+      "PDF scanné",
+      "Pièce jointe d’e-mail"
+    ],
+    "items": [
+      {
+        "title": "Toutes les découpes de tranches de poids",
+        "text": "0-10, 10-20, 20-30 kg ou tout autre pas : les tranches de chaque transporteur sont alignées sur une base commune, sans que vous ayez à les ressaisir."
+      },
+      {
+        "title": "Zones, départements, codes postaux",
+        "text": "Zones maison, groupes de départements, listes de codes postaux : la géographie de chaque transporteur est reconstituée telle qu’il l’a définie."
+      },
+      {
+        "title": "France et international",
+        "text": "Messagerie nationale, affrètement, export et import, pays par pays."
+      },
+      {
+        "title": "Mises à jour de grille",
+        "text": "Une nouvelle version remplace l’ancienne sans repartir de zéro. Les versions précédentes restent consultables, ce qui permet de savoir quel tarif s’appliquait à quelle date."
+      },
+      {
+        "title": "Vous gardez la main",
+        "text": "La grille normalisée s’affiche à côté du fichier d’origine. Un libellé, une tranche ou une zone se modifie directement à l’écran, en quelques secondes et sans ressaisie."
+      }
+    ],
+    "visual": {
+      "beforeLabel": "Avant — la grille telle que vous la recevez",
+      "afterLabel": "Après — la même grille, normalisée"
+    }
+  },
+  "surcharges": {
+    "h2": "Que contiennent vraiment les prestations annexes d’un transporteur ?",
+    "lede": "Sept familles de coûts qui n’entrent presque jamais dans la comparaison, et qui font pourtant l’écart entre deux offres apparemment identiques.",
+    "items": [
+      {
+        "title": "Surcharge gazole",
+        "text": "Appliquée en pourcentage du prix de base, selon une formule et un indice propres à chaque contrat."
+      },
+      {
+        "title": "Rendez-vous de livraison",
+        "text": "Facturé dès qu’une livraison est prise sur créneau. Le montant et les conditions de déclenchement varient fortement d’un transporteur à l’autre."
+      },
+      {
+        "title": "Hayon",
+        "text": "Au départ, à l’arrivée, ou les deux. Parfois inclus jusqu’à un certain poids, souvent avec un minimum de perception."
+      },
+      {
+        "title": "ADR et matières dangereuses",
+        "text": "Majoration en pourcentage ou forfait par envoi, selon la classe et les quantités transportées."
+      },
+      {
+        "title": "Bâchage et débâchage",
+        "text": "Facturé à l’opération, avec des règles de minimum qui diffèrent selon les transporteurs."
+      },
+      {
+        "title": "Péages et taxes",
+        "text": "Répercutés en pourcentage du prix ou au kilomètre, selon les axes empruntés."
+      },
+      {
+        "title": "Immobilisation",
+        "text": "Au-delà d’une franchise d’attente au chargement ou à la livraison, facturée par tranche horaire."
+      }
+    ],
+    "conclusion": "CarrierBridge ramène ces sept familles à une base comparable. Pour un envoi donné, vous voyez le prix complet de chaque transporteur, pas seulement son prix de base."
+  },
+  "fuel": {
+    "h2": "Comment vérifier l’indexation gazole sur une facture transport ?",
+    "lede": "Vous saisissez une fois la formule de votre contrat et l’indice de référence retenu. CarrierBridge recalcule la surcharge attendue pour chaque période et la compare à ce qui vous a été facturé.",
+    "steps": [
+      {
+        "title": "Votre formule, telle qu’elle est écrite au contrat",
+        "text": "Part gazole, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre : CarrierBridge ne vous en impose aucune et n’en présume aucune."
+      },
+      {
+        "title": "Le recalcul à partir des indices publiés",
+        "text": "Pour chaque période, la surcharge théorique est recalculée à partir de l’indice correspondant, puis appliquée au prix de base de vos expéditions."
+      },
+      {
+        "title": "L’écart, s’il existe",
+        "text": "La différence entre le taux appliqué sur la facture et le taux attendu est affichée en points et convertie en euros, transporteur par transporteur et mois par mois."
+      }
+    ],
+    "disclaimer": "CarrierBridge signale un écart de calcul. Il ne lit pas votre contrat et ne se substitue ni à sa relecture, ni à une analyse juridique. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion.",
+    "toolTeaser": "Une facture à vérifier tout de suite ? Le calculateur d’indexation est en accès libre, sans inscription."
+  },
+  "bestPrice": {
+    "h2": "Quel transporteur est le moins cher pour cette expédition ?",
+    "lede": "Poids, destination, prestations attendues. Le classement complet s’affiche en quelques secondes, prix tout compris.",
+    "items": [
+      {
+        "title": "Toutes vos grilles interrogées en même temps",
+        "text": "Y compris celles auxquelles vous n’auriez pas pensé. C’est là que se trouve le gain : le mieux-disant n’est pas toujours celui que l’on consulte par habitude."
+      },
+      {
+        "title": "Le prix complet, pas le prix de base",
+        "text": "Tarif de base, surcharge gazole de la période, prestations annexes demandées : le montant affiché est celui que vous paierez."
+      },
+      {
+        "title": "L’écart rendu visible",
+        "text": "Le deuxième et le troisième transporteur apparaissent avec leur écart au mieux-disant. Quand la disponibilité prime sur le prix, vous savez exactement ce que ce choix coûte."
+      },
+      {
+        "title": "Sans recherche dans les fichiers",
+        "text": "Plus de tri dans quinze classeurs, plus d’appel au commercial pour faire confirmer un tarif, plus de doute sur la version de grille en vigueur."
+      }
+    ]
+  },
+  "operations": {
+    "badge": "Palier Business",
+    "h2": "Comment affecter ses ordres de transport sans TMS ?",
+    "lede": "Le quotidien de l’exploitation, de la demande interne à l’affectation, dans un seul endroit.",
+    "items": [
+      {
+        "title": "Demandes de transport",
+        "text": "Les sites et les services déposent leur besoin dans un formulaire unique plutôt que par e-mail. Rien ne se perd dans une boîte de réception."
+      },
+      {
+        "title": "Agrégation des ordres",
+        "text": "Les expéditions d’une même journée vers une même zone sont regroupées avant arbitrage, ce qui fait souvent basculer le calcul vers un autre transporteur."
+      },
+      {
+        "title": "Affectation",
+        "text": "Le transporteur retenu est désigné pour chaque ordre, avec la trace de la décision et du prix retenu au moment du choix."
+      },
+      {
+        "title": "Tarifs spot hors grille",
+        "text": "Quand aucune grille ne couvre le besoin, le prix négocié à l’affaire est saisi et conservé. Vos affrètements ponctuels cessent d’échapper au suivi."
+      }
+    ]
+  },
+  "registry": {
+    "h2": "Comment suivre les attestations de vigilance de ses transporteurs ?",
+    "lede": "Un référentiel unique pour vos transporteurs et les pièces que vous leur demandez.",
+    "items": [
+      {
+        "title": "Fiche transporteur",
+        "text": "Contacts, périmètre géographique, types de véhicules, grilles en vigueur et historique des versions."
+      },
+      {
+        "title": "Pièces documentaires",
+        "text": "Attestation de vigilance, licence de transport, attestation d’assurance marchandises, RIB. Chaque pièce porte sa date d’expiration."
+      },
+      {
+        "title": "Échéances signalées à l’avance",
+        "text": "Les documents qui arrivent à expiration sont signalés avant la date, pas une fois périmés."
+      }
+    ],
+    "disclaimer": "CarrierBridge centralise les pièces que vous collectez et vous alerte sur leurs échéances. Il ne se substitue pas à vos obligations de vérification et ne certifie pas la validité d’un document."
+  },
+  "sourcing": {
+    "badge": "Beta — inclus dans Pro et Business",
+    "h2": "Comment identifier de nouveaux transporteurs ?",
+    "text": "Décrivez votre besoin en langage courant : un axe, un type de véhicule, une contrainte particulière. Le module propose des transporteurs susceptibles d’y répondre, à consulter lors de votre prochain appel d’offres.",
+    "caveat": "Ce module est en beta. Il n’est pas facturé séparément et n’est pas nécessaire pour utiliser CarrierBridge : l’essentiel de la valeur vient des grilles que vous avez déjà."
+  },
+  "pricingTeaser": {
+    "h2": "Combien coûte CarrierBridge ?",
+    "lede": "Prix publics, sans négociation préalable. Vous commencez gratuitement et vous changez de palier quand vos volumes le justifient.",
+    "allPlans": "Voir le détail des paliers et les offres multi-sites"
+  },
+  "support": {
+    "h2": "Faut-il être accompagné pour démarrer ?",
+    "lede": "Non. L’inscription ne demande aucun paramétrage et mène à un premier résultat exploitable en moins de dix minutes. L’accompagnement existe pour les équipes qui veulent aller plus vite, ou plus loin.",
+    "tagline": "Pour les équipes qui veulent un interlocuteur qui maîtrise à la fois le métier transport et l’outil."
+  },
+  "finalCta": {
+    "h2": "Commencez avec vos propres grilles",
+    "text": "Déposez deux ou trois fichiers, saisissez une expédition type, comparez. Vous saurez en dix minutes si l’outil vous apporte quelque chose — sans carte bancaire et sans rendez-vous commercial."
+  }
+}
