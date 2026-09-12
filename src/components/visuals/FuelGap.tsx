@@ -1,17 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import { AlertTriangle } from "lucide-react";
 import { VisualFrame, useEuro, useNumber } from "./frame";
+import { fuelExample } from "@/lib/demo-figures";
 
-/** Figures chosen so a reader can redo the arithmetic in their head. */
-const SHARE = 32;
-const BASE_INDEX = 120;
-const PERIOD_INDEX = 133.5;
-const INVOICED_RATE = 4.9;
-const BASIS = 42000;
-
-const expectedRate = (SHARE * (PERIOD_INDEX - BASE_INDEX)) / BASE_INDEX;
-const gapPoints = INVOICED_RATE - expectedRate;
-const gapAmount = (BASIS * gapPoints) / 100;
 
 export function FuelGap() {
   const t = useTranslations("home.visuals.fuelGap");
@@ -19,7 +10,7 @@ export function FuelGap() {
   const euro = useEuro(locale);
   const num = useNumber(locale);
   const rows = t.raw("rows") as string[];
-  const values = [`${num(SHARE, 0)} %`, num(BASE_INDEX, 2), num(PERIOD_INDEX, 2)];
+  const values = [`${num(fuelExample.share, 0)} %`, num(fuelExample.baseIndex, 2), num(fuelExample.periodIndex, 2)];
 
   return (
     <VisualFrame title={t("title")} subtitle={t("contract")} caption={t("caption")}>
@@ -35,11 +26,11 @@ export function FuelGap() {
       <dl className="mt-4 space-y-2">
         <div className="flex items-baseline justify-between gap-4">
           <dt className="text-xs text-ink-600">{t("expected")}</dt>
-          <dd className="text-sm font-medium tabular-nums text-ink-800">{num(expectedRate)} %</dd>
+          <dd className="text-sm font-medium tabular-nums text-ink-800">{num(fuelExample.expectedRate)} %</dd>
         </div>
         <div className="flex items-baseline justify-between gap-4">
           <dt className="text-xs text-ink-600">{t("invoiced")}</dt>
-          <dd className="text-sm font-medium tabular-nums text-ink-800">{num(INVOICED_RATE)} %</dd>
+          <dd className="text-sm font-medium tabular-nums text-ink-800">{num(fuelExample.invoicedRate)} %</dd>
         </div>
       </dl>
 
@@ -50,12 +41,12 @@ export function FuelGap() {
             {t("gap")}
           </span>
           <span className="text-sm font-bold tabular-nums text-amber-900">
-            + {num(gapPoints)} {t("gapUnit")}
+            + {num(fuelExample.gapPoints)} {t("gapUnit")}
           </span>
         </div>
         <div className="mt-2 flex items-baseline justify-between gap-4 border-t border-amber-200 pt-2">
           <span className="text-xs text-amber-900/80">{t("basis")}</span>
-          <span className="text-base font-bold tabular-nums text-amber-900">+ {euro(gapAmount)}</span>
+          <span className="text-base font-bold tabular-nums text-amber-900">+ {euro(fuelExample.gapAmount)}</span>
         </div>
       </div>
     </VisualFrame>
