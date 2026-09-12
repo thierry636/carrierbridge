@@ -40,8 +40,9 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(site.url),
-    // Every page sets its own title; this is the suffix they hang off.
-    title: { default: site.name, template: `%s | ${site.name}` },
+    // Each page sets a complete, self-contained title; this is only the
+    // fallback for any route that sets none.
+    title: site.name,
     icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }] },
     robots: { index: true, follow: true },
   };

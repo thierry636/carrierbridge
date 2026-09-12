@@ -4,7 +4,10 @@ import { site } from "./site";
 import { plans } from "./pricing";
 
 export function absoluteUrl(locale: Locale, pathname: AppPathname) {
-  return `${site.url}${getPathname({ locale, href: pathname })}`;
+  const path = getPathname({ locale, href: pathname });
+  // Next normalises the canonical tag by dropping a trailing slash; match that
+  // here so the sitemap advertises the very same URL.
+  return path === "/" ? site.url : `${site.url}${path}`;
 }
 
 /** Canonical plus a complete hreflang set, with French as x-default. */
