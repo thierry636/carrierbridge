@@ -1,18 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import { FileSpreadsheet, FileText } from "lucide-react";
 import { VisualFrame, useNumber } from "./frame";
+import { normalisedSheet, rawSheets } from "@/lib/demo-figures";
 import { cn } from "@/lib/utils";
-
-/** Two sheets, deliberately incompatible: different brackets, different zones. */
-const SHEET_A = [
-  ["0 – 10 kg", 12.4, 14.1],
-  ["10 – 20 kg", 18.2, 21.5],
-  ["20 – 30 kg", 24.6, 28.3],
-];
-const SHEET_B = [
-  ["0 – 30", 21.1, 23.4, 26.0],
-  ["30 – 100", 38.7, 42.2, 47.9],
-];
 
 export function RateSheetBefore() {
   const t = useTranslations("home.visuals.before");
@@ -28,13 +18,13 @@ export function RateSheetBefore() {
           icon={<FileSpreadsheet className="h-3.5 w-3.5" />}
           name={t("sheetA")}
           headers={headersA}
-          rows={SHEET_A.map((r) => [r[0] as string, ...(r.slice(1) as number[]).map((v) => num(v))])}
+          rows={rawSheets.a.map((r) => [r[0] as string, ...(r.slice(1) as number[]).map((v) => num(v))])}
         />
         <MiniSheet
           icon={<FileText className="h-3.5 w-3.5" />}
           name={t("sheetB")}
           headers={headersB}
-          rows={SHEET_B.map((r) => [r[0] as string, ...(r.slice(1) as number[]).map((v) => num(v))])}
+          rows={rawSheets.b.map((r) => [r[0] as string, ...(r.slice(1) as number[]).map((v) => num(v))])}
         />
       </div>
     </VisualFrame>
@@ -89,13 +79,6 @@ function MiniSheet({
   );
 }
 
-/** Same three carriers on one base; the cheapest cell of each row is marked. */
-const NORMALISED = [
-  { bracket: "0 – 10 kg", prices: [12.4, 13.8, 11.9] },
-  { bracket: "10 – 20 kg", prices: [18.2, 19.4, 17.6] },
-  { bracket: "20 – 30 kg", prices: [24.6, 23.1, 25.2] },
-  { bracket: "30 – 50 kg", prices: [31.8, 30.4, 33.1] },
-];
 
 export function RateSheetAfter() {
   const t = useTranslations("home.visuals.after");
@@ -123,7 +106,7 @@ export function RateSheetAfter() {
           </tr>
         </thead>
         <tbody>
-          {NORMALISED.map((row) => {
+          {normalisedSheet.map((row) => {
             const best = Math.min(...row.prices);
             return (
               <tr key={row.bracket} className="border-t border-ink-100">

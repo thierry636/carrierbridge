@@ -40,6 +40,19 @@ npm run lint
 npm run build && npm run start
 ```
 
+### Contrôle du responsive
+
+```bash
+npm run build && npm run start &
+npm run check:responsive
+```
+
+Vérifie sur huit pages, en 390 / 820 / 1440 px, qu’aucune ne défile
+horizontalement et qu’aucun élément ne dépasse. Le test réel est de tenter le
+défilement et de lire `scrollX` : `scrollWidth` compte le contenu des conteneurs
+à défilement interne, donc un tableau dans son propre `overflow-x` y apparaît à
+tort comme un débordement.
+
 ### Contrôle Lighthouse
 
 Lighthouse n’est pas une dépendance du projet ; on l’exécute à la demande sur un
@@ -53,7 +66,7 @@ npx lighthouse http://localhost:3000/ \
 ```
 
 Dernier relevé (`/`, `/tarifs`, `/outils/indexation-gazole`, `/en`, `/contact`) :
-performance 97-98, accessibilité 100, bonnes pratiques 100, SEO 100.
+performance 97-99, accessibilité 100, bonnes pratiques 100, SEO 100.
 
 L’audit `canonical` échoue si l’on teste en local sans avoir construit avec
 `NEXT_PUBLIC_SITE_URL` pointant sur l’origine testée : la balise est figée au

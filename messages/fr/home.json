@@ -216,7 +216,14 @@
       "options": "Hayon à la livraison",
       "best": "Meilleur prix",
       "footnote": "Prix tout compris : tarif de base, surcharge gazole du mois et prestations demandées.",
-      "carrier": "Transporteur {letter}"
+      "carrier": "Transporteur {letter}",
+      "appLabel": "Comparaison d’expédition",
+      "bestCaption": "Meilleur prix, tout compris",
+      "sheetsQueried": "{count} grilles interrogées",
+      "alert": {
+        "title": "Écart d’indexation détecté",
+        "detail": "+ {points} point sur la période"
+      }
     },
     "before": {
       "title": "Ce que vous recevez",

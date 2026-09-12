@@ -1,23 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import { VisualFrame, useEuro } from "./frame";
+import { bestBreakdownTotal, priceBreakdown } from "@/lib/demo-figures";
 import { cn } from "@/lib/utils";
 
-/**
- * The point of this one: A has the lower base rate, B is cheaper all-in.
- * Totals are summed here rather than written down, so the figures cannot
- * drift apart if a line is edited.
- */
-const FUEL_RATE = 0.084;
-const CARRIERS = [
-  { base: 142, tailLift: 18, slot: 15.5 },
-  { base: 151, tailLift: 9.5, slot: 0 },
-];
-
-const lines = CARRIERS.map((c) => {
-  const fuel = c.base * FUEL_RATE;
-  return { values: [c.base, fuel, c.tailLift, c.slot], total: c.base + fuel + c.tailLift + c.slot };
-});
-const bestTotal = Math.min(...lines.map((l) => l.total));
 
 export function PriceBreakdown() {
   const t = useTranslations("home.visuals.breakdown");
@@ -47,7 +32,7 @@ export function PriceBreakdown() {
               <th scope="row" className="py-2 text-left font-normal text-ink-600">
                 {label}
               </th>
-              {lines.map((line, i) => (
+              {priceBreakdown.map((line, i) => (
                 <td key={i} className="py-2 text-right tabular-nums text-ink-700">
                   {euro(line.values[rowIndex])}
                 </td>
@@ -60,12 +45,12 @@ export function PriceBreakdown() {
             <th scope="row" className="pt-3 text-left font-semibold text-ink-900">
               {t("total")}
             </th>
-            {lines.map((line, i) => (
+            {priceBreakdown.map((line, i) => (
               <td key={i} className="pt-3 text-right">
                 <span
                   className={cn(
                     "tabular-nums",
-                    line.total === bestTotal
+                    line.total === bestBreakdownTotal
                       ? "rounded bg-brand-50 px-2 py-1 text-sm font-bold text-brand-800 ring-1 ring-inset ring-brand-200"
                       : "text-sm font-medium text-ink-500"
                   )}

@@ -216,7 +216,14 @@
       "options": "Tail lift at delivery",
       "best": "Best price",
       "footnote": "All-in price: base rate, fuel surcharge for the month and the services requested.",
-      "carrier": "Carrier {letter}"
+      "carrier": "Carrier {letter}",
+      "appLabel": "Shipment comparison",
+      "bestCaption": "Best price, all in",
+      "sheetsQueried": "{count} rate sheets queried",
+      "alert": {
+        "title": "Indexation gap detected",
+        "detail": "+ {points} point over the period"
+      }
     },
     "before": {
       "title": "What you receive",
