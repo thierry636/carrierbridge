@@ -1,0 +1,78 @@
+{
+  "fuel": {
+    "meta": {
+      "title": "Calculateur d’indexation gazole — vérifiez votre surcharge",
+      "description": "Outil gratuit et sans inscription : saisissez votre formule contractuelle, votre indice de référence et le taux facturé, obtenez l’écart en points et en euros."
+    },
+    "h1": "Votre surcharge gazole est-elle correctement calculée ?",
+    "lede": "Saisissez la formule de votre contrat, les indices de la période et le taux appliqué sur votre facture. Vous obtenez immédiatement l’écart, en points et en euros.",
+    "privacy": "Le calcul s’exécute entièrement dans votre navigateur. Aucune donnée n’est transmise, enregistrée ni conservée. Aucune inscription n’est demandée.",
+    "form": {
+      "legend": "Votre facture et votre formule",
+      "baseAmount": {
+        "label": "Montant de base HT sur la période",
+        "help": "Le montant transport hors surcharge gazole, pour une expédition ou pour le mois entier.",
+        "unit": "€"
+      },
+      "fuelShare": {
+        "label": "Part gazole retenue au contrat",
+        "help": "La part du prix considérée comme sensible au gazole. Le plus souvent entre 20 et 35 %.",
+        "unit": "%"
+      },
+      "baseIndex": {
+        "label": "Indice de base (référence contractuelle)",
+        "help": "L’indice retenu au contrat comme point de départ de l’indexation."
+      },
+      "periodIndex": {
+        "label": "Indice de la période facturée",
+        "help": "L’indice publié pour le mois concerné par la facture."
+      },
+      "invoicedRate": {
+        "label": "Taux de surcharge appliqué sur la facture",
+        "help": "Le pourcentage de surcharge gazole que le transporteur vous a facturé.",
+        "unit": "%"
+      },
+      "submit": "Calculer l’écart",
+      "reset": "Réinitialiser",
+      "errors": {
+        "required": "Ce champ est nécessaire au calcul.",
+        "positive": "Indiquez un nombre supérieur à zéro.",
+        "number": "Indiquez un nombre.",
+        "percentRange": "Indiquez un pourcentage compris entre 0 et 100."
+      }
+    },
+    "result": {
+      "title": "Résultat",
+      "expectedRate": "Taux de surcharge attendu",
+      "invoicedRate": "Taux facturé",
+      "gapPoints": "Écart",
+      "gapPointsUnit": "points",
+      "expectedAmount": "Surcharge attendue",
+      "invoicedAmount": "Surcharge facturée",
+      "gapAmount": "Écart en euros",
+      "verdict": {
+        "aligned": "Le taux facturé correspond à votre formule. Aucun écart significatif sur cette période.",
+        "overcharged": "Le taux facturé est supérieur au taux attendu. Sur cette période, la différence représente {amount}.",
+        "undercharged": "Le taux facturé est inférieur au taux attendu. Sur cette période, la différence représente {amount} en votre faveur."
+      },
+      "annualHint": "Reporté sur douze mois de volumes équivalents, cet écart représenterait environ {amount}."
+    },
+    "formula": {
+      "title": "Comment le calcul est fait",
+      "expression": "Taux de surcharge = part gazole × (indice de la période − indice de base) ÷ indice de base",
+      "explanation": "C’est la formule d’indexation la plus répandue dans les contrats de transport routier. Elle applique la variation relative de l’indice à la seule fraction du prix considérée comme sensible au carburant.",
+      "caveat": "Si votre contrat retient une autre mécanique — moyenne glissante sur plusieurs mois, seuil de déclenchement, révision trimestrielle, indexation sur le prix à la pompe plutôt que sur un indice — le résultat ci-dessus n’est qu’une approximation. Vérifiez la clause avant d’ouvrir la discussion avec votre transporteur."
+    },
+    "source": {
+      "title": "Où trouver votre indice",
+      "body": "Votre contrat désigne l’indice de référence à utiliser. Reprenez celui qui y figure : changer d’indice change le résultat.",
+      "placeholder": "Source et conditions de réutilisation des indices à confirmer avant publication."
+    },
+    "disclaimer": "Cet outil donne une indication de calcul. Il ne constitue ni un conseil juridique, ni une analyse contractuelle, et ne certifie pas la régularité d’une facture. Un écart constaté est un point à vérifier avec votre transporteur.",
+    "cta": {
+      "h2": "Douze mois de factures, tous vos transporteurs, d’un seul coup",
+      "text": "Ce calculateur traite une ligne à la fois. Dans CarrierBridge, vous saisissez votre formule une fois et l’écart est suivi automatiquement, mois après mois, pour chacun de vos transporteurs — en même temps que vos grilles et vos prestations annexes.",
+      "button": "Comparer mes grilles gratuitement"
+    }
+  }
+}

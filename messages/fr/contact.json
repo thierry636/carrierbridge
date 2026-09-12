@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Nous contacter — CarrierBridge",
+    "description": "Pour les paliers Business et Enterprise, l’accompagnement Secure, les connecteurs ERP/TMS et les appels d’offres. Les autres paliers s’ouvrent par simple inscription."
+  },
+  "h1": "Parlons de votre périmètre",
+  "lede": "Ce formulaire concerne les paliers Business et Enterprise, l’accompagnement Secure, les connecteurs ERP/TMS et les appels d’offres — tout ce dont le prix dépend du périmètre.",
+  "selfServe": {
+    "title": "Vous cherchez simplement à essayer ?",
+    "text": "Les paliers Découverte, Essentiel et Pro s’ouvrent par simple inscription, sans passer par nous.",
+    "cta": "Créer un compte"
+  },
+  "form": {
+    "name": { "label": "Nom et prénom" },
+    "email": { "label": "E-mail professionnel" },
+    "company": { "label": "Société" },
+    "role": { "label": "Fonction", "optional": "facultatif" },
+    "phone": { "label": "Téléphone", "optional": "facultatif" },
+    "subject": {
+      "label": "Votre demande",
+      "options": {
+        "business": "Palier Business",
+        "enterprise": "Palier Enterprise",
+        "secure": "Accompagnement Secure",
+        "connectors": "Connecteurs ERP/TMS",
+        "tender": "Appel d’offres",
+        "other": "Autre sujet"
+      }
+    },
+    "budget": {
+      "label": "Budget transport annuel",
+      "optional": "facultatif",
+      "options": {
+        "under100k": "Moins de 100 000 €",
+        "100k500k": "100 000 à 500 000 €",
+        "500k1m": "500 000 € à 1 M€",
+        "1m3m": "1 à 3 M€",
+        "over3m": "Plus de 3 M€"
+      }
+    },
+    "message": {
+      "label": "Votre contexte",
+      "placeholder": "Nombre de sites, nombre de transporteurs, ce que vous utilisez aujourd’hui pour comparer."
+    },
+    "consent": "J’accepte que ces informations soient utilisées pour traiter ma demande, conformément à la politique de confidentialité.",
+    "submit": "Envoyer ma demande",
+    "sending": "Envoi en cours…",
+    "success": {
+      "title": "Demande reçue",
+      "text": "Nous revenons vers vous sous un jour ouvré. En attendant, rien ne vous empêche de créer un compte et de tester sur vos grilles."
+    },
+    "errors": {
+      "name": "Indiquez votre nom.",
+      "email": "Indiquez une adresse e-mail valide.",
+      "company": "Indiquez le nom de votre société.",
+      "subject": "Choisissez l’objet de votre demande.",
+      "message": "Décrivez votre contexte en quelques lignes.",
+      "consent": "Votre accord est nécessaire pour traiter la demande.",
+      "generic": "L’envoi a échoué. Réessayez, ou écrivez-nous directement à contact@carrier-bridge.com."
+    }
+  },
+  "direct": {
+    "title": "Ou écrivez-nous directement",
+    "email": "contact@carrier-bridge.com"
+  }
+}
