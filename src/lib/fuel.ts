@@ -1,13 +1,20 @@
 /**
- * Fuel-index recalculation, kept pure and free of React so it can be checked
+ * Energy-index recalculation, kept pure and free of React so it can be checked
  * in isolation. It runs in the browser only — no rate data leaves the page.
+ *
+ * The formula is identical for diesel, gas and electricity; only the index the
+ * contract names changes, and that value is supplied by the user.
  */
+
+/** Which energy the contract indexes. Affects wording and guidance, not maths. */
+export const ENERGIES = ["diesel", "gas", "electric"] as const;
+export type Energy = (typeof ENERGIES)[number];
 
 export interface FuelInput {
   /** Transport amount excluding the fuel surcharge, in euros. */
   baseAmount: number;
-  /** Share of the price deemed fuel-sensitive, in percent. */
-  fuelShare: number;
+  /** Share of the price deemed energy-sensitive, in percent. */
+  energyShare: number;
   /** Contractual reference index. */
   baseIndex: number;
   /** Index published for the invoiced period. */
@@ -33,11 +40,11 @@ export interface FuelResult {
 const TOLERANCE_POINTS = 0.05;
 
 export function computeFuelSurcharge(input: FuelInput): FuelResult {
-  const { baseAmount, fuelShare, baseIndex, periodIndex, invoicedRate } = input;
+  const { baseAmount, energyShare, baseIndex, periodIndex, invoicedRate } = input;
 
-  // The most widespread clause: apply the index variation to the fuel share only.
+  // The most widespread clause: apply the index variation to the energy share only.
   const variation = (periodIndex - baseIndex) / baseIndex;
-  const expectedRate = fuelShare * variation;
+  const expectedRate = energyShare * variation;
 
   const expectedAmount = (baseAmount * expectedRate) / 100;
   const invoicedAmount = (baseAmount * invoicedRate) / 100;
@@ -74,7 +81,7 @@ export function validateFuelInput(raw: Record<FuelField, string>): {
 
   const rules: Record<FuelField, { positive?: boolean; percent?: boolean }> = {
     baseAmount: { positive: true },
-    fuelShare: { positive: true, percent: true },
+    energyShare: { positive: true, percent: true },
     baseIndex: { positive: true },
     periodIndex: { positive: true },
     invoicedRate: {},

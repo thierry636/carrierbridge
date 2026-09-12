@@ -66,9 +66,15 @@ export default async function FuelIndexPage({
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <div className="rounded-xl border border-ink-200 bg-white p-6">
             <h2 className="text-base font-semibold text-ink-900">{t("source.title")}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink-600">{t("source.body")}</p>
-            <p className="mt-3 rounded-lg border-2 border-dashed border-ink-300 bg-ink-50 px-4 py-3 text-sm text-ink-500">
-              {t("source.placeholder")}
+            {t("source.body")
+              .split("\n")
+              .map((paragraph) => (
+                <p key={paragraph} className="mt-3 text-sm leading-relaxed text-ink-600">
+                  {paragraph}
+                </p>
+              ))}
+            <p className="mt-4 border-l-2 border-brand-600 pl-4 text-sm leading-relaxed text-ink-700">
+              {t("source.note")}
             </p>
           </div>
           <div className="rounded-xl border border-ink-200 bg-ink-50 p-6">

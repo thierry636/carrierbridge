@@ -2,21 +2,35 @@
   "fuel": {
     "meta": {
       "title": "Fuel index calculator — check your transport surcharge",
-      "description": "Free, no sign-up: enter your contract formula, your reference index and the invoiced rate, and get the gap in points and in euros."
+      "description": "Free, no sign-up: enter your contract formula, your indices and the invoiced rate, and get the gap. Diesel, gas or electricity."
     },
     "h1": "Is your fuel surcharge calculated correctly?",
-    "lede": "Enter your contract formula, the indices for the period and the rate applied on your invoice. You get the gap straight away, in points and in euros.",
+    "lede": "Enter your contract formula, the indices for the period and the rate applied on your invoice. You get the gap straight away, in points and in euros. The same calculation covers contracts indexed on gas or electricity.",
     "privacy": "The calculation runs entirely in your browser. No data is sent, stored or kept. No sign-up is required.",
     "form": {
       "legend": "Your invoice and your formula",
+      "energy": {
+        "label": "Indexed energy",
+        "help": "The formula is the same whatever the energy: only the reference index changes.",
+        "options": {
+          "diesel": "Diesel",
+          "gas": "CNG / LNG",
+          "electric": "Electricity"
+        }
+      },
       "baseAmount": {
         "label": "Base amount excluding VAT for the period",
-        "help": "The transport amount before the fuel surcharge, for one shipment or for the whole month.",
+        "help": "The transport amount before the energy surcharge, for one shipment or for the whole month.",
         "unit": "€"
       },
-      "fuelShare": {
-        "label": "Fuel share set in the contract",
-        "help": "The share of the price treated as fuel-sensitive. Most often between 20 and 35%.",
+      "energyShare": {
+        "label": "Energy share set in the contract",
+        "help": "The share of the price treated as sensitive to energy costs.",
+        "hints": {
+          "diesel": "For diesel, most often between 20 and 35%.",
+          "gas": "Use the share written into your contract: no settled market practice exists yet for CNG and LNG.",
+          "electric": "Use the share written into your contract: no settled market practice exists yet for electric."
+        },
         "unit": "%"
       },
       "baseIndex": {
@@ -29,8 +43,13 @@
       },
       "invoicedRate": {
         "label": "Surcharge rate applied on the invoice",
-        "help": "The fuel surcharge percentage the carrier charged you.",
+        "help": "The surcharge percentage the carrier charged you.",
         "unit": "%"
+      },
+      "indexHints": {
+        "diesel": "For professional diesel, the indices published by the Comité National Routier are the ones most commonly used in France. Others exist: use the one your contract names.",
+        "gas": "Contracts indexed on CNG or LNG refer to specific indices, sometimes proprietary to the supplier. Use the one your contract names.",
+        "electric": "Contracts indexed on electricity refer to a market index or a supplier tariff. Use the one your contract names."
       },
       "submit": "Calculate the gap",
       "reset": "Reset",
@@ -59,19 +78,19 @@
     },
     "formula": {
       "title": "How the calculation works",
-      "expression": "Surcharge rate = fuel share × (period index − base index) ÷ base index",
-      "explanation": "This is the most widespread indexation formula in road transport contracts. It applies the relative movement of the index to the fraction of the price treated as fuel-sensitive.",
-      "caveat": "If your contract uses a different mechanism — a rolling average over several months, a trigger threshold, quarterly revision, indexation on pump prices rather than an index — the result above is only an approximation. Check the clause before raising it with your carrier."
+      "expression": "Surcharge rate = energy share × (period index − base index) ÷ base index",
+      "explanation": "This is the most widespread indexation formula in road transport contracts, whatever the energy. It applies the relative movement of the index to the fraction of the price treated as sensitive to energy costs.",
+      "caveat": "If your contract uses a different mechanism — a rolling average over several months, a trigger threshold, quarterly revision, indexation on an observed price rather than an index — the result above is only an approximation. Check the clause before raising it with your carrier."
     },
     "source": {
-      "title": "Where to find your index",
-      "body": "Your contract names the reference index to use. Take the one it states: changing the index changes the result.",
-      "placeholder": "Index source and commercial reuse terms to be confirmed before publication."
+      "title": "Which index should you use?",
+      "body": "The one your contract names, and only that one: changing the index changes the result. Indices are many, and depend on the energy as much as on the contract.\nFor professional diesel, the indices published by the Comité National Routier are the ones most commonly used in France. Others exist, published by trade federations, by energy suppliers or by INSEE, and some contracts use a jointly observed price rather than an index.",
+      "note": "CarrierBridge redistributes no index. You enter the value you have looked up, and it never leaves your browser."
     },
     "disclaimer": "This tool gives an indication of the calculation. It is neither legal advice nor a contractual analysis, and it does not certify that an invoice is correct. A gap found is a point to raise with your carrier.",
     "cta": {
       "h2": "Twelve months of invoices, every carrier, in one go",
-      "text": "This calculator handles one line at a time. In CarrierBridge you enter your formula once and the gap is tracked automatically, month after month, for each of your carriers — alongside your rate sheets and ancillary charges.",
+      "text": "This calculator handles one line at a time. In CarrierBridge you enter your formula once — for each energy and each contract — and the gap is tracked automatically, month after month, carrier by carrier, alongside your rate sheets and ancillary charges.",
       "button": "Compare my rate sheets free"
     }
   }

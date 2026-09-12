@@ -12,19 +12,19 @@
     "sections": [
       {
         "title": "Publisher",
-        "body": "The carrier-bridge.com website is published by [[RAISON_SOCIALE]], [[FORME_JURIDIQUE]] with share capital of €[[CAPITAL]].\nRegistered office: [[ADRESSE_SIEGE]].\nRegistered with the [[VILLE_RCS]] trade and companies register under number [[SIREN]].\nIntra-community VAT number: [[TVA_INTRA]].\nEmail: contact@carrier-bridge.com."
+        "body": "The carrier-bridge.com website is published by A2TL, [[FORME_JURIDIQUE]] with share capital of €[[CAPITAL]].\nRegistered office: [[ADRESSE_SIEGE]].\nRegistered with the [[VILLE_RCS]] trade and companies register under number 880635321.\nIntra-community VAT number: [[TVA_INTRA]].\nEmail: contact@carrier-bridge.com."
       },
       {
         "title": "Publication director",
-        "body": "[[DIRECTEUR_PUBLICATION]], as legal representative of [[RAISON_SOCIALE]]."
+        "body": "[[DIRECTEUR_PUBLICATION]], as legal representative of A2TL."
       },
       {
         "title": "Host",
-        "body": "The site is hosted by [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Telephone: [[HEBERGEUR_TELEPHONE]]."
+        "body": "The site is hosted on Railway infrastructure, in a European region. Host identification: [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Telephone: [[HEBERGEUR_TELEPHONE]]."
       },
       {
         "title": "Intellectual property",
-        "body": "Everything making up this site — structure, text, visuals, software, trade marks and logos — is protected by intellectual property law and remains the property of [[RAISON_SOCIALE]] or its partners. Any reproduction, representation or adaptation, in whole or in part and by any means, is prohibited without prior written permission."
+        "body": "Everything making up this site — structure, text, visuals, software, trade marks and logos — is protected by intellectual property law and remains the property of A2TL or its partners. Any reproduction, representation or adaptation, in whole or in part and by any means, is prohibited without prior written permission."
       },
       {
         "title": "Liability",
@@ -32,7 +32,7 @@
       },
       {
         "title": "Links to third-party sites",
-        "body": "This site may link to sites published by third parties. [[RAISON_SOCIALE]] exercises no control over their content and accepts no responsibility for it."
+        "body": "This site may link to sites published by third parties. A2TL exercises no control over their content and accepts no responsibility for it."
       },
       {
         "title": "Reporting content",
@@ -46,7 +46,7 @@
       "description": "Terms of use for the CarrierBridge service: account, subscriptions, obligations, liability, termination."
     },
     "h1": "Terms of use",
-    "intro": "These terms govern access to carrier-bridge.com and use of the CarrierBridge service published by [[RAISON_SOCIALE]]. Creating an account constitutes unreserved acceptance of them.",
+    "intro": "These terms govern access to carrier-bridge.com and use of the CarrierBridge service published by A2TL. Creating an account constitutes unreserved acceptance of them.",
     "sections": [
       {
         "title": "1. Purpose of the service",
@@ -104,7 +104,7 @@
     "sections": [
       {
         "title": "Data controller",
-        "body": "[[RAISON_SOCIALE]], [[ADRESSE_SIEGE]]. Contact: contact@carrier-bridge.com."
+        "body": "A2TL, [[ADRESSE_SIEGE]]. Contact: contact@carrier-bridge.com."
       },
       {
         "title": "Data processed",
@@ -116,11 +116,11 @@
       },
       {
         "title": "Recipients and processors",
-        "body": "Your data is not sold, rented or disclosed to third parties for commercial purposes. It is never passed to carriers. It is accessible only to authorised staff at the publisher, and to the technical providers strictly necessary to run the service — hosting, transactional email, audience measurement, payment collection — acting as processors and bound by contract.\nList of processors: [[LISTE_SOUS_TRAITANTS]]."
+        "body": "Your data is not sold, rented or disclosed to third parties for commercial purposes. It is never passed to carriers. It is accessible only to authorised staff at the publisher, and to the technical providers strictly necessary to run the service, acting as processors and bound by contract.\nProcessors: Railway (hosting, European region), Resend (transactional email), Plausible (cookieless audience measurement), [[PRESTATAIRE_PAIEMENT]] (subscription payments)."
       },
       {
         "title": "Where data is held",
-        "body": "Data is hosted within the European Union, at [[HEBERGEUR_NOM]]. No transfer outside the European Union takes place for day-to-day operation of the service. Should such a transfer become necessary, it would be covered by the safeguards set out in the General Data Protection Regulation."
+        "body": "Data is hosted within the European Union, on Railway infrastructure, in a European region.\nRailway is a company established in the United States. Access from a third country therefore cannot be excluded, solely for operational and technical support purposes. That transfer is covered by the standard contractual clauses adopted by the European Commission, together with the technical measures described in the Security section."
       },
       {
         "title": "Retention periods",

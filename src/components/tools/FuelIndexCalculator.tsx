@@ -5,8 +5,10 @@ import { useLocale, useTranslations } from "next-intl";
 import { AlertTriangle, CheckCircle2, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
+  ENERGIES,
   computeFuelSurcharge,
   validateFuelInput,
+  type Energy,
   type FuelErrors,
   type FuelField,
   type FuelResult,
@@ -16,15 +18,18 @@ import { cn } from "@/lib/utils";
 
 const FIELDS: { name: FuelField; unit?: "euro" | "percent"; step: string }[] = [
   { name: "baseAmount", unit: "euro", step: "0.01" },
-  { name: "fuelShare", unit: "percent", step: "0.1" },
+  { name: "energyShare", unit: "percent", step: "0.1" },
   { name: "baseIndex", step: "0.01" },
   { name: "periodIndex", step: "0.01" },
   { name: "invoicedRate", unit: "percent", step: "0.01" },
 ];
 
+/** Which fields carry guidance that depends on the energy selected. */
+const INDEX_FIELDS: FuelField[] = ["baseIndex", "periodIndex"];
+
 const EMPTY: Record<FuelField, string> = {
   baseAmount: "",
-  fuelShare: "",
+  energyShare: "",
   baseIndex: "",
   periodIndex: "",
   invoicedRate: "",
@@ -34,6 +39,7 @@ export function FuelIndexCalculator() {
   const t = useTranslations("tools.fuel");
   const locale = useLocale();
   const formId = useId();
+  const [energy, setEnergy] = useState<Energy>("diesel");
   const [values, setValues] = useState(EMPTY);
   const [errors, setErrors] = useState<FuelErrors>({});
   const [result, setResult] = useState<FuelResult | null>(null);
@@ -66,7 +72,15 @@ export function FuelIndexCalculator() {
     }
     const computed = computeFuelSurcharge(value);
     setResult(computed);
-    track("fuel_calculator_used", { verdict: computed.verdict });
+    track("fuel_calculator_used", { verdict: computed.verdict, energy });
+  }
+
+  /** Guidance depends on the energy: the share range and which index to look up. */
+  function help(field: FuelField) {
+    const base = t(`form.${field}.help`);
+    if (field === "energyShare") return `${base} ${t(`form.energyShare.hints.${energy}`)}`;
+    if (INDEX_FIELDS.includes(field)) return `${base} ${t(`form.indexHints.${energy}`)}`;
+    return base;
   }
 
   function onReset() {
@@ -82,6 +96,28 @@ export function FuelIndexCalculator() {
           <legend className="text-base font-semibold text-ink-900">{t("form.legend")}</legend>
 
           <div className="mt-6 space-y-5">
+            <div>
+              <label htmlFor={`${formId}-energy`} className="block text-sm font-medium text-ink-900">
+                {t("form.energy.label")}
+              </label>
+              <select
+                id={`${formId}-energy`}
+                value={energy}
+                onChange={(event) => setEnergy(event.target.value as Energy)}
+                aria-describedby={`${formId}-energy-help`}
+                className="mt-1.5 w-full rounded-lg border border-ink-300 bg-white px-3 py-2 text-sm text-ink-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
+              >
+                {ENERGIES.map((value) => (
+                  <option key={value} value={value}>
+                    {t(`form.energy.options.${value}`)}
+                  </option>
+                ))}
+              </select>
+              <p id={`${formId}-energy-help`} className="mt-1.5 text-xs text-ink-500">
+                {t("form.energy.help")}
+              </p>
+            </div>
+
             {FIELDS.map((field) => {
               const fieldId = `${formId}-${field.name}`;
               const helpId = `${fieldId}-help`;
@@ -121,7 +157,7 @@ export function FuelIndexCalculator() {
                     )}
                   </div>
                   <p id={helpId} className={cn("mt-1.5 text-xs", error ? "text-red-600" : "text-ink-500")}>
-                    {error ? t(`form.errors.${error}`) : t(`form.${field.name}.help`)}
+                    {error ? t(`form.errors.${error}`) : help(field.name)}
                   </p>
                 </div>
               );
