@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
-import { ScreenshotPlaceholder } from "@/components/ui/placeholder";
+import { Screenshot } from "@/components/ui/screenshot";
+import { FuelGap } from "@/components/visuals/FuelGap";
 import { Link } from "@/i18n/routing";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -32,7 +33,9 @@ export function FuelControl() {
           ))}
         </ol>
 
-        <ScreenshotPlaceholder label={tc("placeholder.screenshotGap")} ratio="aspect-[4/3]" />
+        <Screenshot id="fuelGap" ratio="aspect-[4/3]">
+          <FuelGap />
+        </Screenshot>
       </div>
 
       <div className="mt-12 rounded-xl border border-ink-200 bg-ink-50 p-6 lg:flex lg:items-center lg:justify-between lg:gap-8">

@@ -207,5 +207,91 @@
   "finalCta": {
     "h2": "Commencez avec vos propres grilles",
     "text": "Déposez deux ou trois fichiers, saisissez une expédition type, comparez. Vous saurez en dix minutes si l’outil vous apporte quelque chose — sans carte bancaire et sans rendez-vous commercial."
+  },
+  "visuals": {
+    "note": "Exemple illustratif",
+    "ranking": {
+      "title": "Une expédition, tous vos transporteurs",
+      "shipment": "420 kg · palette · Lyon → Lille",
+      "options": "Hayon à la livraison",
+      "best": "Meilleur prix",
+      "footnote": "Prix tout compris : tarif de base, surcharge gazole du mois et prestations demandées.",
+      "carrier": "Transporteur {letter}"
+    },
+    "before": {
+      "title": "Ce que vous recevez",
+      "sheetA": "transporteur-a.xlsx",
+      "sheetB": "tarifs-b.pdf",
+      "headersA": [
+        "Poids",
+        "Zone 1",
+        "Zone 2"
+      ],
+      "headersB": [
+        "Tranche",
+        "A",
+        "B",
+        "C"
+      ],
+      "caption": "Deux grilles, deux découpes de poids, deux géographies. Le même envoi ne se lit pas de la même façon."
+    },
+    "after": {
+      "title": "Après normalisation",
+      "headers": [
+        "Tranche",
+        "Transp. A",
+        "Transp. B",
+        "Transp. C"
+      ],
+      "caption": "Une base commune. Le mieux-disant se lit tranche par tranche."
+    },
+    "breakdown": {
+      "title": "Le prix de base ne décide de rien",
+      "shipment": "180 kg · Nantes → Strasbourg",
+      "columns": [
+        "Transporteur A",
+        "Transporteur B"
+      ],
+      "rows": [
+        "Tarif de base",
+        "Surcharge gazole 8,4 %",
+        "Hayon à la livraison",
+        "Rendez-vous de livraison"
+      ],
+      "total": "Total à payer",
+      "caption": "Le transporteur A affiche le tarif de base le plus bas. C’est le B qui coûte le moins cher."
+    },
+    "fuelGap": {
+      "title": "Écart d’indexation détecté",
+      "contract": "Formule au contrat",
+      "rows": [
+        "Part gazole",
+        "Indice de base",
+        "Indice de la période"
+      ],
+      "expected": "Taux attendu",
+      "invoiced": "Taux facturé",
+      "gap": "Écart",
+      "gapUnit": "point",
+      "basis": "Sur 42 000 € de base facturés",
+      "caption": "Un écart d’un peu plus d’un point, invisible ligne à ligne, chiffré sur la période."
+    },
+    "quickStart": {
+      "title": "Dix minutes, trois gestes",
+      "steps": [
+        {
+          "title": "Déposez vos grilles",
+          "text": "Excel, PDF, scan — telles que vous les avez reçues."
+        },
+        {
+          "title": "Saisissez une expédition",
+          "text": "Poids, destination, prestations attendues."
+        },
+        {
+          "title": "Comparez",
+          "text": "Le classement complet, prix tout compris."
+        }
+      ]
+    }
   }
 }

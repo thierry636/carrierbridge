@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
 
+  images: {
+    // Sources are WebP; AVIF is served on top where the browser accepts it.
+    formats: ["image/avif", "image/webp"],
+  },
+
   async redirects() {
     return [
       // The site used to advertise carrierbridge.com. Anything still arriving

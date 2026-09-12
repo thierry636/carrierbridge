@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 import { Section, SectionHeading } from "@/components/ui/section";
-import { ScreenshotPlaceholder } from "@/components/ui/placeholder";
+import { Screenshot } from "@/components/ui/screenshot";
+import { PriceBreakdown } from "@/components/visuals/PriceBreakdown";
 
 export function BestPrice() {
   const t = useTranslations("home.bestPrice");
-  const tc = useTranslations("common");
   const items = t.raw("items") as { title: string; text: string }[];
 
   return (
@@ -12,7 +12,9 @@ export function BestPrice() {
       <SectionHeading title={t("h2")} lede={t("lede")} />
 
       <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-14">
-        <ScreenshotPlaceholder label={tc("placeholder.screenshot")} ratio="aspect-[4/3]" />
+        <Screenshot id="bestPrice" ratio="aspect-[4/3]">
+          <PriceBreakdown />
+        </Screenshot>
         <dl className="grid gap-6">
           {items.map((item) => (
             <div key={item.title} className="border-t border-ink-200 pt-4">

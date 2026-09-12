@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 import { Section, SectionHeading } from "@/components/ui/section";
-import { ScreenshotPlaceholder } from "@/components/ui/placeholder";
+import { Screenshot } from "@/components/ui/screenshot";
+import { RateSheetBefore, RateSheetAfter } from "@/components/visuals/RateSheets";
 
 export function GridImport() {
   const t = useTranslations("home.import");
-  const tc = useTranslations("common");
   const formats = t.raw("formats") as string[];
   const items = t.raw("items") as { title: string; text: string }[];
 
@@ -36,13 +36,17 @@ export function GridImport() {
 
         <div className="grid gap-4">
           <figure>
-            <ScreenshotPlaceholder label={tc("placeholder.screenshotBefore")} ratio="aspect-[16/9]" />
+            <Screenshot id="gridBefore" ratio="aspect-[16/9]">
+              <RateSheetBefore />
+            </Screenshot>
             <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
               {t("visual.beforeLabel")}
             </figcaption>
           </figure>
           <figure>
-            <ScreenshotPlaceholder label={tc("placeholder.screenshotAfter")} ratio="aspect-[16/9]" />
+            <Screenshot id="gridAfter" ratio="aspect-[16/9]">
+              <RateSheetAfter />
+            </Screenshot>
             <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
               {t("visual.afterLabel")}
             </figcaption>

@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import { ArrowRight, Check } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { ScreenshotPlaceholder } from "@/components/ui/placeholder";
+import { Screenshot } from "@/components/ui/screenshot";
+import { ShipmentRanking } from "@/components/visuals/ShipmentRanking";
 import { SignupButton } from "@/components/ui/signup-button";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -42,7 +43,9 @@ export function Hero() {
             </ul>
           </div>
 
-          <ScreenshotPlaceholder label={tc("placeholder.screenshot")} />
+          <Screenshot id="hero" ratio="aspect-[16/10]" priority>
+            <ShipmentRanking />
+          </Screenshot>
         </div>
       </Container>
     </section>
