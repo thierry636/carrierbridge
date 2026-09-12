@@ -8,7 +8,7 @@
     },
     {
       "q": "Which rate sheet formats are accepted?",
-      "a": "All of them. Excel and CSV, native PDFs, scanned PDFs, and rate sheets received as email attachments. Whatever the structure: weight brackets in any division, carrier-specific zones, groups of départements, postcode lists, domestic and international sheets. You upload the file exactly as you received it, without reworking it and without forcing it into an imposed format. The result appears next to the original: if a label needs clarifying or a zone renaming, you adjust it yourself on screen, in seconds."
+      "a": "Excel, today: .xls and .xlsx. Rate sheets received as PDFs or scans are not processed yet — we would rather say so than let you find out.\n\nThe Excel file does not have to be tidy, though. Merged cells, several tables on one sheet, a column covering two carriers, prices carrying a comment, one tab per departure site, ancillary terms slipped in under the prices: that is what we see every day, and that is what the loading agent is built to read. It shows you on screen what it has understood and asks you to decide wherever two readings are possible.\n\nThe structure itself is kept as it is: town-by-carrier matrix, scale by pallet count, flat rate per trip, weight brackets by département. We impose no house format."
     },
     {
       "q": "How is fuel indexation checked?",

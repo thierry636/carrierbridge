@@ -7,8 +7,9 @@ destiné aux chargeurs.
 > et les annuaires logiciels :
 >
 > CarrierBridge est un logiciel français de gestion des tarifs transport pour les
-> chargeurs : import et normalisation des grilles transporteurs, désignation du
-> meilleur prix par expédition, et contrôle de l’indexation gazole et des surtaxes.
+> chargeurs : il intègre les grilles Excel de chaque transporteur dans leur logique
+> propre, désigne le meilleur prix pour chaque expédition et contrôle l’indexation
+> gazole et les surtaxes.
 
 Le site s’adresse **exclusivement aux chargeurs**, jamais aux transporteurs, et ne
 fait apparaître aucune personne physique.
@@ -94,13 +95,18 @@ src/lib/
 messages/{fr,en}/  copie découpée par domaine, parité de clés vérifiable
 ```
 
-### Deux règles à ne pas contourner
+### Trois règles à ne pas contourner
 
 1. **Les prix ne se saisissent qu’une fois**, dans `src/lib/pricing.ts`. La home,
    la page tarifs et les `offers` schema.org en dérivent.
 2. **Le domaine ne se réécrit qu’une fois**, dans `src/lib/site.ts`. Le site est
    canonique sur `carrier-bridge.com` ; `carrierbridge.com` et les variantes `www`
    partent en 301 (voir `next.config.ts`).
+3. **Le produit intègre du Excel, et rien d’autre à ce jour.** Ne réintroduisez pas
+   « PDF », « scan » ou « e-mail » dans la copie des formats acceptés tant que ce
+   n’est pas vrai. Et il n’aligne pas les grilles sur une base commune : chacune
+   est conservée dans sa structure d’origine, la conversion se fait à la cotation.
+   Toute formulation en « normalisation » ou « base commune » est à proscrire.
 
 ## Routes
 
