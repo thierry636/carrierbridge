@@ -69,10 +69,11 @@ src/components/
   pricing/  PricingPlans (paliers, matrice, connecteurs) · RoiEstimates · TenderPricing
   tools/    FuelIndexCalculator
   legal/    LegalPage · CookiePreferences
+  visuals/  les six visuels dessinés des blocs produit
   i18n/     ClientMessages — n’envoie au client que les namespaces utiles
 src/lib/
   site.ts       domaine, e-mail de contact, URL de l’app — source unique
-  media.ts      les six emplacements d’images et l’URL de la vidéo
+  media.ts      emplacements de captures facultatives et URL de la vidéo
   pricing.ts    paliers, prix et matrice de fonctionnalités — source unique
   fuel.ts       calcul d’indexation gazole, pur et testable
   seo.ts        canonical, hreflang, JSON-LD SoftwareApplication et FAQPage
@@ -119,14 +120,14 @@ Rien de tout cela n’a été inventé — les emplacements sont visibles sur le
 - **Mentions légales** — les marqueurs `[[RAISON_SOCIALE]]`, `[[SIREN]]`,
   `[[HEBERGEUR_NOM]]`, `[[DIRECTEUR_PUBLICATION]]` … dans `messages/{fr,en}/legal.json`.
   Faire relire les CGU et la politique de confidentialité par un juriste.
-- **Captures d’écran du produit** — déposer six fichiers WebP dans
-  `public/captures/`, en suivant le tableau de `public/captures/README.md`.
-  Aucune modification de code : le bloc pointillé indique le nom attendu et
-  disparaît dès que le fichier est là. Les textes alternatifs sont déjà écrits
-  et traduits (`common.screenshots`).
 - **Vidéo de démonstration** (3 min) — renseigner `NEXT_PUBLIC_DEMO_VIDEO_URL`.
   Elle ne se charge qu’au clic du visiteur, donc aucun appel à l’hébergeur vidéo
   avant action explicite.
+
+Les captures d’écran ne sont **pas** attendues : chaque emplacement affiche un
+visuel dessiné en HTML/CSS, lisible à sa taille d’affichage et sans jeu de
+données de démonstration à fabriquer. Une capture déposée dans `public/captures/`
+prend la place du visuel correspondant — voir `public/captures/README.md`.
 - **Chiffre de résultat client** vérifiable.
 - **Source des indices gazole** et ses conditions de réutilisation commerciale
   (`tools.fuel.source.placeholder`).

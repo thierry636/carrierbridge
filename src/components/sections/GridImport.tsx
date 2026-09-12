@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Screenshot } from "@/components/ui/screenshot";
+import { RateSheetBefore, RateSheetAfter } from "@/components/visuals/RateSheets";
 
 export function GridImport() {
   const t = useTranslations("home.import");
@@ -35,13 +36,17 @@ export function GridImport() {
 
         <div className="grid gap-4">
           <figure>
-            <Screenshot id="gridBefore" ratio="aspect-[16/9]" />
+            <Screenshot id="gridBefore" ratio="aspect-[16/9]">
+              <RateSheetBefore />
+            </Screenshot>
             <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
               {t("visual.beforeLabel")}
             </figcaption>
           </figure>
           <figure>
-            <Screenshot id="gridAfter" ratio="aspect-[16/9]" />
+            <Screenshot id="gridAfter" ratio="aspect-[16/9]">
+              <RateSheetAfter />
+            </Screenshot>
             <figcaption className="mt-2 text-xs font-medium uppercase tracking-wide text-ink-500">
               {t("visual.afterLabel")}
             </figcaption>

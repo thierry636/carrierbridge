@@ -1,48 +1,36 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { ImageIcon } from "lucide-react";
 import { CAPTURES_DIR, screenshotSrc, screenshots, type ScreenshotId } from "@/lib/media";
 import { cn } from "@/lib/utils";
 
 /**
- * Renders the real screenshot when the file has been dropped into
- * public/captures, and a visible placeholder while it has not. The check runs
- * at build time, since every page using this is statically generated.
+ * Optional override. The site ships with drawn visuals, which stay legible at
+ * the width they occupy and need no demo dataset. Drop a real capture into
+ * public/captures and it takes that slot instead; remove it and the visual
+ * comes back. The check runs at build time, since these pages are static.
  */
 export async function Screenshot({
   id,
   ratio,
   priority,
   className,
+  children,
 }: {
   id: ScreenshotId;
   ratio: string;
   priority?: boolean;
   className?: string;
+  children: ReactNode;
 }) {
   const { file, width, height } = screenshots[id];
-  const present = existsSync(path.join(process.cwd(), "public", CAPTURES_DIR, file));
-  const t = await getTranslations("common");
-
-  if (!present) {
-    return (
-      <div
-        className={cn(
-          "flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-ink-300 bg-ink-50 p-8 text-center",
-          ratio,
-          className
-        )}
-      >
-        <ImageIcon className="h-6 w-6 text-ink-400" aria-hidden />
-        <p className="max-w-xs text-sm font-medium text-ink-500">
-          {t("placeholder.missing", { file: `public/${CAPTURES_DIR}/${file}` })}
-        </p>
-      </div>
-    );
+  if (!existsSync(path.join(process.cwd(), "public", CAPTURES_DIR, file))) {
+    return <>{children}</>;
   }
 
+  const t = await getTranslations("common");
   return (
     <div className={cn("overflow-hidden rounded-xl border border-ink-200 bg-white", ratio, className)}>
       <Image

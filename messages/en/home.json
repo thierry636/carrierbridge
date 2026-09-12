@@ -36,7 +36,12 @@
     "h2": "How do you import rate sheets in Excel, PDF or scanned form?",
     "lede": "You upload the file exactly as the carrier sent it, whatever the format and whatever the structure. CarrierBridge reads it and brings it onto a common base. No upfront configuration is asked of you: the rate sheet is usable straight after import, and you adjust it yourself on screen if you want to refine a label or a zone.",
     "formatsLabel": "Accepted formats",
-    "formats": ["Excel and CSV", "Native PDF", "Scanned PDF", "Email attachment"],
+    "formats": [
+      "Excel and CSV",
+      "Native PDF",
+      "Scanned PDF",
+      "Email attachment"
+    ],
     "items": [
       {
         "title": "Any weight bracket structure",
@@ -202,5 +207,91 @@
   "finalCta": {
     "h2": "Start with your own rate sheets",
     "text": "Upload two or three files, enter a typical shipment, compare. Ten minutes will tell you whether the tool is worth anything to you — no card, no sales call."
+  },
+  "visuals": {
+    "note": "Illustrative example",
+    "ranking": {
+      "title": "One shipment, every carrier",
+      "shipment": "420 kg · pallet · Lyon → Lille",
+      "options": "Tail lift at delivery",
+      "best": "Best price",
+      "footnote": "All-in price: base rate, fuel surcharge for the month and the services requested.",
+      "carrier": "Carrier {letter}"
+    },
+    "before": {
+      "title": "What you receive",
+      "sheetA": "carrier-a.xlsx",
+      "sheetB": "rates-b.pdf",
+      "headersA": [
+        "Weight",
+        "Zone 1",
+        "Zone 2"
+      ],
+      "headersB": [
+        "Bracket",
+        "A",
+        "B",
+        "C"
+      ],
+      "caption": "Two rate sheets, two weight divisions, two geographies. The same consignment does not read the same way."
+    },
+    "after": {
+      "title": "After normalisation",
+      "headers": [
+        "Bracket",
+        "Carrier A",
+        "Carrier B",
+        "Carrier C"
+      ],
+      "caption": "One common base. The best price reads off, bracket by bracket."
+    },
+    "breakdown": {
+      "title": "The base rate decides nothing",
+      "shipment": "180 kg · Nantes → Strasbourg",
+      "columns": [
+        "Carrier A",
+        "Carrier B"
+      ],
+      "rows": [
+        "Base rate",
+        "Fuel surcharge 8.4%",
+        "Tail lift at delivery",
+        "Booked delivery slot"
+      ],
+      "total": "Total payable",
+      "caption": "Carrier A shows the lower base rate. Carrier B is the one that costs less."
+    },
+    "fuelGap": {
+      "title": "Indexation gap detected",
+      "contract": "Contract formula",
+      "rows": [
+        "Fuel share",
+        "Base index",
+        "Index for the period"
+      ],
+      "expected": "Expected rate",
+      "invoiced": "Invoiced rate",
+      "gap": "Gap",
+      "gapUnit": "point",
+      "basis": "On €42,000 of base charges",
+      "caption": "A gap of just over a point, invisible line by line, quantified across the period."
+    },
+    "quickStart": {
+      "title": "Ten minutes, three actions",
+      "steps": [
+        {
+          "title": "Upload your rate sheets",
+          "text": "Excel, PDF, scan — exactly as you received them."
+        },
+        {
+          "title": "Enter a shipment",
+          "text": "Weight, destination, services required."
+        },
+        {
+          "title": "Compare",
+          "text": "The full ranking, all charges included."
+        }
+      ]
+    }
   }
 }

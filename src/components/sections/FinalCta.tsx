@@ -5,6 +5,7 @@ import { SignupButton } from "@/components/ui/signup-button";
 import { Screenshot } from "@/components/ui/screenshot";
 import { DemoVideo } from "@/components/ui/demo-video";
 import { demoVideoUrl } from "@/lib/media";
+import { QuickStart } from "@/components/visuals/QuickStart";
 
 export function FinalCta() {
   const t = useTranslations("home.finalCta");
@@ -26,10 +27,19 @@ export function FinalCta() {
             </SignupButton>
             <p className="mt-3 text-sm text-ink-500">{tc("cta.signupNote")}</p>
           </div>
-          <DemoVideo
-            url={demoVideoUrl}
-            poster={<Screenshot id="demoPoster" ratio="aspect-video" />}
-          />
+          {/* No video yet: the three steps say more than an empty player would. */}
+          {demoVideoUrl ? (
+            <DemoVideo
+              url={demoVideoUrl}
+              poster={
+                <Screenshot id="demoPoster" ratio="aspect-video">
+                  <div className="flex aspect-video items-center justify-center rounded-xl bg-ink-950" />
+                </Screenshot>
+              }
+            />
+          ) : (
+            <QuickStart />
+          )}
         </div>
       </Container>
     </section>
