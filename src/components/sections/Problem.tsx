@@ -1,44 +1,33 @@
 import { useTranslations } from "next-intl";
-import { Container } from "@/components/ui/container";
-import { SectionHeader } from "./SectionHeader";
-import { Users, FileWarning, Layers } from "lucide-react";
+import { FileSpreadsheet, Layers, Fuel } from "lucide-react";
+import { Section, SectionHeading } from "@/components/ui/section";
 
-const icons = [Users, FileWarning, Layers];
+const icons = [FileSpreadsheet, Layers, Fuel];
 
 export function Problem() {
-  const t = useTranslations("problem");
+  const t = useTranslations("home.problem");
   const items = t.raw("items") as { title: string; text: string }[];
 
   return (
-    <section className="bg-white py-20 lg:py-28">
-      <Container>
-        <SectionHeader
-          eyebrow={t("eyebrow")}
-          title={t("title")}
-          subtitle={t("subtitle")}
-        />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {items.map((item, i) => {
-            const Icon = icons[i] ?? Users;
-            return (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-ink-200 bg-white p-7 transition-colors hover:border-brand-200 hover:bg-brand-50/30"
-              >
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
-                  <Icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-5 text-lg font-semibold text-ink-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-600">
-                  {item.text}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </Container>
-    </section>
+    <Section id="probleme" tone="muted">
+      <SectionHeading title={t("h2")} lede={t("lede")} />
+
+      <div className="mt-12 grid gap-6 md:grid-cols-3">
+        {items.map((item, index) => {
+          const Icon = icons[index] ?? FileSpreadsheet;
+          return (
+            <article key={item.title} className="rounded-xl border border-ink-200 bg-white p-6">
+              <Icon className="h-6 w-6 text-brand-600" aria-hidden />
+              <h3 className="mt-4 text-base font-semibold text-ink-900">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-600">{item.text}</p>
+            </article>
+          );
+        })}
+      </div>
+
+      <p className="mt-10 max-w-3xl border-l-2 border-brand-600 pl-5 text-base leading-relaxed text-ink-800">
+        {t("consequence")}
+      </p>
+    </Section>
   );
 }
