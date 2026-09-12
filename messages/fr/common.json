@@ -60,12 +60,7 @@
     "manage": "Gérer mes cookies"
   },
   "placeholder": {
-    "screenshot": "Capture d’écran du produit à insérer",
-    "screenshotBefore": "Capture à insérer — la grille telle qu’elle est reçue",
-    "screenshotAfter": "Capture à insérer — la même grille, normalisée",
-    "screenshotGap": "Capture à insérer — un écart d’indexation détecté",
-    "video": "Vidéo de démonstration à insérer",
-    "metric": "Chiffre client à confirmer"
+    "missing": "Capture manquante — déposez {file}"
   },
   "notFound": {
     "title": "Cette page n’existe pas",
@@ -73,5 +68,18 @@
     "home": "Retour à l’accueil",
     "pricing": "Voir les tarifs",
     "fuelTool": "Calculateur d’indexation gazole"
+  },
+  "screenshots": {
+    "hero": "Écran principal de CarrierBridge : les grilles de plusieurs transporteurs ramenées à une base commune, avec le prix retenu pour une expédition.",
+    "gridBefore": "Une grille tarifaire telle qu’elle est reçue du transporteur, avant normalisation.",
+    "gridAfter": "La même grille tarifaire après normalisation dans CarrierBridge, avec ses tranches de poids et ses zones alignées.",
+    "bestPrice": "Classement des transporteurs pour une expédition donnée, prix tout compris, avec l’écart au mieux-disant.",
+    "fuelGap": "Écart d’indexation gazole détecté : taux facturé, taux attendu et différence en euros.",
+    "demoPoster": "Aperçu de la démonstration vidéo de CarrierBridge."
+  },
+  "video": {
+    "title": "Démonstration de CarrierBridge",
+    "play": "Lancer la démonstration vidéo",
+    "privacy": "La vidéo ne se charge qu’au clic"
   }
 }

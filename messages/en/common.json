@@ -60,12 +60,7 @@
     "manage": "Manage cookies"
   },
   "placeholder": {
-    "screenshot": "Product screenshot to be added",
-    "screenshotBefore": "Screenshot to be added — the rate sheet as received",
-    "screenshotAfter": "Screenshot to be added — the same rate sheet, normalised",
-    "screenshotGap": "Screenshot to be added — an indexation gap detected",
-    "video": "Demo video to be added",
-    "metric": "Client figure to be confirmed"
+    "missing": "Screenshot missing — add {file}"
   },
   "notFound": {
     "title": "This page does not exist",
@@ -73,5 +68,18 @@
     "home": "Back to home",
     "pricing": "See pricing",
     "fuelTool": "Fuel index calculator"
+  },
+  "screenshots": {
+    "hero": "The main CarrierBridge screen: rate sheets from several carriers brought onto a common base, with the price selected for one shipment.",
+    "gridBefore": "A carrier rate sheet as received, before normalisation.",
+    "gridAfter": "The same rate sheet after normalisation in CarrierBridge, with weight brackets and zones aligned.",
+    "bestPrice": "Carrier ranking for a given shipment, all charges included, with the gap to the best price.",
+    "fuelGap": "A fuel indexation gap detected: invoiced rate, expected rate and the difference in euros.",
+    "demoPoster": "Preview of the CarrierBridge demo video."
+  },
+  "video": {
+    "title": "CarrierBridge demo",
+    "play": "Play the demo video",
+    "privacy": "The video loads only on click"
   }
 }

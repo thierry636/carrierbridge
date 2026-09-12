@@ -2,7 +2,9 @@ import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { SignupButton } from "@/components/ui/signup-button";
-import { ScreenshotPlaceholder } from "@/components/ui/placeholder";
+import { Screenshot } from "@/components/ui/screenshot";
+import { DemoVideo } from "@/components/ui/demo-video";
+import { demoVideoUrl } from "@/lib/media";
 
 export function FinalCta() {
   const t = useTranslations("home.finalCta");
@@ -24,7 +26,10 @@ export function FinalCta() {
             </SignupButton>
             <p className="mt-3 text-sm text-ink-500">{tc("cta.signupNote")}</p>
           </div>
-          <ScreenshotPlaceholder label={tc("placeholder.video")} ratio="aspect-video" />
+          <DemoVideo
+            url={demoVideoUrl}
+            poster={<Screenshot id="demoPoster" ratio="aspect-video" />}
+          />
         </div>
       </Container>
     </section>
