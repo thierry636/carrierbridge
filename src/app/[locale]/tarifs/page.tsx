@@ -58,9 +58,12 @@ export default async function PricingPage({
       </section>
 
       <Section>
-        <ClientMessages namespaces={["pricing"]}>
-          <PricingPlans withMatrix />
-        </ClientMessages>
+        <SectionHeading title={t("page.plansH2")} />
+        <div className="mt-10">
+          <ClientMessages namespaces={["pricing"]}>
+            <PricingPlans withMatrix />
+          </ClientMessages>
+        </div>
       </Section>
 
       <RoiEstimates />

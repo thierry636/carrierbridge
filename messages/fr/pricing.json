@@ -6,7 +6,8 @@
   "page": {
     "h1": "Combien coûte la gestion de vos tarifs transport ?",
     "lede": "Prix publics, sans négociation préalable. Découverte, Essentiel et Pro s’ouvrent par simple inscription. Vous changez de palier quand vos volumes le justifient.",
-    "vatNote": "Tous les prix sont indiqués hors taxes, en euros."
+    "vatNote": "Tous les prix sont indiqués hors taxes, en euros.",
+    "plansH2": "Quel palier correspond à votre situation ?"
   },
   "billing": {
     "monthly": "Mensuel",

@@ -6,7 +6,8 @@
   "page": {
     "h1": "What does managing your transport rates cost?",
     "lede": "Public prices, no negotiation required. Discovery, Essential and Pro open with a simple sign-up. You move up a plan when your volumes justify it.",
-    "vatNote": "All prices are shown excluding VAT, in euros."
+    "vatNote": "All prices are shown excluding VAT, in euros.",
+    "plansH2": "Which plan fits your situation?"
   },
   "billing": {
     "monthly": "Monthly",
@@ -118,9 +119,21 @@
     "h2": "Tenders",
     "lede": "Charged per tender, separately from the subscription. The Enterprise plan includes one simple tender a year.",
     "items": [
-      { "name": "Simple tender", "scope": "Up to 10 carriers approached", "price": "€1,200" },
-      { "name": "Extended tender", "scope": "Up to 30 carriers approached", "price": "€2,500" },
-      { "name": "Multi-site or multi-flow tender", "scope": "Scope to be defined together", "price": "On request" }
+      {
+        "name": "Simple tender",
+        "scope": "Up to 10 carriers approached",
+        "price": "€1,200"
+      },
+      {
+        "name": "Extended tender",
+        "scope": "Up to 30 carriers approached",
+        "price": "€2,500"
+      },
+      {
+        "name": "Multi-site or multi-flow tender",
+        "scope": "Scope to be defined together",
+        "price": "On request"
+      }
     ]
   },
   "onboarding": {

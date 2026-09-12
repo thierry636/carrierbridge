@@ -40,6 +40,25 @@ npm run lint
 npm run build && npm run start
 ```
 
+### Contrôle Lighthouse
+
+Lighthouse n’est pas une dépendance du projet ; on l’exécute à la demande sur un
+build de production. Chromium est déjà présent dans l’environnement de CI.
+
+```bash
+npm run build && npm run start &
+npx lighthouse http://localhost:3000/ \
+  --chrome-flags="--headless=new --no-sandbox" \
+  --only-categories=performance,accessibility,best-practices,seo --view
+```
+
+Dernier relevé (`/`, `/tarifs`, `/outils/indexation-gazole`, `/en`, `/contact`) :
+performance 97-98, accessibilité 100, bonnes pratiques 100, SEO 100.
+
+L’audit `canonical` échoue si l’on teste en local sans avoir construit avec
+`NEXT_PUBLIC_SITE_URL` pointant sur l’origine testée : la balise est figée au
+build. Ce n’est pas un défaut du site.
+
 ## Organisation
 
 ```
