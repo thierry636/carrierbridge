@@ -31,6 +31,26 @@
       "a": "Il est écarté avant le calcul, pas après. Les règles de capacité et d’éligibilité s’appliquent d’abord, la comparaison de prix ensuite. Une proposition affichée est une proposition applicable."
     },
     {
+      "q": "CarrierBridge remplace-t-il mon TMS ?",
+      "a": "Si vous en avez un et qu’il vous convient, non : CarrierBridge se concentre sur la décision tarifaire et le suivi de l’expédition, là où les TMS sont généralement les plus faibles. Si vous n’en avez pas — c’est le cas de la grande majorité des chargeurs — CarrierBridge couvre le besoin qui vous manque réellement, sans projet d’intégration."
+    },
+    {
+      "q": "Mes transporteurs doivent-ils créer un compte ?",
+      "a": "Non. Chacun reçoit un lien personnel qui ouvre la liste des expéditions que vous lui avez confiées. Aucun identifiant, aucune installation, aucune formation. C’est ce qui permet de faire entrer l’ensemble de votre panel dans l’outil, y compris les petites structures."
+    },
+    {
+      "q": "Que se passe-t-il si un transporteur ne met pas à jour ses statuts ?",
+      "a": "Vous le voyez. Les expéditions sans mise à jour depuis un délai que vous fixez sont signalées, et le taux de réponse de chaque transporteur est suivi dans sa fiche. C’est une donnée de qualité de service, exploitable lors de votre prochain appel d’offres."
+    },
+    {
+      "q": "Gérez-vous le regroupement de commandes ?",
+      "a": "Non. Nous savons coter plusieurs expéditions ensemble pour vous montrer si un envoi unique reviendrait moins cher, mais construire et exécuter un plan transport relève d’un autre outil. Une expédition, chez nous, a un point de livraison."
+    },
+    {
+      "q": "Peut-on récupérer les preuves de livraison ?",
+      "a": "Oui. Les documents sont déposés par le transporteur depuis son lien, ou par vos équipes, et restent attachés à l’expédition avec l’ordre, le prix et l’historique des statuts."
+    },
+    {
       "q": "Mes données sont-elles confidentielles ?",
       "a": "Vos grilles, vos volumes et vos prix négociés vous appartiennent. Ils ne sont ni partagés avec d’autres clients, ni communiqués aux transporteurs, ni agrégés dans un indice de marché. Les données sont hébergées en Europe, chiffrées en transit et au repos, et traitées conformément au RGPD. Le détail des traitements, des durées de conservation et de vos droits figure dans notre politique de confidentialité."
     },
