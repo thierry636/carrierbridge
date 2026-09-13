@@ -71,8 +71,7 @@
   },
   "screenshots": {
     "hero": "Écran principal de CarrierBridge : le classement des transporteurs pour une expédition, prix tout compris, avec le mieux-disant désigné.",
-    "gridBefore": "Un fichier Excel de grille tarifaire tel qu’il est reçu du transporteur, avec ses cellules fusionnées et ses tableaux multiples.",
-    "gridAfter": "Trois grilles transporteurs intégrées dans CarrierBridge, chacune conservant sa propre structure de tarification.",
+    "gridBefore": "Un fichier Excel de grille tarifaire tel qu’il est reçu du transporteur, et l’agent d’import qui en confirme la lecture.",
     "bestPrice": "Classement des transporteurs pour une expédition donnée, prix tout compris, avec l’écart au mieux-disant.",
     "fuelGap": "Écart d’indexation gazole détecté : taux facturé, taux attendu et différence en euros.",
     "demoPoster": "Aperçu de la démonstration vidéo de CarrierBridge."

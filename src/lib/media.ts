@@ -9,8 +9,7 @@
  */
 export const screenshots = {
   hero: { file: "hero.webp", width: 1280, height: 800 },
-  gridBefore: { file: "grille-avant.webp", width: 1280, height: 720 },
-  gridAfter: { file: "grille-apres.webp", width: 1280, height: 720 },
+  gridBefore: { file: "grille.webp", width: 1280, height: 720 },
   bestPrice: { file: "meilleur-prix.webp", width: 1200, height: 900 },
   fuelGap: { file: "ecart-gazole.webp", width: 1200, height: 900 },
   demoPoster: { file: "demo-poster.webp", width: 1280, height: 720 },

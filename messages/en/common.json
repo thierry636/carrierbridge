@@ -71,8 +71,7 @@
   },
   "screenshots": {
     "hero": "The main CarrierBridge screen: carriers ranked for one shipment, all-in prices, with the best one named.",
-    "gridBefore": "An Excel rate sheet file as received from the carrier, with its merged cells and multiple tables.",
-    "gridAfter": "Three carrier rate sheets loaded into CarrierBridge, each keeping its own pricing structure.",
+    "gridBefore": "An Excel rate sheet file as received from the carrier, with the loading agent confirming its reading.",
     "bestPrice": "Carrier ranking for a given shipment, all charges included, with the gap to the best price.",
     "fuelGap": "A fuel indexation gap detected: invoiced rate, expected rate and the difference in euros.",
     "demoPoster": "Preview of the CarrierBridge demo video."
