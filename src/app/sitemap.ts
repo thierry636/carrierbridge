@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/seo";
 const routes: { path: AppPathname; priority: number; changeFrequency: "monthly" | "yearly" }[] = [
   { path: "/", priority: 1, changeFrequency: "monthly" },
   { path: "/tarifs", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/outils/indexation-gazole", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/outils/indexation-energie", priority: 0.9, changeFrequency: "monthly" },
   { path: "/blog", priority: 0.6, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.5, changeFrequency: "yearly" },
   { path: "/mentions-legales", priority: 0.2, changeFrequency: "yearly" },

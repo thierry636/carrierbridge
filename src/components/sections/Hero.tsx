@@ -27,8 +27,13 @@ export function Hero() {
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
           <div>
-            <h1 className="text-balance text-4xl font-bold leading-[1.05] tracking-tight text-ink-950 sm:text-5xl lg:text-[54px]">
+            <h1 className="text-4xl font-bold leading-[1.06] tracking-tight text-ink-950 sm:text-5xl lg:text-[52px]">
               {t("h1")}
+              {/* Subordinate clause, so it is set smaller and lighter rather
+                  than competing with the claim for four heavy lines. */}
+              <span className="mt-2 block text-[0.6em] font-semibold leading-tight text-ink-500">
+                {t("h1Qualifier")}
+              </span>
             </h1>
             <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-600">
               {t("subtitle")}

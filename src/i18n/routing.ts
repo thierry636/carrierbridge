@@ -17,9 +17,9 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/tarifs": { fr: "/tarifs", en: "/pricing" },
-    "/outils/indexation-gazole": {
-      fr: "/outils/indexation-gazole",
-      en: "/tools/fuel-index",
+    "/outils/indexation-energie": {
+      fr: "/outils/indexation-energie",
+      en: "/tools/energy-index",
     },
     "/contact": { fr: "/contact", en: "/contact" },
     "/blog": { fr: "/blog", en: "/blog" },

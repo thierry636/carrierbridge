@@ -24,7 +24,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "tools.fuel.meta" });
   return pageMetadata({
     locale,
-    pathname: "/outils/indexation-gazole",
+    pathname: "/outils/indexation-energie",
     title: t("title"),
     description: t("description"),
   });

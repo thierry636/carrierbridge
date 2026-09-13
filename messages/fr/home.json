@@ -1,17 +1,18 @@
 {
   "meta": {
     "title": "CarrierBridge — Comparateur de grilles tarifaires transport",
-    "description": "Intégrez les grilles Excel de vos transporteurs telles qu’elles arrivent. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation gazole."
+    "description": "Intégrez les grilles Excel de vos transporteurs telles qu’elles arrivent. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation énergie."
   },
   "hero": {
-    "h1": "Gérez 20 transporteurs aussi facilement que 3.",
-    "subtitle": "Importez toutes vos grilles, quel qu’en soit le format. CarrierBridge désigne le meilleur transporteur pour chaque expédition et vérifie que les surtaxes et l’indexation gazole ne dérivent pas. Sans TMS, sans acheteur transport dédié.",
+    "h1": "Faites baisser votre budget transport",
+    "subtitle": "Consultez plus de transporteurs à l’appel d’offres, intégrez leurs surtaxes et leur indexation énergie dans la comparaison, arbitrez chaque expédition en quelques secondes. Vos grilles Excel telles qu’elles arrivent, sans ressaisie.",
     "proofLabel": "Ce que ça change",
     "proof": [
-      "Chaque grille intégrée telle que le transporteur l’a construite, sans ressaisie",
-      "Le prix tout compris de chaque transporteur, surtaxes incluses",
-      "Les écarts d’indexation gazole signalés, pas découverts en fin d’année"
-    ]
+      "Plus de transporteurs consultés à l’appel d’offres, donc de meilleurs prix obtenus",
+      "Surtaxes et indexation énergie intégrées au prix comparé",
+      "Le temps ADV rendu : plus de recherche dans quinze fichiers"
+    ],
+    "h1Qualifier": "sans TMS ni acheteur dédié."
   },
   "problem": {
     "h2": "Pourquoi n’attribue-t-on qu’à deux ou trois transporteurs ?",
@@ -26,7 +27,7 @@
         "text": "Le prix affiché n’est jamais le prix payé. Hayon, rendez-vous, ADR, bâchage, immobilisation, péages : ces lignes s’ajoutent selon des règles propres à chaque transporteur, et n’entrent presque jamais dans la comparaison."
       },
       {
-        "title": "Une indexation gazole jamais vérifiée",
+        "title": "Une indexation énergie jamais vérifiée",
         "text": "La formule est signée en début de contrat, puis plus personne ne la recalcule. L’écart entre ce qui a été contractualisé et ce qui est facturé s’installe mois après mois sans que rien ne le signale."
       }
     ],
@@ -34,45 +35,33 @@
   },
   "import": {
     "h2": "Comment intégrer une grille tarifaire transporteur sous Excel ?",
-    "lede": "Vous déposez le fichier tel que le transporteur vous l’a envoyé. Un agent conversationnel l’ouvre à l’écran avec vous, montre ce qu’il a compris et vous fait trancher là où c’est ambigu. Quelques échanges, et la grille est en service. Rien n’est ressaisi, rien n’est reformaté.",
+    "lede": "Vous déposez le fichier tel que le transporteur vous l’a envoyé. Un agent conversationnel le lit, vous montre ce qu’il a compris et vous fait valider. Quelques secondes, aucune ressaisie.",
     "formatsLabel": "Format accepté",
     "formats": [
       "Excel — .xls et .xlsx"
     ],
-    "formatsNote": "Aujourd’hui CarrierBridge intègre les fichiers Excel. Les grilles reçues en PDF ou scannées ne sont pas encore traitées.",
+    "formatsNote": "Les grilles reçues en PDF ou scannées ne sont pas encore traitées.",
     "items": [
       {
-        "title": "Un agent qui voit la grille avec vous",
-        "text": "Il affiche le fichier, surligne ce qu’il a identifié — en-têtes, destinations, tranches, prix — et pose une question quand deux lectures sont possibles. Vous répondez en langage courant, pas en paramétrage."
+        "title": "Le fichier n’a pas à être propre",
+        "text": "Cellules fusionnées, plusieurs tableaux sur un onglet, une colonne pour deux transporteurs, des prix annotés, un onglet par site de départ. C’est ce que nous recevons tous les jours."
       },
       {
-        "title": "Les fichiers en l’état, y compris les pires",
-        "text": "Cellules fusionnées, plusieurs tableaux sur le même onglet, une colonne qui porte deux transporteurs, des prix annotés d’un commentaire, un onglet par site de départ, des lignes de conditions glissées sous les prix. C’est le quotidien : le fichier n’a pas à être préparé avant."
+        "title": "L’agent interprète et structure",
+        "text": "Il affiche sa lecture à l’écran et vous fait trancher là où c’est ambigu. Vous répondez en langage courant, pas en paramétrage."
       },
       {
-        "title": "La structure du transporteur est conservée",
-        "text": "Une matrice ville par transporteur, un barème au nombre de palettes, un forfait au voyage, des tranches de poids par département : chaque grille est intégrée dans sa logique propre. Rien n’est ramené de force à un format maison — c’est précisément ce qui détruirait l’information."
-      },
-      {
-        "title": "Les conditions annexes rattachées",
-        "text": "Retour de palettes vides, attente au-delà d’une heure, plus-value chantier, période de référence de l’indexation carburant : ces lignes qui traînent en bas de l’onglet suivent le transporteur au lieu de se perdre."
-      },
-      {
-        "title": "Mises à jour de grille",
-        "text": "Une nouvelle version remplace l’ancienne sans repartir de zéro. Les versions précédentes restent consultables, ce qui permet de savoir quel tarif s’appliquait à quelle date."
+        "title": "Chaque grille garde sa logique",
+        "text": "Matrice ville, barème au nombre de palettes, forfait au voyage, tranches de poids par département. Aucun format maison n’est imposé."
       }
-    ],
-    "visual": {
-      "beforeLabel": "Le fichier tel qu’il arrive",
-      "afterLabel": "Trois transporteurs, trois logiques, toutes intégrées"
-    }
+    ]
   },
   "surcharges": {
     "h2": "Que contiennent vraiment les prestations annexes d’un transporteur ?",
     "lede": "Les coûts qui n’entrent presque jamais dans la comparaison, et qui font pourtant l’écart entre deux offres apparemment identiques.",
     "items": [
       {
-        "title": "Surcharge gazole",
+        "title": "Surcharge énergie",
         "text": "Appliquée en pourcentage du prix de base, selon une formule et un indice propres à chaque contrat."
       },
       {
@@ -111,12 +100,12 @@
     "conclusion": "Pour une expédition donnée, CarrierBridge applique les règles propres à chaque transporteur et affiche le prix complet, pas seulement le tarif de base."
   },
   "fuel": {
-    "h2": "Comment vérifier l’indexation gazole sur une facture transport ?",
+    "h2": "Comment vérifier l’indexation énergie sur une facture transport ?",
     "lede": "Vous saisissez une fois la formule de votre contrat et l’indice de référence retenu. CarrierBridge recalcule la surcharge attendue pour chaque période et la compare à ce qui vous a été facturé.",
     "steps": [
       {
         "title": "Votre formule, telle qu’elle est écrite au contrat",
-        "text": "Part gazole, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre : CarrierBridge ne vous en impose aucune et n’en présume aucune."
+        "text": "Part énergie, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre : CarrierBridge ne vous en impose aucune et n’en présume aucune."
       },
       {
         "title": "Le recalcul à partir des indices publiés",
@@ -140,7 +129,7 @@
       },
       {
         "title": "Le prix complet, pas le prix de base",
-        "text": "Tarif de base, surcharge gazole de la période, prestations annexes demandées : le montant affiché est celui que vous paierez."
+        "text": "Tarif de base, surcharge énergie de la période, prestations annexes demandées : le montant affiché est celui que vous paierez."
       },
       {
         "title": "L’écart rendu visible",
@@ -221,7 +210,7 @@
       "shipment": "420 kg · palette · Lyon → Lille",
       "options": "Hayon à la livraison",
       "best": "Meilleur prix",
-      "footnote": "Prix tout compris : tarif de base, surcharge gazole du mois et prestations demandées.",
+      "footnote": "Prix tout compris : tarif de base, surcharge énergie du mois et prestations demandées.",
       "carrier": "Transporteur {letter}",
       "appLabel": "Comparaison d’expédition",
       "bestCaption": "Meilleur prix, tout compris",
@@ -240,7 +229,7 @@
       ],
       "rows": [
         "Tarif de base",
-        "Surcharge gazole 8,4 %",
+        "Surcharge énergie 8,4 %",
         "Hayon à la livraison",
         "Rendez-vous de livraison"
       ],
@@ -251,7 +240,7 @@
       "title": "Écart d’indexation détecté",
       "contract": "Formule au contrat",
       "rows": [
-        "Part gazole",
+        "Part énergie",
         "Indice de base",
         "Indice de la période"
       ],
@@ -279,7 +268,7 @@
         }
       ]
     },
-    "messy": {
+    "sheet": {
       "title": "Le fichier tel qu’il arrive",
       "filename": "tarifs_transport_2026.xls",
       "tabs": [
@@ -288,7 +277,6 @@
         "Transp. X",
         "Transp. Y"
       ],
-      "sheetTitle": "DÉPART SITE A — 2026",
       "headers": [
         "DPT",
         "VILLE",
@@ -303,75 +291,13 @@
           "0,18 €"
         ],
         [
-          "Attente au-delà d’1 h / h",
-          "45,00 €"
-        ],
-        [
           "Indexation carburant — base",
           "janv. 2023"
         ]
       ],
-      "flags": [
-        "Une colonne pour deux transporteurs",
-        "Prix annoté d’un commentaire",
-        "Un second tableau sous les prix"
-      ],
-      "caption": "Cellules fusionnées, quatre onglets, deux transporteurs dans une même colonne, des conditions glissées sous les prix. Rien de tout cela n’est à corriger avant l’import."
-    },
-    "agent": {
-      "title": "L’agent d’import",
-      "subtitle": "Il voit le fichier et vous fait trancher",
-      "thread": [
-        {
-          "from": "agent",
-          "text": "J’ai trouvé 36 transporteurs en colonnes et 190 destinations en lignes. La colonne 3 en porte deux : « Transp. A 28 t » et « Transp. B 28 t ». Deux transporteurs distincts, ou un groupement ?"
-        },
-        {
-          "from": "user",
-          "text": "Deux transporteurs, même tarif."
-        },
-        {
-          "from": "agent",
-          "text": "Noté. En bas de l’onglet : retour palettes 0,18 €, attente au-delà d’1 h à 45 €/h, indexation carburant sur base janvier 2023. Je les rattache aux deux."
-        }
-      ],
-      "caption": "Vous répondez en langage courant. Aucun paramétrage n’est à remplir."
-    },
-    "logics": {
-      "title": "Trois transporteurs, trois logiques, toutes intégrées",
-      "cards": [
-        {
-          "carrier": "Transporteur A",
-          "structure": "Matrice ville × prix, camion 28 t",
-          "sample": [
-            "Valence",
-            "Avignon",
-            "Marseille"
-          ],
-          "unit": "par voyage"
-        },
-        {
-          "carrier": "Transporteur B",
-          "structure": "Barème au nombre de palettes",
-          "sample": [
-            "26 palettes",
-            "20 palettes",
-            "14 palettes"
-          ],
-          "unit": "par voyage"
-        },
-        {
-          "carrier": "Transporteur C",
-          "structure": "Tranches de poids par département",
-          "sample": [
-            "0 – 9 kg · 26",
-            "9 – 12 kg · 26",
-            "12 – 14 kg · 26"
-          ],
-          "unit": "par envoi"
-        }
-      ],
-      "caption": "Aucune n’est ramenée à un format maison. La conversion vers une expédition donnée se fait au moment de la cotation."
+      "agentQuestion": "Colonne 3 : deux transporteurs au même tarif. Je les sépare ?",
+      "agentAnswer": "Oui",
+      "caption": "Quatre onglets, deux transporteurs dans une colonne, des conditions sous les prix. Rien à corriger avant l’import."
     }
   }
 }

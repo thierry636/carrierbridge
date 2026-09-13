@@ -11,8 +11,8 @@
       "a": "Excel, aujourd’hui : .xls et .xlsx. Les grilles reçues en PDF ou scannées ne sont pas encore traitées — nous préférons le dire que le laisser découvrir.\n\nEn revanche, le fichier Excel n’a pas à être propre. Cellules fusionnées, plusieurs tableaux sur le même onglet, une colonne qui couvre deux transporteurs, des prix annotés d’un commentaire, un onglet par site de départ, des conditions annexes glissées sous les prix : c’est ce que nous voyons tous les jours, et c’est ce que l’agent d’import sait lire. Il vous montre à l’écran ce qu’il a compris et vous fait trancher quand deux lectures sont possibles.\n\nLa structure, elle, est conservée telle quelle : matrice ville par transporteur, barème au nombre de palettes, forfait au voyage, tranches de poids par département. Nous n’imposons aucun format maison."
     },
     {
-      "q": "Comment l’indexation gazole est-elle vérifiée ?",
-      "a": "Vous saisissez la formule de votre contrat : part gazole, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre, CarrierBridge n’en impose aucune. L’outil recalcule ensuite la surcharge attendue pour chaque période à partir des indices publics, et la compare au taux appliqué sur vos factures. Il signale les écarts de calcul ; il ne lit pas votre contrat et ne se substitue pas à une analyse contractuelle. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion."
+      "q": "Comment l’indexation énergie est-elle vérifiée ?",
+      "a": "Vous saisissez la formule de votre contrat : part énergie, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre, CarrierBridge n’en impose aucune. L’outil recalcule ensuite la surcharge attendue pour chaque période à partir des indices publics, et la compare au taux appliqué sur vos factures. Il signale les écarts de calcul ; il ne lit pas votre contrat et ne se substitue pas à une analyse contractuelle. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion."
     },
     {
       "q": "Faut-il un TMS ?",

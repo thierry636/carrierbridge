@@ -1,13 +1,13 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : il intègre les grilles Excel de chaque transporteur dans leur logique propre, désigne le meilleur prix pour chaque expédition et contrôle l’indexation gazole et les surtaxes.",
+    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : il intègre les grilles Excel de chaque transporteur dans leur logique propre, désigne le meilleur prix pour chaque expédition et contrôle l’indexation énergie et les surtaxes.",
     "audience": "Conçu pour les chargeurs dont le budget transport se situe entre 100 000 € et 3 millions d’euros par an."
   },
   "nav": {
     "product": "Le produit",
     "pricing": "Tarifs",
-    "fuelTool": "Calculateur gazole",
+    "fuelTool": "Calculateur d’indexation",
     "blog": "Blog",
     "contact": "Nous contacter",
     "signup": "Commencer",
@@ -23,11 +23,11 @@
     "demo": "Voir une démo (3 min)",
     "contact": "Nous contacter",
     "pricing": "Voir les tarifs",
-    "fuelTool": "Tester le calculateur gazole",
+    "fuelTool": "Tester le calculateur d’indexation",
     "fuelToolFree": "Tester gratuitement, sans inscription"
   },
   "footer": {
-    "tagline": "Le logiciel de gestion des tarifs transport des chargeurs. Importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation gazole.",
+    "tagline": "Le logiciel de gestion des tarifs transport des chargeurs. Importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation énergie.",
     "columns": {
       "product": "Produit",
       "resources": "Ressources",
@@ -37,7 +37,7 @@
     "links": {
       "features": "Fonctionnalités",
       "pricing": "Tarifs",
-      "fuelTool": "Calculateur d’indexation gazole",
+      "fuelTool": "Calculateur d’indexation énergie",
       "signup": "Créer un compte",
       "login": "Se connecter",
       "blog": "Blog",
@@ -67,14 +67,13 @@
     "body": "Le lien que vous avez suivi est peut-être obsolète, ou l’adresse comporte une erreur.",
     "home": "Retour à l’accueil",
     "pricing": "Voir les tarifs",
-    "fuelTool": "Calculateur d’indexation gazole"
+    "fuelTool": "Calculateur d’indexation énergie"
   },
   "screenshots": {
     "hero": "Écran principal de CarrierBridge : le classement des transporteurs pour une expédition, prix tout compris, avec le mieux-disant désigné.",
-    "gridBefore": "Un fichier Excel de grille tarifaire tel qu’il est reçu du transporteur, avec ses cellules fusionnées et ses tableaux multiples.",
-    "gridAfter": "Trois grilles transporteurs intégrées dans CarrierBridge, chacune conservant sa propre structure de tarification.",
+    "gridBefore": "Un fichier Excel de grille tarifaire tel qu’il est reçu du transporteur, et l’agent d’import qui en confirme la lecture.",
     "bestPrice": "Classement des transporteurs pour une expédition donnée, prix tout compris, avec l’écart au mieux-disant.",
-    "fuelGap": "Écart d’indexation gazole détecté : taux facturé, taux attendu et différence en euros.",
+    "fuelGap": "Écart d’indexation énergie détecté : taux facturé, taux attendu et différence en euros.",
     "demoPoster": "Aperçu de la démonstration vidéo de CarrierBridge."
   },
   "video": {

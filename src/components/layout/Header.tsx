@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 const navItems: { key: string; href: AppPathname }[] = [
   { key: "pricing", href: "/tarifs" },
-  { key: "fuelTool", href: "/outils/indexation-gazole" },
+  { key: "fuelTool", href: "/outils/indexation-energie" },
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },
 ];

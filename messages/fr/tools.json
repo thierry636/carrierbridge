@@ -1,10 +1,10 @@
 {
   "fuel": {
     "meta": {
-      "title": "Calculateur d’indexation gazole — vérifiez votre surcharge",
+      "title": "Calculateur d’indexation énergie — vérifiez votre surcharge",
       "description": "Outil gratuit et sans inscription : saisissez votre formule contractuelle, vos indices et le taux facturé, obtenez l’écart. Gazole, gaz ou électricité."
     },
-    "h1": "Votre surcharge gazole est-elle correctement calculée ?",
+    "h1": "Votre surcharge énergie est-elle correctement calculée ?",
     "lede": "Saisissez la formule de votre contrat, les indices de la période et le taux appliqué sur votre facture. Vous obtenez immédiatement l’écart, en points et en euros. Le calcul vaut aussi pour les contrats indexés sur le gaz ou l’électricité.",
     "privacy": "Le calcul s’exécute entièrement dans votre navigateur. Aucune donnée n’est transmise, enregistrée ni conservée. Aucune inscription n’est demandée.",
     "form": {

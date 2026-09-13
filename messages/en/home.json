@@ -1,17 +1,18 @@
 {
   "meta": {
     "title": "CarrierBridge — Carrier rate sheet comparison",
-    "description": "Load your carriers' Excel rate sheets exactly as they arrive. CarrierBridge names the best price per shipment and checks fuel indexation on your invoices."
+    "description": "Load your carriers' Excel rate sheets exactly as they arrive. CarrierBridge names the best price per shipment and checks energy indexation on your invoices."
   },
   "hero": {
-    "h1": "Manage 20 carriers as easily as 3.",
-    "subtitle": "Import every rate sheet, whatever the format. CarrierBridge names the best carrier for each shipment and checks that surcharges and fuel indexation do not drift. No TMS, no dedicated transport buyer.",
+    "h1": "Cut your transport spend",
+    "subtitle": "Approach more carriers at tender, bring their surcharges and energy indexation into the comparison, and settle each shipment in seconds. Your Excel rate sheets exactly as they arrive, with no retyping.",
     "proofLabel": "What changes",
     "proof": [
-      "Every rate sheet loaded as the carrier built it, with no retyping",
-      "The all-in price of each carrier, surcharges included",
-      "Fuel indexation gaps flagged, not discovered at year end"
-    ]
+      "More carriers approached at tender, so better prices obtained",
+      "Surcharges and energy indexation included in the price compared",
+      "Time given back to the team: no more hunting through fifteen files"
+    ],
+    "h1Qualifier": "without a TMS or a dedicated buyer."
   },
   "problem": {
     "h2": "Why do shippers award to only two or three carriers?",
@@ -26,7 +27,7 @@
         "text": "The quoted price is never the price paid. Tail lift, booked delivery slots, dangerous goods, sheeting, waiting time, tolls: these lines follow rules specific to each carrier, and almost never make it into the comparison."
       },
       {
-        "title": "Fuel indexation nobody checks",
+        "title": "Energy indexation nobody checks",
         "text": "The formula is signed at the start of the contract, then nobody recalculates it. The gap between what was agreed and what is invoiced settles in month after month, with nothing to flag it."
       }
     ],
@@ -34,45 +35,33 @@
   },
   "import": {
     "h2": "How do you load a carrier rate sheet from Excel?",
-    "lede": "You upload the file exactly as the carrier sent it. A conversational agent opens it on screen with you, shows what it has understood and asks you to decide wherever it is ambiguous. A few exchanges and the rate sheet is live. Nothing is retyped, nothing is reformatted.",
+    "lede": "You upload the file exactly as the carrier sent it. A conversational agent reads it, shows you what it understood and asks you to confirm. Seconds, and nothing retyped.",
     "formatsLabel": "Accepted format",
     "formats": [
       "Excel — .xls and .xlsx"
     ],
-    "formatsNote": "CarrierBridge reads Excel files today. Rate sheets received as PDFs or scans are not processed yet.",
+    "formatsNote": "Rate sheets received as PDFs or scans are not processed yet.",
     "items": [
       {
-        "title": "An agent that reads the sheet with you",
-        "text": "It displays the file, highlights what it has identified — headers, destinations, brackets, prices — and asks a question wherever two readings are possible. You answer in plain language, not in settings."
+        "title": "The file does not have to be tidy",
+        "text": "Merged cells, several tables on one sheet, a column covering two carriers, annotated prices, one tab per departure site. That is what we receive every day."
       },
       {
-        "title": "Files as they are, including the worst",
-        "text": "Merged cells, several tables on one sheet, a column covering two carriers, prices carrying a comment, one tab per departure site, terms and conditions slipped in under the prices. That is the everyday reality: the file does not have to be tidied up first."
+        "title": "The agent interprets and structures",
+        "text": "It shows its reading on screen and asks you to decide wherever it is ambiguous. You answer in plain language, not in settings."
       },
       {
-        "title": "The carrier's own structure is kept",
-        "text": "A town-by-carrier matrix, a scale by pallet count, a flat rate per trip, weight brackets by département: each sheet is loaded in its own logic. Nothing is forced into a house format — that is exactly what would destroy the information."
-      },
-      {
-        "title": "Ancillary terms captured with it",
-        "text": "Empty pallet returns, waiting beyond an hour, site-access surcharges, the reference period for fuel indexation: the lines trailing at the bottom of the sheet follow the carrier instead of getting lost."
-      },
-      {
-        "title": "Rate sheet updates",
-        "text": "A new version replaces the old one without starting over. Earlier versions stay available, so you can tell which rate applied on which date."
+        "title": "Each sheet keeps its own logic",
+        "text": "Town matrix, scale by pallet count, flat rate per trip, weight brackets by département. No house format is imposed."
       }
-    ],
-    "visual": {
-      "beforeLabel": "The file as it arrives",
-      "afterLabel": "Three carriers, three logics, all loaded"
-    }
+    ]
   },
   "surcharges": {
     "h2": "What do a carrier's ancillary charges actually contain?",
     "lede": "The costs that almost never enter the comparison, and that make the difference between two apparently identical offers.",
     "items": [
       {
-        "title": "Fuel surcharge",
+        "title": "Energy surcharge",
         "text": "Applied as a percentage of the base price, following a formula and an index specific to each contract."
       },
       {
@@ -111,12 +100,12 @@
     "conclusion": "For a given shipment, CarrierBridge applies each carrier's own rules and shows the complete price, not just the base rate."
   },
   "fuel": {
-    "h2": "How do you check fuel indexation on a transport invoice?",
+    "h2": "How do you check energy indexation on a transport invoice?",
     "lede": "You enter your contract formula and reference index once. CarrierBridge recalculates the expected surcharge for each period and compares it with what you were invoiced.",
     "steps": [
       {
         "title": "Your formula, exactly as the contract states it",
-        "text": "Fuel share, reference index, base index, revision frequency. The formula stays yours: CarrierBridge neither imposes nor assumes one."
+        "text": "Energy share, reference index, base index, revision frequency. The formula stays yours: CarrierBridge neither imposes nor assumes one."
       },
       {
         "title": "Recalculated from published indices",
@@ -140,7 +129,7 @@
       },
       {
         "title": "The complete price, not the base rate",
-        "text": "Base rate, fuel surcharge for the period, ancillary charges requested: the figure shown is the one you will pay."
+        "text": "Base rate, energy surcharge for the period, ancillary charges requested: the figure shown is the one you will pay."
       },
       {
         "title": "The gap made visible",
@@ -221,7 +210,7 @@
       "shipment": "420 kg · pallet · Lyon → Lille",
       "options": "Tail lift at delivery",
       "best": "Best price",
-      "footnote": "All-in price: base rate, fuel surcharge for the month and the services requested.",
+      "footnote": "All-in price: base rate, energy surcharge for the month and the services requested.",
       "carrier": "Carrier {letter}",
       "appLabel": "Shipment comparison",
       "bestCaption": "Best price, all in",
@@ -240,7 +229,7 @@
       ],
       "rows": [
         "Base rate",
-        "Fuel surcharge 8.4%",
+        "Energy surcharge 8.4%",
         "Tail lift at delivery",
         "Booked delivery slot"
       ],
@@ -251,7 +240,7 @@
       "title": "Indexation gap detected",
       "contract": "Contract formula",
       "rows": [
-        "Fuel share",
+        "Energy share",
         "Base index",
         "Index for the period"
       ],
@@ -279,7 +268,7 @@
         }
       ]
     },
-    "messy": {
+    "sheet": {
       "title": "The file as it arrives",
       "filename": "transport_rates_2026.xls",
       "tabs": [
@@ -288,7 +277,6 @@
         "Carrier X",
         "Carrier Y"
       ],
-      "sheetTitle": "SITE A DEPOT — 2026",
       "headers": [
         "DPT",
         "TOWN",
@@ -303,75 +291,13 @@
           "€0.18"
         ],
         [
-          "Waiting beyond 1 h / h",
-          "€45.00"
-        ],
-        [
           "Fuel indexation — base",
           "Jan 2023"
         ]
       ],
-      "flags": [
-        "One column for two carriers",
-        "A price carrying a comment",
-        "A second table under the prices"
-      ],
-      "caption": "Merged cells, four tabs, two carriers in one column, terms slipped in under the prices. None of it has to be fixed before loading."
-    },
-    "agent": {
-      "title": "The loading agent",
-      "subtitle": "It sees the file and asks you to decide",
-      "thread": [
-        {
-          "from": "agent",
-          "text": "I found 36 carriers across the columns and 190 destinations down the rows. Column 3 carries two: “Carrier A 28 t” and “Carrier B 28 t”. Two separate carriers, or one group?"
-        },
-        {
-          "from": "user",
-          "text": "Two carriers, same rate."
-        },
-        {
-          "from": "agent",
-          "text": "Noted. At the bottom of the sheet: pallet return €0.18, waiting beyond 1 h at €45/h, fuel indexation on a January 2023 base. I am attaching them to both."
-        }
-      ],
-      "caption": "You answer in plain language. There is no settings form to fill in."
-    },
-    "logics": {
-      "title": "Three carriers, three logics, all loaded",
-      "cards": [
-        {
-          "carrier": "Carrier A",
-          "structure": "Town × price matrix, 28 t truck",
-          "sample": [
-            "Valence",
-            "Avignon",
-            "Marseille"
-          ],
-          "unit": "per trip"
-        },
-        {
-          "carrier": "Carrier B",
-          "structure": "Scale by pallet count",
-          "sample": [
-            "26 pallets",
-            "20 pallets",
-            "14 pallets"
-          ],
-          "unit": "per trip"
-        },
-        {
-          "carrier": "Carrier C",
-          "structure": "Weight brackets by département",
-          "sample": [
-            "0 – 9 kg · 26",
-            "9 – 12 kg · 26",
-            "12 – 14 kg · 26"
-          ],
-          "unit": "per consignment"
-        }
-      ],
-      "caption": "None of them is forced into a house format. Converting to a given shipment happens when the quote is produced."
+      "agentQuestion": "Column 3: two carriers on the same rate. Shall I split them?",
+      "agentAnswer": "Yes",
+      "caption": "Four tabs, two carriers in one column, terms under the prices. Nothing to fix before loading."
     }
   }
 }

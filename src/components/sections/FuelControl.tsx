@@ -12,7 +12,7 @@ export function FuelControl() {
   const steps = t.raw("steps") as { title: string; text: string }[];
 
   return (
-    <Section id="indexation-gazole">
+    <Section id="indexation-energie">
       <SectionHeading title={t("h2")} lede={t("lede")} />
 
       <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-14">
@@ -44,7 +44,7 @@ export function FuelControl() {
           <p className="mt-3 text-base font-medium text-ink-900">{t("toolTeaser")}</p>
         </div>
         <Link
-          href="/outils/indexation-gazole"
+          href="/outils/indexation-energie"
           className={`${buttonVariants({ size: "md" })} mt-5 lg:mt-0 lg:shrink-0`}
         >
           {tc("cta.fuelToolFree")} <ArrowRight className="h-4 w-4" aria-hidden />

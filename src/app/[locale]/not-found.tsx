@@ -21,7 +21,7 @@ export default function LocaleNotFound() {
           {t("pricing")}
         </Link>
         <Link
-          href="/outils/indexation-gazole"
+          href="/outils/indexation-energie"
           className={buttonVariants({ variant: "secondary", size: "md" })}
         >
           {t("fuelTool")}

@@ -30,6 +30,10 @@ const nextConfig: NextConfig = {
         destination: `https://${CANONICAL_HOST}/:path*`,
         permanent: true,
       },
+      // The indexation tool covered diesel only at first; the copy now speaks
+      // of energy across the board, so the slugs moved with it.
+      { source: "/outils/indexation-gazole", destination: "/outils/indexation-energie", permanent: true },
+      { source: "/en/tools/fuel-index", destination: "/en/tools/energy-index", permanent: true },
     ];
   },
 

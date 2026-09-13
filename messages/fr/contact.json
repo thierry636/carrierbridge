@@ -11,11 +11,23 @@
     "cta": "Créer un compte"
   },
   "form": {
-    "name": { "label": "Nom et prénom" },
-    "email": { "label": "E-mail professionnel" },
-    "company": { "label": "Société" },
-    "role": { "label": "Fonction", "optional": "facultatif" },
-    "phone": { "label": "Téléphone", "optional": "facultatif" },
+    "name": {
+      "label": "Nom et prénom"
+    },
+    "email": {
+      "label": "E-mail professionnel"
+    },
+    "company": {
+      "label": "Société"
+    },
+    "role": {
+      "label": "Fonction",
+      "optional": "facultatif"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "optional": "facultatif"
+    },
     "subject": {
       "label": "Votre demande",
       "options": {

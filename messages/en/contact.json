@@ -11,11 +11,23 @@
     "cta": "Create an account"
   },
   "form": {
-    "name": { "label": "Full name" },
-    "email": { "label": "Work email" },
-    "company": { "label": "Company" },
-    "role": { "label": "Role", "optional": "optional" },
-    "phone": { "label": "Phone", "optional": "optional" },
+    "name": {
+      "label": "Full name"
+    },
+    "email": {
+      "label": "Work email"
+    },
+    "company": {
+      "label": "Company"
+    },
+    "role": {
+      "label": "Role",
+      "optional": "optional"
+    },
+    "phone": {
+      "label": "Phone",
+      "optional": "optional"
+    },
     "subject": {
       "label": "Your enquiry",
       "options": {

@@ -11,8 +11,7 @@ prend la place du visuel. Retirez-le, le visuel revient.
 | Fichier | Emplacement | Visuel actuel | Taille | Ratio |
 |---|---|---|---|---|
 | `hero.webp` | Héros | Classement d’une expédition | 1280 × 800 | 16/10 |
-| `grille-avant.webp` | Import, « avant » | Deux grilles incompatibles | 1280 × 720 | 16/9 |
-| `grille-apres.webp` | Import, « après » | Base commune, mieux-disant surligné | 1280 × 720 | 16/9 |
+| `grille.webp` | Import | Fichier Excel reçu + agent d’import | 1280 × 720 | 16/9 |
 | `meilleur-prix.webp` | Calculatrice | Décomposition base + surtaxes | 1200 × 900 | 4/3 |
 | `ecart-gazole.webp` | Indexation gazole | Écart chiffré en points et en euros | 1200 × 900 | 4/3 |
 | `demo-poster.webp` | Vignette vidéo | — (voir plus bas) | 1280 × 720 | 16/9 |

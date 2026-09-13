@@ -15,7 +15,7 @@ const columns: { id: string; links: { key: string; href: AppPathname }[] }[] = [
   {
     id: "resources",
     links: [
-      { key: "fuelTool", href: "/outils/indexation-gazole" },
+      { key: "fuelTool", href: "/outils/indexation-energie" },
       { key: "blog", href: "/blog" },
     ],
   },

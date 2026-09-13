@@ -1,13 +1,13 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: it loads each carrier's Excel rate sheet in its own logic, names the best price for each shipment, and checks fuel indexation and surcharges.",
+    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: it loads each carrier's Excel rate sheet in its own logic, names the best price for each shipment, and checks energy indexation and surcharges.",
     "audience": "Built for shippers with an annual transport spend between €100,000 and €3 million."
   },
   "nav": {
     "product": "Product",
     "pricing": "Pricing",
-    "fuelTool": "Fuel index calculator",
+    "fuelTool": "Energy index calculator",
     "blog": "Blog",
     "contact": "Contact us",
     "signup": "Get started",
@@ -23,11 +23,11 @@
     "demo": "Watch a demo (3 min)",
     "contact": "Contact us",
     "pricing": "See pricing",
-    "fuelTool": "Try the fuel index calculator",
+    "fuelTool": "Try the energy index calculator",
     "fuelToolFree": "Try it free, no sign-up"
   },
   "footer": {
-    "tagline": "Transport rate management for shippers. Import your rate sheets, name the best price for every shipment, keep fuel indexation in check.",
+    "tagline": "Transport rate management for shippers. Import your rate sheets, name the best price for every shipment, keep energy indexation in check.",
     "columns": {
       "product": "Product",
       "resources": "Resources",
@@ -37,7 +37,7 @@
     "links": {
       "features": "Features",
       "pricing": "Pricing",
-      "fuelTool": "Fuel index calculator",
+      "fuelTool": "Energy index calculator",
       "signup": "Create an account",
       "login": "Sign in",
       "blog": "Blog",
@@ -67,14 +67,13 @@
     "body": "The link you followed may be out of date, or the address contains a mistake.",
     "home": "Back to home",
     "pricing": "See pricing",
-    "fuelTool": "Fuel index calculator"
+    "fuelTool": "Energy index calculator"
   },
   "screenshots": {
     "hero": "The main CarrierBridge screen: carriers ranked for one shipment, all-in prices, with the best one named.",
-    "gridBefore": "An Excel rate sheet file as received from the carrier, with its merged cells and multiple tables.",
-    "gridAfter": "Three carrier rate sheets loaded into CarrierBridge, each keeping its own pricing structure.",
+    "gridBefore": "An Excel rate sheet file as received from the carrier, with the loading agent confirming its reading.",
     "bestPrice": "Carrier ranking for a given shipment, all charges included, with the gap to the best price.",
-    "fuelGap": "A fuel indexation gap detected: invoiced rate, expected rate and the difference in euros.",
+    "fuelGap": "A energy indexation gap detected: invoiced rate, expected rate and the difference in euros.",
     "demoPoster": "Preview of the CarrierBridge demo video."
   },
   "video": {
