@@ -11,7 +11,7 @@ export function PricingSection() {
     <Section id="tarifs">
       <SectionHeading title={t("h2")} lede={t("lede")} />
       <div className="mt-10">
-        <PricingPlans />
+        <PricingPlans variant="home" />
       </div>
       <Link
         href="/tarifs"

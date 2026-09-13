@@ -3,7 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { routing, type Locale } from "@/i18n/routing";
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/container";
 import { Link } from "@/i18n/routing";
 import { buttonVariants } from "@/components/ui/button";
@@ -46,38 +47,49 @@ export default async function BlogPage({
 
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  return (
-    <div className="py-14 lg:py-20">
-      <Container>
-        <div className="max-w-3xl">
-          <h1 className="text-balance text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">
-            {t("h1")}
-          </h1>
-          <p className="mt-5 text-pretty text-lg leading-relaxed text-ink-600">{t("lede")}</p>
-        </div>
+  const tc = await getTranslations({ locale, namespace: "common" });
+  const crumbs = breadcrumbJsonLd({
+    locale,
+    pathname: "/blog",
+    homeName: tc("nav.home"),
+    pageName: tc("nav.blog"),
+  });
 
-        {posts.length === 0 ? (
-          <div className="mt-12 max-w-2xl rounded-xl border border-ink-200 bg-ink-50 p-8">
-            <h2 className="text-lg font-semibold text-ink-900">{t("empty.title")}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink-600">{t("empty.text")}</p>
-            <Link
-              href="/outils/indexation-energie"
-              className={`${buttonVariants({ size: "md" })} mt-6`}
-            >
-              {t("empty.cta")} <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
+  return (
+    <>
+      <JsonLd data={crumbs} />
+      <div className="py-14 lg:py-20">
+        <Container>
+          <div className="max-w-3xl">
+            <h1 className="text-balance text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">
+              {t("h1")}
+            </h1>
+            <p className="mt-5 text-pretty text-lg leading-relaxed text-ink-600">{t("lede")}</p>
           </div>
-        ) : (
-          <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <li key={post.slug} className="rounded-xl border border-ink-200 bg-white p-6">
-                <h2 className="text-base font-semibold text-ink-900">{post.title}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-ink-600">{post.excerpt}</p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </Container>
-    </div>
+
+          {posts.length === 0 ? (
+            <div className="mt-12 max-w-2xl rounded-xl border border-ink-200 bg-ink-50 p-8">
+              <h2 className="text-lg font-semibold text-ink-900">{t("empty.title")}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-ink-600">{t("empty.text")}</p>
+              <Link
+                href="/outils/indexation-energie"
+                className={`${buttonVariants({ size: "md" })} mt-6`}
+              >
+                {t("empty.cta")} <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </div>
+          ) : (
+            <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {posts.map((post) => (
+                <li key={post.slug} className="rounded-xl border border-ink-200 bg-white p-6">
+                  <h2 className="text-base font-semibold text-ink-900">{post.title}</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-ink-600">{post.excerpt}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </Container>
+      </div>
+    </>
   );
 }

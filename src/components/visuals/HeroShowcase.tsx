@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
-import { AlertTriangle, ArrowRight, Check } from "lucide-react";
-import { useEuro, useNumber } from "./frame";
-import { bestQuote, fuelExample, gapToBest, shipmentQuotes } from "@/lib/demo-figures";
+import { ArrowRight, Check } from "lucide-react";
+import { useEuro } from "./frame";
+import { bestQuote, gapToBest, shipmentQuotes } from "@/lib/demo-figures";
 
 /**
  * The hero has one job: make the product feel real before a word is read.
@@ -14,7 +14,6 @@ export function HeroShowcase() {
   const tv = useTranslations("home.visuals");
   const locale = useLocale();
   const euro = useEuro(locale);
-  const num = useNumber(locale);
 
   return (
     <div className="relative">
@@ -96,21 +95,6 @@ export function HeroShowcase() {
         </div>
       </div>
 
-      {/* Breaks out of the card: depth, and the second value proposition in the hero. */}
-      <div className="absolute -bottom-10 -left-10 hidden w-60 rounded-xl bg-white p-4 shadow-[0_18px_45px_-18px_rgba(15,23,42,0.4)] ring-1 ring-ink-900/10 lg:block">
-        <div className="flex items-center gap-2">
-          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-100" aria-hidden>
-            <AlertTriangle className="h-3.5 w-3.5 text-amber-700" />
-          </span>
-          <p className="text-xs font-semibold text-ink-900">{t("alert.title")}</p>
-        </div>
-        <p className="mt-2.5 text-2xl font-bold tabular-nums tracking-tight text-ink-950">
-          + {euro(fuelExample.gapAmount)}
-        </p>
-        <p className="mt-0.5 text-xs text-ink-500">
-          {t("alert.detail", { points: num(fuelExample.gapPoints) })}
-        </p>
-      </div>
     </div>
   );
 }

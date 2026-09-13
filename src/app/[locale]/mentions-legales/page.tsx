@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalPage, LegalSections } from "@/components/legal/LegalPage";
 
 function isLocale(value: string): value is Locale {
@@ -33,9 +34,20 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale, namespace: "legal.notice" });
   const sections = t.raw("sections") as { title: string; body: string }[];
 
+  const tc = await getTranslations({ locale, namespace: "common" });
+  const crumbs = breadcrumbJsonLd({
+    locale,
+    pathname: "/mentions-legales",
+    homeName: tc("nav.home"),
+    pageName: tc("footer.links.legalNotice"),
+  });
+
   return (
-    <LegalPage title={t("h1")}>
-      <LegalSections sections={sections} />
-    </LegalPage>
+    <>
+      <JsonLd data={crumbs} />
+      <LegalPage title={t("h1")}>
+        <LegalSections sections={sections} />
+      </LegalPage>
+    </>
   );
 }

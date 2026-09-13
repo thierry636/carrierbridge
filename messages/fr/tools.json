@@ -1,8 +1,8 @@
 {
   "fuel": {
     "meta": {
-      "title": "Calculateur d’indexation énergie — vérifiez votre surcharge",
-      "description": "Outil gratuit et sans inscription : saisissez votre formule contractuelle, vos indices et le taux facturé, obtenez l’écart. Gazole, gaz ou électricité."
+      "title": "Calculateur d’indexation énergie et surcharge gazole",
+      "description": "Outil gratuit, sans inscription : calcul de l’indexation gazole sur une facture transport. Saisissez votre formule et vos indices, obtenez l’écart en euros."
     },
     "h1": "Votre surcharge énergie est-elle correctement calculée ?",
     "lede": "Saisissez la formule de votre contrat, les indices de la période et le taux appliqué sur votre facture. Vous obtenez immédiatement l’écart, en points et en euros. Le calcul vaut aussi pour les contrats indexés sur le gaz ou l’électricité.",
@@ -77,7 +77,7 @@
       "annualHint": "Reporté sur douze mois de volumes équivalents, cet écart représenterait environ {amount}."
     },
     "formula": {
-      "title": "Comment le calcul est fait",
+      "title": "Comment se calcule la surcharge gazole ?",
       "expression": "Taux de surcharge = part énergie × (indice de la période − indice de base) ÷ indice de base",
       "explanation": "C’est la formule d’indexation la plus répandue dans les contrats de transport routier, quelle que soit l’énergie. Elle applique la variation relative de l’indice à la seule fraction du prix considérée comme sensible au coût de l’énergie.",
       "caveat": "Si votre contrat retient une autre mécanique — moyenne glissante sur plusieurs mois, seuil de déclenchement, révision trimestrielle, indexation sur un prix relevé plutôt que sur un indice — le résultat ci-dessus n’est qu’une approximation. Vérifiez la clause avant d’ouvrir la discussion avec votre transporteur."

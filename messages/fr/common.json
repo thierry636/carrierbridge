@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge est un logiciel français de gestion des tarifs transport pour les chargeurs : il intègre les grilles Excel de chaque transporteur dans leur logique propre, désigne le meilleur prix pour chaque expédition et contrôle l’indexation énergie et les surtaxes.",
+    "definition": "CarrierBridge est le logiciel de gestion des tarifs transport des chargeurs : importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation.",
     "audience": "Conçu pour les chargeurs dont le budget transport se situe entre 100 000 € et 3 millions d’euros par an."
   },
   "nav": {
@@ -14,7 +14,8 @@
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "language": "Langue",
-    "skipToContent": "Aller au contenu principal"
+    "skipToContent": "Aller au contenu principal",
+    "home": "Accueil"
   },
   "cta": {
     "signup": "Comparer mes grilles gratuitement",

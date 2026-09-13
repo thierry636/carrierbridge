@@ -165,5 +165,10 @@
       "An annual commitment gives you two months free compared with paying monthly.",
       "AI sourcing is in beta: it is included in Pro and Business, and is never charged separately."
     ]
+  },
+  "businessTeaser": {
+    "eyebrow": "Multi-site and large accounts",
+    "cta": "See Business and Enterprise",
+    "tagline": "Requests, aggregation, constrained assignment, spot rates, API."
   }
 }

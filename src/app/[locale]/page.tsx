@@ -11,6 +11,7 @@ import { GridImport } from "@/components/sections/GridImport";
 import { Surcharges } from "@/components/sections/Surcharges";
 import { FuelControl } from "@/components/sections/FuelControl";
 import { BestPrice } from "@/components/sections/BestPrice";
+import { AssignmentConstraints } from "@/components/sections/AssignmentConstraints";
 import { Operations } from "@/components/sections/Operations";
 import { CarrierRegistry } from "@/components/sections/CarrierRegistry";
 import { AiSourcing } from "@/components/sections/AiSourcing";
@@ -59,6 +60,7 @@ export default async function HomePage({
       <Surcharges />
       <FuelControl />
       <BestPrice />
+      <AssignmentConstraints />
       <Operations />
       <CarrierRegistry />
       <AiSourcing />
