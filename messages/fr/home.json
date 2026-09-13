@@ -1,17 +1,18 @@
 {
   "meta": {
     "title": "CarrierBridge — Comparateur de grilles tarifaires transport",
-    "description": "Intégrez les grilles Excel de vos transporteurs telles qu’elles arrivent. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation gazole."
+    "description": "Intégrez les grilles Excel de vos transporteurs telles qu’elles arrivent. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation énergie."
   },
   "hero": {
-    "h1": "Gérez 20 transporteurs aussi facilement que 3.",
-    "subtitle": "Importez toutes vos grilles, quel qu’en soit le format. CarrierBridge désigne le meilleur transporteur pour chaque expédition et vérifie que les surtaxes et l’indexation gazole ne dérivent pas. Sans TMS, sans acheteur transport dédié.",
+    "h1": "Faites baisser votre budget transport",
+    "subtitle": "Consultez plus de transporteurs à l’appel d’offres, intégrez leurs surtaxes et leur indexation énergie dans la comparaison, arbitrez chaque expédition en quelques secondes. Vos grilles Excel telles qu’elles arrivent, sans ressaisie.",
     "proofLabel": "Ce que ça change",
     "proof": [
-      "Chaque grille intégrée telle que le transporteur l’a construite, sans ressaisie",
-      "Le prix tout compris de chaque transporteur, surtaxes incluses",
-      "Les écarts d’indexation gazole signalés, pas découverts en fin d’année"
-    ]
+      "Plus de transporteurs consultés à l’appel d’offres, donc de meilleurs prix obtenus",
+      "Surtaxes et indexation énergie intégrées au prix comparé",
+      "Le temps ADV rendu : plus de recherche dans quinze fichiers"
+    ],
+    "h1Qualifier": "sans TMS ni acheteur dédié."
   },
   "problem": {
     "h2": "Pourquoi n’attribue-t-on qu’à deux ou trois transporteurs ?",
@@ -26,7 +27,7 @@
         "text": "Le prix affiché n’est jamais le prix payé. Hayon, rendez-vous, ADR, bâchage, immobilisation, péages : ces lignes s’ajoutent selon des règles propres à chaque transporteur, et n’entrent presque jamais dans la comparaison."
       },
       {
-        "title": "Une indexation gazole jamais vérifiée",
+        "title": "Une indexation énergie jamais vérifiée",
         "text": "La formule est signée en début de contrat, puis plus personne ne la recalcule. L’écart entre ce qui a été contractualisé et ce qui est facturé s’installe mois après mois sans que rien ne le signale."
       }
     ],
@@ -60,7 +61,7 @@
     "lede": "Les coûts qui n’entrent presque jamais dans la comparaison, et qui font pourtant l’écart entre deux offres apparemment identiques.",
     "items": [
       {
-        "title": "Surcharge gazole",
+        "title": "Surcharge énergie",
         "text": "Appliquée en pourcentage du prix de base, selon une formule et un indice propres à chaque contrat."
       },
       {
@@ -99,12 +100,12 @@
     "conclusion": "Pour une expédition donnée, CarrierBridge applique les règles propres à chaque transporteur et affiche le prix complet, pas seulement le tarif de base."
   },
   "fuel": {
-    "h2": "Comment vérifier l’indexation gazole sur une facture transport ?",
+    "h2": "Comment vérifier l’indexation énergie sur une facture transport ?",
     "lede": "Vous saisissez une fois la formule de votre contrat et l’indice de référence retenu. CarrierBridge recalcule la surcharge attendue pour chaque période et la compare à ce qui vous a été facturé.",
     "steps": [
       {
         "title": "Votre formule, telle qu’elle est écrite au contrat",
-        "text": "Part gazole, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre : CarrierBridge ne vous en impose aucune et n’en présume aucune."
+        "text": "Part énergie, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre : CarrierBridge ne vous en impose aucune et n’en présume aucune."
       },
       {
         "title": "Le recalcul à partir des indices publiés",
@@ -128,7 +129,7 @@
       },
       {
         "title": "Le prix complet, pas le prix de base",
-        "text": "Tarif de base, surcharge gazole de la période, prestations annexes demandées : le montant affiché est celui que vous paierez."
+        "text": "Tarif de base, surcharge énergie de la période, prestations annexes demandées : le montant affiché est celui que vous paierez."
       },
       {
         "title": "L’écart rendu visible",
@@ -209,7 +210,7 @@
       "shipment": "420 kg · palette · Lyon → Lille",
       "options": "Hayon à la livraison",
       "best": "Meilleur prix",
-      "footnote": "Prix tout compris : tarif de base, surcharge gazole du mois et prestations demandées.",
+      "footnote": "Prix tout compris : tarif de base, surcharge énergie du mois et prestations demandées.",
       "carrier": "Transporteur {letter}",
       "appLabel": "Comparaison d’expédition",
       "bestCaption": "Meilleur prix, tout compris",
@@ -228,7 +229,7 @@
       ],
       "rows": [
         "Tarif de base",
-        "Surcharge gazole 8,4 %",
+        "Surcharge énergie 8,4 %",
         "Hayon à la livraison",
         "Rendez-vous de livraison"
       ],
@@ -239,7 +240,7 @@
       "title": "Écart d’indexation détecté",
       "contract": "Formule au contrat",
       "rows": [
-        "Part gazole",
+        "Part énergie",
         "Indice de base",
         "Indice de la période"
       ],

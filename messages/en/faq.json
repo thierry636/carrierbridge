@@ -11,8 +11,8 @@
       "a": "Excel, today: .xls and .xlsx. Rate sheets received as PDFs or scans are not processed yet — we would rather say so than let you find out.\n\nThe Excel file does not have to be tidy, though. Merged cells, several tables on one sheet, a column covering two carriers, prices carrying a comment, one tab per departure site, ancillary terms slipped in under the prices: that is what we see every day, and that is what the loading agent is built to read. It shows you on screen what it has understood and asks you to decide wherever two readings are possible.\n\nThe structure itself is kept as it is: town-by-carrier matrix, scale by pallet count, flat rate per trip, weight brackets by département. We impose no house format."
     },
     {
-      "q": "How is fuel indexation checked?",
-      "a": "You enter your contract formula: fuel share, reference index, base index, revision frequency. The formula stays yours — CarrierBridge imposes none. The tool then recalculates the expected surcharge for each period from published indices and compares it with the rate applied on your invoices. It flags calculation gaps; it does not read your contract and is no substitute for contractual analysis. A flagged gap is a point to raise with your carrier, not a conclusion."
+      "q": "How is energy indexation checked?",
+      "a": "You enter your contract formula: energy share, reference index, base index, revision frequency. The formula stays yours — CarrierBridge imposes none. The tool then recalculates the expected surcharge for each period from published indices and compares it with the rate applied on your invoices. It flags calculation gaps; it does not read your contract and is no substitute for contractual analysis. A flagged gap is a point to raise with your carrier, not a conclusion."
     },
     {
       "q": "Do I need a TMS?",

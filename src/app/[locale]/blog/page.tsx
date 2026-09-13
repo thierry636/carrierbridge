@@ -61,7 +61,7 @@ export default async function BlogPage({
             <h2 className="text-lg font-semibold text-ink-900">{t("empty.title")}</h2>
             <p className="mt-3 text-sm leading-relaxed text-ink-600">{t("empty.text")}</p>
             <Link
-              href="/outils/indexation-gazole"
+              href="/outils/indexation-energie"
               className={`${buttonVariants({ size: "md" })} mt-6`}
             >
               {t("empty.cta")} <ArrowRight className="h-4 w-4" aria-hidden />

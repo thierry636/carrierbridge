@@ -66,7 +66,7 @@ npx lighthouse http://localhost:3000/ \
   --only-categories=performance,accessibility,best-practices,seo --view
 ```
 
-Dernier relevé (`/`, `/tarifs`, `/outils/indexation-gazole`, `/en`, `/contact`) :
+Dernier relevé (`/`, `/tarifs`, `/outils/indexation-energie`, `/en`, `/contact`) :
 performance 97-99, accessibilité 100, bonnes pratiques 100, SEO 100.
 
 L’audit `canonical` échoue si l’on teste en local sans avoir construit avec
@@ -95,14 +95,18 @@ src/lib/
 messages/{fr,en}/  copie découpée par domaine, parité de clés vérifiable
 ```
 
-### Trois règles à ne pas contourner
+### Quatre règles à ne pas contourner
 
 1. **Les prix ne se saisissent qu’une fois**, dans `src/lib/pricing.ts`. La home,
    la page tarifs et les `offers` schema.org en dérivent.
 2. **Le domaine ne se réécrit qu’une fois**, dans `src/lib/site.ts`. Le site est
    canonique sur `carrier-bridge.com` ; `carrierbridge.com` et les variantes `www`
    partent en 301 (voir `next.config.ts`).
-3. **Le produit intègre du Excel, et rien d’autre à ce jour.** Ne réintroduisez pas
+3. **Le vocabulaire du site dit « énergie », pas « gazole ».** Le gazole reste
+   nommé là où il désigne une énergie précise : l’option du calculateur, les
+   indices du CNR, le libellé qu’un transporteur a tapé dans son propre fichier.
+   Partout ailleurs — titres, navigation, URL — c’est « indexation énergie ».
+4. **Le produit intègre du Excel, et rien d’autre à ce jour.** Ne réintroduisez pas
    « PDF », « scan » ou « e-mail » dans la copie des formats acceptés tant que ce
    n’est pas vrai. Et il n’aligne pas les grilles sur une base commune : chacune
    est conservée dans sa structure d’origine, la conversion se fait à la cotation.
@@ -114,7 +118,7 @@ messages/{fr,en}/  copie découpée par domaine, parité de clés vérifiable
 |---|---|
 | `/` | `/en` |
 | `/tarifs` | `/en/pricing` |
-| `/outils/indexation-gazole` | `/en/tools/fuel-index` |
+| `/outils/indexation-energie` | `/en/tools/energy-index` |
 | `/blog` | `/en/blog` |
 | `/contact` | `/en/contact` |
 | `/mentions-legales` | `/en/legal-notice` |
@@ -148,5 +152,4 @@ visuel dessiné en HTML/CSS, lisible à sa taille d’affichage et sans jeu de
 données de démonstration à fabriquer. Une capture déposée dans `public/captures/`
 prend la place du visuel correspondant — voir `public/captures/README.md`.
 - **Chiffre de résultat client** vérifiable.
-- **Source des indices gazole** et ses conditions de réutilisation commerciale
-  (`tools.fuel.source.placeholder`).
+

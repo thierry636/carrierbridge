@@ -1,10 +1,10 @@
 {
   "fuel": {
     "meta": {
-      "title": "Fuel index calculator — check your transport surcharge",
+      "title": "Energy index calculator — check your transport surcharge",
       "description": "Free, no sign-up: enter your contract formula, your indices and the invoiced rate, and get the gap. Diesel, gas or electricity."
     },
-    "h1": "Is your fuel surcharge calculated correctly?",
+    "h1": "Is your energy surcharge calculated correctly?",
     "lede": "Enter your contract formula, the indices for the period and the rate applied on your invoice. You get the gap straight away, in points and in euros. The same calculation covers contracts indexed on gas or electricity.",
     "privacy": "The calculation runs entirely in your browser. No data is sent, stored or kept. No sign-up is required.",
     "form": {

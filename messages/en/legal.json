@@ -28,7 +28,7 @@
       },
       {
         "title": "Liability",
-        "body": "The information published on this site is provided for guidance. It describes the features of the service at the date of publication and may change. The calculation tools provided, in particular the fuel indexation calculator, give an indication and constitute neither legal advice, nor a contractual analysis, nor certification that an invoice is correct."
+        "body": "The information published on this site is provided for guidance. It describes the features of the service at the date of publication and may change. The calculation tools provided, in particular the energy indexation calculator, give an indication and constitute neither legal advice, nor a contractual analysis, nor certification that an invoice is correct."
       },
       {
         "title": "Links to third-party sites",
@@ -50,7 +50,7 @@
     "sections": [
       {
         "title": "1. Purpose of the service",
-        "body": "CarrierBridge is software accessible online, intended for shippers. It allows transport rate sheets received as Excel files to be loaded while keeping their original structure, carrier offers to be compared for a given shipment, ancillary charges to be tracked, and fuel indexation to be recalculated in order to identify any gaps with the amounts invoiced. The service is not intended for carriers."
+        "body": "CarrierBridge is software accessible online, intended for shippers. It allows transport rate sheets received as Excel files to be loaded while keeping their original structure, carrier offers to be compared for a given shipment, ancillary charges to be tracked, and energy indexation to be recalculated in order to identify any gaps with the amounts invoiced. The service is not intended for carriers."
       },
       {
         "title": "2. User account",

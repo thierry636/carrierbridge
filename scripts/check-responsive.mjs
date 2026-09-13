@@ -16,7 +16,7 @@ const EXECUTABLE =
 const PATHS = [
   "/",
   "/tarifs",
-  "/outils/indexation-gazole",
+  "/outils/indexation-energie",
   "/contact",
   "/blog",
   "/mentions-legales",
