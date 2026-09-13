@@ -20,7 +20,7 @@
       },
       {
         "title": "Hébergeur",
-        "body": "Le site est hébergé sur l’infrastructure de Railway, dans une région européenne. Identification de l’hébergeur : [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Téléphone : [[HEBERGEUR_TELEPHONE]]."
+        "body": "Le site carrier-bridge.com est hébergé par Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis. Les pages sont distribuées par son réseau de diffusion de contenu.\nLes données de service, elles, sont hébergées dans une région européenne (voir la politique de confidentialité)."
       },
       {
         "title": "Propriété intellectuelle",
@@ -116,11 +116,11 @@
       },
       {
         "title": "Destinataires et sous-traitants",
-        "body": "Vos données ne sont ni vendues, ni louées, ni communiquées à des tiers à des fins commerciales. Elles ne sont jamais transmises aux transporteurs. Elles sont accessibles aux seules personnes habilitées chez l’éditeur, ainsi qu’aux prestataires techniques strictement nécessaires au fonctionnement du service, agissant en qualité de sous-traitants et liés par contrat.\nSous-traitants : Railway (hébergement, région européenne), Resend (envoi des e-mails transactionnels), Plausible (mesure d’audience sans cookie), [[PRESTATAIRE_PAIEMENT]] (encaissement des abonnements)."
+        "body": "Vos données ne sont ni vendues, ni louées, ni communiquées à des tiers à des fins commerciales. Elles ne sont jamais transmises aux transporteurs. Elles sont accessibles aux seules personnes habilitées chez l’éditeur, ainsi qu’aux prestataires techniques strictement nécessaires au fonctionnement du service, agissant en qualité de sous-traitants et liés par contrat.\nSous-traitants : Netlify (hébergement du site vitrine), [[HEBERGEUR_APPLICATION]] (hébergement de l’application, région européenne), Resend (envoi des e-mails transactionnels), Plausible (mesure d’audience sans cookie), [[PRESTATAIRE_PAIEMENT]] (encaissement des abonnements)."
       },
       {
         "title": "Localisation des données",
-        "body": "Les données sont hébergées dans l’Union européenne, sur l’infrastructure de Railway, dans une région européenne.\nRailway est une société établie aux États-Unis. Un accès depuis un pays tiers ne peut donc être exclu pour les seuls besoins d’exploitation et de support technique. Ce transfert est encadré par les clauses contractuelles types adoptées par la Commission européenne, complétées des mesures techniques décrites à la section Sécurité."
+        "body": "Il faut distinguer deux choses.\nLe site vitrine carrier-bridge.com est hébergé par Netlify, Inc., société établie aux États-Unis, et distribué par un réseau mondial. Il ne traite que les données du formulaire de contact et une mesure d’audience agrégée sans cookie.\nLes données de service — vos grilles, vos volumes, vos prix négociés, votre compte — sont hébergées dans l’Union européenne, dans une région européenne de [[HEBERGEUR_APPLICATION]].\nCes deux prestataires sont établis aux États-Unis. Un accès depuis un pays tiers ne peut donc être exclu pour les seuls besoins d’exploitation et de support technique. Ces transferts sont encadrés par les clauses contractuelles types adoptées par la Commission européenne, complétées des mesures techniques décrites à la section Sécurité."
       },
       {
         "title": "Durées de conservation",
