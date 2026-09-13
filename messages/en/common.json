@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "CarrierBridge",
-    "definition": "CarrierBridge is French software for managing transport rates on the shipper side: it loads each carrier's Excel rate sheet in its own logic, names the best price for each shipment, and checks energy indexation and surcharges.",
+    "definition": "CarrierBridge is the transport rate management software for shippers: load your rate sheets, name the best price for each shipment, keep indexation in check.",
     "audience": "Built for shippers with an annual transport spend between €100,000 and €3 million."
   },
   "nav": {
@@ -14,7 +14,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "language": "Language",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "home": "Home"
   },
   "cta": {
     "signup": "Compare my rate sheets free",

@@ -89,3 +89,38 @@ export function faqJsonLd(items: { q: string; a: string }[]) {
     })),
   };
 }
+
+/**
+ * Breadcrumbs for internal pages. The home is the only ancestor — the site is
+ * one level deep — so the trail is Accueil › this page.
+ */
+export function breadcrumbJsonLd({
+  locale,
+  pathname,
+  homeName,
+  pageName,
+}: {
+  locale: Locale;
+  pathname: AppPathname;
+  homeName: string;
+  pageName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: homeName,
+        item: absoluteUrl(locale, "/"),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: pageName,
+        item: absoluteUrl(locale, pathname),
+      },
+    ],
+  };
+}

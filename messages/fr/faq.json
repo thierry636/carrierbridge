@@ -12,11 +12,23 @@
     },
     {
       "q": "Comment l’indexation énergie est-elle vérifiée ?",
-      "a": "Vous saisissez la formule de votre contrat : part énergie, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre, CarrierBridge n’en impose aucune. L’outil recalcule ensuite la surcharge attendue pour chaque période à partir des indices publics, et la compare au taux appliqué sur vos factures. Il signale les écarts de calcul ; il ne lit pas votre contrat et ne se substitue pas à une analyse contractuelle. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion."
+      "a": "L’indexation énergie — ce que vos factures appellent le plus souvent la surcharge gazole — se vérifie à partir de votre contrat. Vous en saisissez la formule : part énergie, indice de référence, indice de base, périodicité de révision. La formule reste la vôtre, CarrierBridge n’en impose aucune. L’outil recalcule ensuite la surcharge attendue pour chaque période à partir des indices publics, et la compare au taux appliqué sur vos factures. Il signale les écarts de calcul ; il ne lit pas votre contrat et ne se substitue pas à une analyse contractuelle. Un écart signalé est un point à vérifier avec votre transporteur, pas une conclusion."
     },
     {
       "q": "Faut-il un TMS ?",
       "a": "Non, et CarrierBridge n’en remplace pas un : les deux répondent à des questions différentes. Le TMS exécute — il planifie, édite les documents, suit les expéditions. CarrierBridge arbitre — il détermine à qui confier l’ordre et à quel prix, puis contrôle ce qui est facturé. Si vous n’avez pas de TMS, CarrierBridge fonctionne seul. Si vous en avez un, les deux cohabitent, et un connecteur peut récupérer automatiquement vos ordres de transport."
+    },
+    {
+      "q": "L’affectation est-elle automatique ?",
+      "a": "Non, pas par défaut. Le moteur propose et justifie, l’ADV valide. L’affectation automatique existe, mais elle s’active par périmètre et après quelques semaines d’usage, une fois les règles calées. Un outil qui affecte seul dès le premier jour affecte mal."
+    },
+    {
+      "q": "Comment gérez-vous les minimums de volume promis aux transporteurs ?",
+      "a": "Vous saisissez l’engagement tel qu’il figure au contrat : minimum d’ordres, de véhicules, de chiffre d’affaires, ou part de marché, avec sa période de référence. Le moteur en tient compte à chaque affectation et pondère progressivement en faveur d’un transporteur en retard, dans la limite d’un surcoût que vous fixez."
+    },
+    {
+      "q": "Et si le transporteur le moins cher n’est pas disponible ?",
+      "a": "Il est écarté avant le calcul, pas après. Les règles de capacité et d’éligibilité s’appliquent d’abord, la comparaison de prix ensuite. Une proposition affichée est une proposition applicable."
     },
     {
       "q": "Mes données sont-elles confidentielles ?",

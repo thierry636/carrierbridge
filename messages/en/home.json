@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "CarrierBridge — Carrier rate sheet comparison",
-    "description": "Load your carriers' Excel rate sheets exactly as they arrive. CarrierBridge names the best price per shipment and checks energy indexation on your invoices."
+    "title": "CarrierBridge — Transport rate management software for shippers",
+    "description": "The transport rate management software for shippers: load your rate sheets, name the best price for each shipment, keep indexation in check."
   },
   "hero": {
-    "h1": "Cut your transport spend",
+    "h1": "Approach fifteen carriers. Settle every shipment.",
     "subtitle": "Approach more carriers at tender, bring their surcharges and energy indexation into the comparison, and settle each shipment in seconds. Your Excel rate sheets exactly as they arrive, with no retyping.",
     "proofLabel": "What changes",
     "proof": [
@@ -12,7 +12,7 @@
       "Surcharges and energy indexation included in the price compared",
       "Time given back to the team: no more hunting through fifteen files"
     ],
-    "h1Qualifier": "without a TMS or a dedicated buyer."
+    "h1Qualifier": "Without a TMS or a dedicated buyer."
   },
   "problem": {
     "h2": "Why do shippers award to only two or three carriers?",
@@ -256,7 +256,7 @@
       "steps": [
         {
           "title": "Upload your rate sheets",
-          "text": "Excel, PDF, scan — exactly as you received them."
+          "text": "Excel — .xls and .xlsx, exactly as you received them."
         },
         {
           "title": "Enter a shipment",

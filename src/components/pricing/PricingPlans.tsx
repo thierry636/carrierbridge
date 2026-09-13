@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Check, Minus } from "lucide-react";
+import { ArrowRight, Check, Minus } from "lucide-react";
 import {
   enterprisePlanIds,
   featureGroups,
@@ -20,17 +20,27 @@ import { cn } from "@/lib/utils";
 type Billing = "monthly" | "annual";
 type Tab = "standard" | "enterprise";
 
-export function PricingPlans({ withMatrix = false }: { withMatrix?: boolean }) {
+/**
+ * The home shows the three self-serve plans plus a compact pointer to
+ * Business, because a section on the same page is labelled "Palier Business"
+ * and that tier was nowhere to be seen. The full page keeps the tabs and the
+ * feature matrix.
+ */
+export function PricingPlans({ variant = "full" }: { variant?: "home" | "full" }) {
+  const isHome = variant === "home";
   const t = useTranslations("pricing");
   const locale = useLocale();
   const [billing, setBilling] = useState<Billing>("monthly");
   const [tab, setTab] = useState<Tab>("standard");
 
-  const planIds = tab === "standard" ? standardPlanIds : enterprisePlanIds;
+  const planIds = isHome || tab === "standard" ? standardPlanIds : enterprisePlanIds;
 
   return (
     <div>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        {isHome ? (
+          <span />
+        ) : (
         <div role="tablist" aria-label={t("tabs.standard")} className="flex rounded-lg bg-ink-100 p-1">
           {(["standard", "enterprise"] as const).map((value) => (
             <button
@@ -48,6 +58,7 @@ export function PricingPlans({ withMatrix = false }: { withMatrix?: boolean }) {
             </button>
           ))}
         </div>
+        )}
 
         <div className="flex items-center gap-1 rounded-lg bg-ink-100 p-1">
           {(["monthly", "annual"] as const).map((value) => (
@@ -72,7 +83,7 @@ export function PricingPlans({ withMatrix = false }: { withMatrix?: boolean }) {
         </div>
       </div>
 
-      {tab === "enterprise" && (
+      {!isHome && tab === "enterprise" && (
         <p className="mt-4 text-sm text-ink-600">{t("tabs.enterpriseHint")}</p>
       )}
 
@@ -87,9 +98,9 @@ export function PricingPlans({ withMatrix = false }: { withMatrix?: boolean }) {
         ))}
       </div>
 
-      {withMatrix && <FeatureMatrix planIds={planIds} />}
-
-      <ConnectorRow />
+      {isHome && <BusinessTeaser locale={locale} />}
+      {!isHome && <FeatureMatrix planIds={planIds} />}
+      {!isHome && <ConnectorRow />}
     </div>
   );
 }
@@ -242,5 +253,33 @@ function ConnectorRow() {
         {t("cta")}
       </Link>
     </div>
+  );
+}
+
+/** Compact fourth card on the home: enough to know Business exists and costs. */
+function BusinessTeaser({ locale }: { locale: string }) {
+  const t = useTranslations("pricing");
+  const plan = getPlan("business");
+
+  return (
+    <Link
+      href="/tarifs"
+      className="mt-6 flex flex-col gap-3 rounded-xl border border-ink-300 border-dashed bg-ink-50 p-5 transition-colors hover:border-brand-300 hover:bg-brand-50/50 sm:flex-row sm:items-center sm:justify-between"
+    >
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
+          {t("businessTeaser.eyebrow")}
+        </p>
+        <p className="mt-1 text-base font-semibold text-ink-900">
+          {t("plans.business.name")} · {formatEuros(plan.monthly, locale)}
+          <span className="font-normal text-ink-500">{t("billing.perMonth")}</span>
+        </p>
+        <p className="mt-0.5 text-sm text-ink-600">{t("businessTeaser.tagline")}</p>
+      </div>
+      <span className="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-brand-700">
+        {t("businessTeaser.cta")}
+        <ArrowRight className="h-4 w-4" aria-hidden />
+      </span>
+    </Link>
   );
 }

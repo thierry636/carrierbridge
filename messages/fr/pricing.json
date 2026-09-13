@@ -165,5 +165,10 @@
       "L’engagement annuel donne deux mois offerts par rapport au paiement mensuel.",
       "Le sourcing IA est en beta : il est inclus dans Pro et Business, et n’est jamais facturé séparément."
     ]
+  },
+  "businessTeaser": {
+    "eyebrow": "Multi-sites et grands comptes",
+    "cta": "Voir Business et Enterprise",
+    "tagline": "Demandes, agrégation, affectation sous contraintes, tarifs spot, API."
   }
 }

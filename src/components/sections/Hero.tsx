@@ -4,7 +4,6 @@ import { Container } from "@/components/ui/container";
 import { Screenshot } from "@/components/ui/screenshot";
 import { HeroShowcase } from "@/components/visuals/HeroShowcase";
 import { SignupButton } from "@/components/ui/signup-button";
-import { buttonVariants } from "@/components/ui/button";
 
 export function Hero() {
   const t = useTranslations("home.hero");
@@ -28,9 +27,11 @@ export function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
           <div>
             <h1 className="text-4xl font-bold leading-[1.06] tracking-tight text-ink-950 sm:text-5xl lg:text-[52px]">
-              {t("h1")}
+              {t("h1")}{" "}
               {/* Subordinate clause, so it is set smaller and lighter rather
-                  than competing with the claim for four heavy lines. */}
+                  than competing with the claim for four heavy lines. The space
+                  above matters: without it the heading text content reads
+                  "expédition.Sans TMS". */}
               <span className="mt-2 block text-[0.6em] font-semibold leading-tight text-ink-500">
                 {t("h1Qualifier")}
               </span>
@@ -39,13 +40,13 @@ export function Hero() {
               {t("subtitle")}
             </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            {/* The demo button is out until the video exists: a primary CTA that
+                leads nowhere costs more than its absence. `common.cta.demo` is
+                kept for when it comes back. */}
+            <div className="mt-9">
               <SignupButton source="hero" size="lg">
                 {tc("cta.signup")} <ArrowRight className="h-4 w-4" aria-hidden />
               </SignupButton>
-              <a href="#demo" className={buttonVariants({ variant: "secondary", size: "lg" })}>
-                {tc("cta.demo")}
-              </a>
             </div>
             <p className="mt-3 text-sm text-ink-500">{tc("cta.signupNote")}</p>
 

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "CarrierBridge — Comparateur de grilles tarifaires transport",
-    "description": "Intégrez les grilles Excel de vos transporteurs telles qu’elles arrivent. CarrierBridge désigne le meilleur prix par expédition et contrôle l’indexation énergie."
+    "title": "CarrierBridge — Logiciel de gestion des tarifs transport pour chargeurs",
+    "description": "Le logiciel de gestion des tarifs transport des chargeurs : importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation."
   },
   "hero": {
-    "h1": "Faites baisser votre budget transport",
+    "h1": "Consultez quinze transporteurs. Arbitrez chaque expédition.",
     "subtitle": "Consultez plus de transporteurs à l’appel d’offres, intégrez leurs surtaxes et leur indexation énergie dans la comparaison, arbitrez chaque expédition en quelques secondes. Vos grilles Excel telles qu’elles arrivent, sans ressaisie.",
     "proofLabel": "Ce que ça change",
     "proof": [
@@ -12,7 +12,7 @@
       "Surtaxes et indexation énergie intégrées au prix comparé",
       "Le temps ADV rendu : plus de recherche dans quinze fichiers"
     ],
-    "h1Qualifier": "sans TMS ni acheteur dédié."
+    "h1Qualifier": "Sans TMS ni acheteur dédié."
   },
   "problem": {
     "h2": "Pourquoi n’attribue-t-on qu’à deux ou trois transporteurs ?",
@@ -101,7 +101,7 @@
   },
   "fuel": {
     "h2": "Comment vérifier l’indexation énergie sur une facture transport ?",
-    "lede": "Vous saisissez une fois la formule de votre contrat et l’indice de référence retenu. CarrierBridge recalcule la surcharge attendue pour chaque période et la compare à ce qui vous a été facturé.",
+    "lede": "L’indexation énergie, que vos factures appellent le plus souvent la surcharge gazole, se contrôle à partir de votre contrat. Vous saisissez une fois la formule et l’indice de référence retenu ; CarrierBridge recalcule la surcharge attendue pour chaque période et la compare à ce qui vous a été facturé.",
     "steps": [
       {
         "title": "Votre formule, telle qu’elle est écrite au contrat",
@@ -140,6 +140,75 @@
         "text": "Plus de tri dans quinze classeurs, plus d’appel au commercial pour faire confirmer un tarif, plus de doute sur la version de grille en vigueur."
       }
     ]
+  },
+  "assignment": {
+    "badge": "Palier Business",
+    "h2": "Comment respecter ses engagements de volume avec plusieurs transporteurs ?",
+    "lede": "Le moins cher n’est pas toujours affectable. Un transporteur peut être saturé, non agréé pour la marchandise, ou en retard sur le volume que vous vous êtes engagé à lui confier. CarrierBridge intègre ces contraintes au calcul et vous propose une affectation applicable — que vous validez.",
+    "rules": {
+      "title": "Les règles que vous définissez",
+      "items": [
+        {
+          "title": "Éligibilité",
+          "lede": "Qui peut exécuter cet ordre.",
+          "points": [
+            "Zones et départements autorisés par transporteur",
+            "Aptitudes : ADR, température dirigée, hayon, gabarit",
+            "Contraintes de livraison : rendez-vous, accès en centre-ville",
+            "Documents de vigilance à jour"
+          ]
+        },
+        {
+          "title": "Capacité",
+          "lede": "Ce qu’il peut absorber.",
+          "points": [
+            "Plafond d’ordres par jour et par semaine",
+            "Plafond par corridor ou par zone",
+            "Nombre de véhicules disponibles par période",
+            "Délai de préavis minimal"
+          ]
+        },
+        {
+          "title": "Engagements",
+          "lede": "Ce que vous lui avez promis.",
+          "points": [
+            "Minimum de taxation et minimum de perception par envoi",
+            "Minimum d’ordres, de véhicules ou de chiffre d’affaires par période",
+            "Part de marché garantie, globalement ou par zone",
+            "Exclusivité sur un corridor"
+          ]
+        }
+      ]
+    },
+    "engine": {
+      "title": "Le moteur propose, vous décidez",
+      "paragraphs": [
+        "L’affectation n’est pas automatique. Pour chaque ordre, CarrierBridge classe les transporteurs éligibles, affiche le coût réel de chacun et indique le motif de sa proposition : moins-disant, rattrapage d’engagement, seul candidat éligible. Vous validez, ou vous choisissez autrement en indiquant pourquoi.",
+        "Ce motif n’est pas perdu. Quand le même écart revient sur le même périmètre, l’outil vous propose d’en faire une règle."
+      ],
+      "traceability": {
+        "title": "Traçabilité de chaque décision.",
+        "text": "Le transporteur retenu, son prix au moment du choix, les candidats écartés et le motif de leur exclusion sont conservés. Vous pouvez justifier une affectation six mois plus tard."
+      },
+      "capture": "Écran d’affectation : proposition, alternatives chiffrées, motif et impact sur les engagements."
+    },
+    "tracking": {
+      "title": "Le pilotage des engagements",
+      "text": "Pour chaque transporteur, l’écart entre le volume réalisé et le volume engagé est suivi en continu, avec la projection de fin de période. Vous savez en octobre que l’engagement annuel ne sera pas tenu, pas en décembre.",
+      "indicators": [
+        "Réalisé contre engagé, en volume et en valeur, par transporteur",
+        "Volume restant à confier et jours restants pour tenir l’engagement",
+        "Répartition réalisée contre répartition cible, par zone",
+        "Zones desservies par un seul transporteur",
+        "Alerte quand un engagement devient mathématiquement inatteignable"
+      ],
+      "capture": "Suivi des engagements : réalisé, cible et projection de fin de période."
+    },
+    "cost": {
+      "title": "Le coût des contraintes",
+      "text": "Respecter un engagement coûte parfois plus cher que prendre le moins-disant. CarrierBridge chiffre cet écart : coût réel de vos affectations contre coût théorique au mieux-disant, sur la période. Vous savez ce que vous payez pour tenir vos engagements — et donc si la remise obtenue en échange les justifie encore."
+    },
+    "disclaimer": "CarrierBridge applique les règles que vous saisissez et signale les écarts. Il ne se substitue pas à la lecture de vos contrats : un engagement de volume crée des obligations dont la portée s’apprécie au regard du contrat signé."
   },
   "operations": {
     "badge": "Palier Business",
@@ -256,7 +325,7 @@
       "steps": [
         {
           "title": "Déposez vos grilles",
-          "text": "Excel, PDF, scan — telles que vous les avez reçues."
+          "text": "Excel — .xls et .xlsx, tels que vous les avez reçus."
         },
         {
           "title": "Saisissez une expédition",

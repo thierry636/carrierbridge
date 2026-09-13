@@ -12,10 +12,14 @@ import { signupUrl } from "@/lib/site";
 import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
+/**
+ * The blog is reachable from the footer but not from here: pointing the main
+ * navigation at an empty listing spends a click for nothing. Put it back with
+ * the first published article.
+ */
 const navItems: { key: string; href: AppPathname }[] = [
   { key: "pricing", href: "/tarifs" },
   { key: "fuelTool", href: "/outils/indexation-energie" },
-  { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },
 ];
 
