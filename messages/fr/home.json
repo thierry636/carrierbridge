@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "CarrierBridge — Logiciel de gestion des tarifs transport pour chargeurs",
-    "description": "Le logiciel de gestion des tarifs transport des chargeurs : importez vos grilles, désignez le meilleur prix pour chaque expédition, contrôlez l’indexation."
+    "title": "CarrierBridge — Logiciel de gestion du transport pour chargeurs",
+    "description": "Importez vos grilles, désignez le meilleur transporteur pour chaque expédition, suivez son exécution et vérifiez la facture. Sans TMS ni acheteur dédié."
   },
   "hero": {
     "h1": "Consultez quinze transporteurs. Arbitrez chaque expédition.",
-    "subtitle": "Consultez plus de transporteurs à l’appel d’offres, intégrez leurs surtaxes et leur indexation énergie dans la comparaison, arbitrez chaque expédition en quelques secondes. Vos grilles Excel telles qu’elles arrivent, sans ressaisie.",
+    "subtitle": "Consultez plus de transporteurs à l’appel d’offres, intégrez surtaxes et indexation énergie dans la comparaison, arbitrez chaque expédition — puis transmettez l’ordre et suivez l’expédition jusqu’à la preuve de livraison.",
     "proofLabel": "Ce que ça change",
     "proof": [
       "Plus de transporteurs consultés à l’appel d’offres, donc de meilleurs prix obtenus",
@@ -220,8 +220,8 @@
         "text": "Les sites et les services déposent leur besoin dans un formulaire unique plutôt que par e-mail. Rien ne se perd dans une boîte de réception."
       },
       {
-        "title": "Agrégation des ordres",
-        "text": "Les expéditions d’une même journée vers une même zone sont regroupées avant arbitrage, ce qui fait souvent basculer le calcul vers un autre transporteur."
+        "title": "Comparaison groupée",
+        "text": "Plusieurs expéditions partant le même jour vers la même zone peuvent être cotées ensemble pour vérifier si un envoi unique reviendrait moins cher. CarrierBridge affiche l’écart. La décision de regrouper, et son exécution, restent les vôtres."
       },
       {
         "title": "Affectation",
@@ -368,5 +368,105 @@
       "agentAnswer": "Oui",
       "caption": "Quatre onglets, deux transporteurs dans une colonne, des conditions sous les prix. Rien à corriger avant l’import."
     }
+  },
+  "execution": {
+    "badge": "Palier Business",
+    "h2": "Comment transmettre un ordre à son transporteur et suivre l’expédition ?",
+    "lede": "Choisir le transporteur ne suffit pas : il faut encore lui passer l’ordre, savoir où en est l’expédition et récupérer la preuve de livraison. CarrierBridge va jusqu’au bout, de l’affectation à la clôture — sans que vos transporteurs aient à créer un compte.",
+    "lifecycle": {
+      "title": "Le cycle de vie d’une expédition",
+      "steps": [
+        {
+          "title": "Affectation",
+          "text": "Le transporteur est désigné, avec le prix retenu au moment du choix et la trace de la décision."
+        },
+        {
+          "title": "Transmission",
+          "text": "L’ordre part par e-mail, avec tous les éléments d’exécution : enlèvement, livraison, marchandise, prestations attendues, référence."
+        },
+        {
+          "title": "Acceptation",
+          "text": "Le transporteur confirme, refuse, ou propose une modification. Chaque réponse est horodatée et conservée."
+        },
+        {
+          "title": "Suivi",
+          "text": "Les statuts remontent au fil de l’exécution : enlevé, en cours, livré, incident. Vous savez où en est chaque expédition sans relancer personne."
+        },
+        {
+          "title": "Clôture",
+          "text": "Preuve de livraison et documents attachés, expédition close, prix facturable comparé au prix retenu à l’affectation."
+        }
+      ],
+      "capture": "Suivi des expéditions en cours, par statut et par transporteur."
+    },
+    "link": {
+      "title": "Un lien, pas un portail",
+      "paragraphs": [
+        "Vos transporteurs ne créent pas de compte et n’ont rien à installer. Chacun reçoit un lien personnel qui ouvre la liste des expéditions que vous lui avez confiées : il consulte, accepte, met à jour un statut et dépose ses documents depuis son navigateur, sur ordinateur comme sur téléphone.",
+        "Un transporteur ne voit que ses propres expéditions. Ni vos autres transporteurs, ni les prix que vous obtenez ailleurs."
+      ],
+      "points": [
+        {
+          "title": "Rien à installer, rien à retenir.",
+          "text": "Pas d’identifiant, pas de mot de passe, pas de formation. C’est ce qui fait la différence entre un outil utilisé par tout votre panel et un portail que seuls les plus gros transporteurs alimentent."
+        },
+        {
+          "title": "Un périmètre borné.",
+          "text": "Le lien donne accès aux expéditions d’un transporteur, pour un chargeur. Il est révocable et renouvelable à tout moment depuis votre interface."
+        },
+        {
+          "title": "Chaque action tracée.",
+          "text": "Acceptation, changement de statut, dépôt de document : qui, quand, depuis quel lien. Vous pouvez produire l’historique en cas de litige."
+        }
+      ],
+      "capture": "Vue transporteur : ses expéditions, accessibles par lien, sans compte."
+    },
+    "documents": {
+      "title": "Les documents de l’expédition",
+      "paragraphs": [
+        "Lettre de voiture, preuve de livraison signée, photos d’un colis endommagé, bon de réception, réserves écrites : les documents sont attachés à l’expédition concernée, déposés par le transporteur ou par vos équipes.",
+        "Ils restent rattachés au shipment, avec l’ordre, le transporteur retenu, le prix et l’historique des statuts. Retrouver un dossier complet dix-huit mois plus tard prend quelques secondes, sans chercher dans une messagerie."
+      ]
+    },
+    "invoice": {
+      "title": "Le prix payé contre le prix décidé",
+      "paragraphs": [
+        "Le prix retenu à l’affectation est conservé. À réception de la facture, CarrierBridge le compare à ce qui vous est facturé : tarif de base, prestations annexes réellement dues, surcharge énergie de la période. Les écarts sont listés, chiffrés, et rattachés à l’expédition concernée.",
+        "C’est la boucle qui manque à la plupart des organisations : on négocie, on affecte, puis plus personne ne vérifie que ce qui est payé correspond à ce qui a été décidé."
+      ]
+    },
+    "disclaimer": "CarrierBridge signale des écarts entre le prix décidé et le prix facturé. Il ne se substitue ni à votre contrôle comptable, ni à la validation de vos factures."
+  },
+  "scope": {
+    "h2": "Est-ce un TMS ?",
+    "intro": [
+      "Non, et ce n’est pas une nuance de vocabulaire. Le TMS chargeur existe depuis vingt ans et reste peu déployé, non parce qu’il fonctionne mal, mais parce que le raccorder coûte plus cher que ce qu’il rapporte. Un module de prise de rendez-vous, c’est six mois de DSI et un budget d’intégration — puis tout est à refaire pour l’outil suivant.",
+      "CarrierBridge est construit à l’envers : vous déposez vos grilles, vous obtenez un résultat le jour même, et vous payez un abonnement, pas un projet."
+    ],
+    "does": {
+      "title": "Ce que CarrierBridge fait",
+      "lede": "La vie d’une expédition, de la décision à la clôture.",
+      "items": [
+        "Importer et interpréter les grilles tarifaires",
+        "Passer des appels d’offres et comparer les réponses",
+        "Désigner le transporteur pour chaque expédition, sous vos contraintes et vos engagements",
+        "Transmettre l’ordre et en suivre l’exécution",
+        "Conserver les documents et les preuves de livraison",
+        "Vérifier que le prix facturé correspond au prix décidé"
+      ]
+    },
+    "doesNot": {
+      "title": "Ce que CarrierBridge ne fait pas",
+      "lede": "Tout ce qui se situe au-dessus de l’expédition, ou après elle.",
+      "items": [
+        "Construire un plan transport ou des tournées",
+        "Regrouper et consolider des commandes",
+        "Gérer les créneaux de quai et la planification des sites",
+        "Remplacer votre ERP sur les commandes et les stocks",
+        "Tenir votre comptabilité fournisseur ou déclencher vos paiements",
+        "Piloter une flotte ou des conducteurs"
+      ]
+    },
+    "closing": "Une expédition chez CarrierBridge, c’est un enlèvement et un point de livraison. Dès qu’il faut en regrouper plusieurs, construire une tournée ou arbitrer un plan de transport, ce n’est plus notre travail — et nous préférons le dire que le faire à moitié."
   }
 }

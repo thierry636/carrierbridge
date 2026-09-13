@@ -13,9 +13,11 @@ import { FuelControl } from "@/components/sections/FuelControl";
 import { BestPrice } from "@/components/sections/BestPrice";
 import { AssignmentConstraints } from "@/components/sections/AssignmentConstraints";
 import { Operations } from "@/components/sections/Operations";
+import { ShipmentExecution } from "@/components/sections/ShipmentExecution";
 import { CarrierRegistry } from "@/components/sections/CarrierRegistry";
 import { AiSourcing } from "@/components/sections/AiSourcing";
 import { PricingSection } from "@/components/sections/PricingSection";
+import { ProductScope } from "@/components/sections/ProductScope";
 import { Support } from "@/components/sections/Support";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -62,11 +64,13 @@ export default async function HomePage({
       <BestPrice />
       <AssignmentConstraints />
       <Operations />
+      <ShipmentExecution />
       <CarrierRegistry />
       <AiSourcing />
       <ClientMessages namespaces={["pricing"]}>
         <PricingSection />
       </ClientMessages>
+      <ProductScope />
       <Support />
       <ClientMessages namespaces={["faq"]}>
         <Faq />
