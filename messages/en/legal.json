@@ -20,7 +20,7 @@
       },
       {
         "title": "Host",
-        "body": "The site is hosted on Railway infrastructure, in a European region. Host identification: [[HEBERGEUR_NOM]], [[HEBERGEUR_ADRESSE]]. Telephone: [[HEBERGEUR_TELEPHONE]]."
+        "body": "The carrier-bridge.com website is hosted by Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, United States. Pages are delivered through its content delivery network.\nService data is hosted in a European region (see the privacy policy)."
       },
       {
         "title": "Intellectual property",
@@ -116,11 +116,11 @@
       },
       {
         "title": "Recipients and processors",
-        "body": "Your data is not sold, rented or disclosed to third parties for commercial purposes. It is never passed to carriers. It is accessible only to authorised staff at the publisher, and to the technical providers strictly necessary to run the service, acting as processors and bound by contract.\nProcessors: Railway (hosting, European region), Resend (transactional email), Plausible (cookieless audience measurement), [[PRESTATAIRE_PAIEMENT]] (subscription payments)."
+        "body": "Your data is not sold, rented or disclosed to third parties for commercial purposes. It is never passed to carriers. It is accessible only to authorised staff at the publisher, and to the technical providers strictly necessary to run the service, acting as processors and bound by contract.\nProcessors: Netlify (website hosting), [[HEBERGEUR_APPLICATION]] (application hosting, European region), Resend (transactional email), Plausible (cookieless audience measurement), [[PRESTATAIRE_PAIEMENT]] (subscription payments)."
       },
       {
         "title": "Where data is held",
-        "body": "Data is hosted within the European Union, on Railway infrastructure, in a European region.\nRailway is a company established in the United States. Access from a third country therefore cannot be excluded, solely for operational and technical support purposes. That transfer is covered by the standard contractual clauses adopted by the European Commission, together with the technical measures described in the Security section."
+        "body": "Two things need separating.\nThe carrier-bridge.com website is hosted by Netlify, Inc., a company established in the United States, and delivered through a global network. It processes only contact form submissions and aggregated, cookieless audience measurement.\nService data — your rate sheets, volumes, negotiated prices and account — is hosted within the European Union, in a European region of [[HEBERGEUR_APPLICATION]].\nBoth providers are established in the United States. Access from a third country therefore cannot be excluded, solely for operational and technical support purposes. Those transfers are covered by the standard contractual clauses adopted by the European Commission, together with the technical measures described in the Security section."
       },
       {
         "title": "Retention periods",

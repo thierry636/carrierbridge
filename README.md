@@ -100,8 +100,16 @@ messages/{fr,en}/  copie découpée par domaine, parité de clés vérifiable
 1. **Les prix ne se saisissent qu’une fois**, dans `src/lib/pricing.ts`. La home,
    la page tarifs et les `offers` schema.org en dérivent.
 2. **Le domaine ne se réécrit qu’une fois**, dans `src/lib/site.ts`. Le site est
-   canonique sur `carrier-bridge.com` ; `carrierbridge.com` et les variantes `www`
-   partent en 301 (voir `next.config.ts`).
+   canonique sur `carrier-bridge.com`. La redirection de `carrierbridge.com`
+   écrite dans `next.config.ts` **ne s’applique que si ce domaine est rattaché au
+   projet Netlify**. Il pointe aujourd’hui ailleurs, donc la règle est inerte.
+
+### Déploiement
+
+Le site est déployé sur **Netlify** depuis `main` (projet `carrierbridge`,
+domaine `carrier-bridge.com`). Netlify applique les `redirects` et `headers`
+de `next.config.ts` — vérifié en production sur les en-têtes de sécurité.
+`www.carrier-bridge.com` est redirigé nativement par Netlify.
 3. **Le vocabulaire du site dit « énergie », pas « gazole ».** Le gazole reste
    nommé là où il désigne une énergie précise : l’option du calculateur, les
    indices du CNR, le libellé qu’un transporteur a tapé dans son propre fichier.
